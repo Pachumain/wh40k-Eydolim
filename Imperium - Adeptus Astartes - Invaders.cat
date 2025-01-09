@@ -858,7 +858,6 @@ Attacks characteristic of 7.</characteristic>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Heavy Flamer" hidden="false" id="c51e-56a9-24cf-624f" type="selectionEntry" targetId="b3e6-f7a7-8357-2055"/>
-            <entryLink import="true" name="Heavy Flamer" hidden="false" id="088a-e28b-0d8d-255e" type="selectionEntry" targetId="b3e6-f7a7-8357-2055"/>
           </entryLinks>
           <profiles>
             <profile name="Great hammer" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="d788-058a-9bac-e898">
