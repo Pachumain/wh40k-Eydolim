@@ -852,6 +852,10 @@ Attacks characteristic of 7.</characteristic>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapons" id="21f4-896c-c628-d749" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fdb3-8d6e-d5b3-6a2c"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd19-0e51-1470-5a48"/>
+          </constraints>
           <entryLinks>
             <entryLink import="true" name="Heavy Flamer" hidden="false" id="c51e-56a9-24cf-624f" type="selectionEntry" targetId="b3e6-f7a7-8357-2055"/>
             <entryLink import="true" name="Heavy Flamer" hidden="false" id="088a-e28b-0d8d-255e" type="selectionEntry" targetId="b3e6-f7a7-8357-2055"/>
