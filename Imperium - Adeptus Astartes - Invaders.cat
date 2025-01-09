@@ -5,7 +5,7 @@
   </catalogueLinks>
   <entryLinks>
     <entryLink import="true" name="Aggressor Squad Crusade" hidden="false" id="7cc4-9d29-3817-602b" type="selectionEntry" targetId="d24a-820c-d8b9-486c"/>
-    <entryLink import="true" name="Captain Nemo" hidden="false" id="9540-0110-742c-2613" type="selectionEntry" targetId="9a00-4bb7-4f56-26d8"/>
+    <entryLink import="true" name="Captain Nemo" hidden="false" id="9540-0110-742c-2613" type="selectionEntry" targetId="5c8c-cd50-01d8-6f03"/>
     <entryLink import="true" name="Repulsor Canopus" hidden="false" id="4c10-7914-3af0-f440" type="selectionEntry" targetId="b327-f986-1adb-e8ef"/>
     <entryLink import="true" name="Techmarine on Bike Argus" hidden="false" id="dada-9251-e722-c584" type="selectionEntry" targetId="b166-9e99-e7da-67f1"/>
     <entryLink import="true" name="Vindicator Soteria" hidden="false" id="e2d2-cb65-bb49-4ab8" type="selectionEntry" targetId="00d1-e744-b6f5-f851"/>
@@ -498,11 +498,6 @@ If your army includes one or more of the Vehicle models listed below, Captain Ne
             <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="36d3-36bc-68dd-40ac" shared="true"/>
-          </conditions>
-        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Techmarine on Bike Argus" hidden="false" id="b166-9e99-e7da-67f1">
@@ -510,12 +505,13 @@ If your army includes one or more of the Vehicle models listed below, Captain Ne
         <cost name="pts" typeId="51b2-306e-1021-d207" value="110"/>
       </costs>
       <categoryLinks>
-        <categoryLink name="Character" hidden="false" id="cb1d-b350-f6d3-69bd" targetId="9cfd-1c32-585f-7d5c" primary="true"/>
+        <categoryLink name="Character" hidden="false" id="cb1d-b350-f6d3-69bd" targetId="9cfd-1c32-585f-7d5c" primary="false"/>
         <categoryLink name="Mounted" hidden="false" id="77ca-bdec-7e17-56e1" targetId="14a0-40c9-2748-ae6e" primary="false"/>
         <categoryLink name="Grenades" hidden="false" id="1ff2-2577-ea54-6d80" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
         <categoryLink name="Imperium" hidden="false" id="4e09-9194-8652-7260" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
         <categoryLink name="Techmarine" hidden="false" id="087f-7f36-7bd0-3018" targetId="b957-d9cd-ee81-560" primary="false"/>
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="54eb-dd37-8014-6ff2" targetId="6e7-40c-58d9-e402" primary="false"/>
+        <categoryLink targetId="4f3a-f0f7-6647-348d" id="016a-5925-3253-092f" primary="true" name="Epic Hero"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" id="c13e-2ea1-f797-2c4b" collective="false" targetId="caa-f869-3cbd-b48e" type="selectionEntry">
@@ -526,7 +522,7 @@ If your army includes one or more of the Vehicle models listed below, Captain Ne
         <entryLink import="true" name="Enhancements" hidden="false" id="520a-2cb9-3e62-9032" type="selectionEntryGroup" targetId="9e5d-de4c-c5d1-1d3e"/>
       </entryLinks>
       <constraints>
-        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="391d-d8ce-117e-0c6d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="391d-d8ce-117e-0c6d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
       <profiles>
         <profile name="Blessing of the Omnissiah" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0af6-7537-327a-1170">
@@ -553,7 +549,7 @@ If your army includes one or more of the Vehicle models listed below, Captain Ne
 Attacks characteristic of 7.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Techmarine on Bike [Legends]" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="db3e-3fee-b7f8-8430">
+        <profile name="Techmarine on Bike Argus" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="db3e-3fee-b7f8-8430">
           <characteristics>
             <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
@@ -722,11 +718,6 @@ Attacks characteristic of 7.</characteristic>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <modifiers>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="force" childId="9ed-cbf4-bfe5-90bf" shared="true" id="4152-0c12-8e8d-0154" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
         <modifier type="add" value="e9c7-1590-1bda-bf7f" field="category">
           <conditions>
             <condition type="instanceOf" value="0" field="selections" scope="primary-catalogue" childId="470a-6daa-9014-12df" shared="true" includeChildSelections="false" includeChildForces="false"/>
@@ -823,10 +814,11 @@ Attacks characteristic of 7.</characteristic>
       </costs>
       <categoryLinks>
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="1281-ba78-f934-0f94" targetId="6e7-40c-58d9-e402" primary="false"/>
-        <categoryLink name="Vehicle" hidden="false" id="2b58-690a-3aaf-ed4c" targetId="dbd4-63-af05-998" primary="true"/>
+        <categoryLink name="Vehicle" hidden="false" id="2b58-690a-3aaf-ed4c" targetId="dbd4-63-af05-998" primary="false"/>
         <categoryLink name="Walker" hidden="false" id="64c6-d7cd-aa30-106c" targetId="6dda-e157-334d-e93a" primary="false"/>
         <categoryLink name="Imperium" hidden="false" id="f54d-7134-f5fb-769f" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
         <categoryLink name="Dreadnought" hidden="false" id="80b3-6ac3-2a78-c724" targetId="a820-cf8-f29d-7b06" primary="false"/>
+        <categoryLink targetId="4f3a-f0f7-6647-348d" id="a6d4-eb90-18a3-909d" primary="true" name="Epic Hero"/>
       </categoryLinks>
       <profiles>
         <profile name="Dreadnought Typhis" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="d1cb-9fb8-57d4-d998">
@@ -894,13 +886,14 @@ Attacks characteristic of 7.</characteristic>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="55"/>
       </costs>
       <categoryLinks>
-        <categoryLink name="Character" hidden="false" id="4fc9-410d-bfb1-684d" targetId="9cfd-1c32-585f-7d5c" primary="true"/>
+        <categoryLink name="Character" hidden="false" id="4fc9-410d-bfb1-684d" targetId="9cfd-1c32-585f-7d5c" primary="false"/>
         <categoryLink name="Infantry" hidden="false" id="fb07-5744-48c2-2ed9" targetId="cf47-a0d7-7207-29dc" primary="false"/>
         <categoryLink name="Imperium" hidden="false" id="4eea-c91a-056b-5305" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
         <categoryLink name="Gravis" hidden="false" id="4370-67fb-bd77-4848" targetId="81f0-f40e-c36c-5a30" primary="false"/>
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="d36c-de56-00cb-a11e" targetId="6e7-40c-58d9-e402" primary="false"/>
         <categoryLink name="Apothecary" hidden="false" id="e6d1-b89a-f503-0122" targetId="2170-4f11-9bf7-ae56" primary="false"/>
         <categoryLink name="Biologis" hidden="false" id="1f3f-6d6c-b7c2-9f43" targetId="6820-5587-dd68-4d0f" primary="false"/>
+        <categoryLink targetId="4f3a-f0f7-6647-348d" id="e94d-0611-6e52-fa4b" primary="true" name="Epic Hero"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="74e4-af7d-573b-be09"/>
