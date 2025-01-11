@@ -280,11 +280,8 @@
       </profiles>
       <entryLinks>
         <entryLink import="true" name="Flamers" hidden="false" id="bb19-1e96-4ba6-1c7d" type="selectionEntry" targetId="673b-ddca-e950-dbfa"/>
+        <entryLink import="true" name="Close combat weapons" hidden="false" id="5f4c-73ee-b9d3-63f0" type="selectionEntry" targetId="e52f-1417-55c8-7d35"/>
       </entryLinks>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea90-c401-cb63-229f"/>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9a8c-d356-ace4-d471"/>
-      </constraints>
     </entryLink>
     <entryLink import="true" name="Faveur de l&apos;Empereur" hidden="false" id="08b6-f957-7577-62ed" type="selectionEntry" targetId="d63f-0154-cfc2-a7fd">
       <selectionEntries>
