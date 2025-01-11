@@ -36,13 +36,13 @@
         <categoryLink targetId="1fb6-c459-62c9-1472" id="5c1a-5861-6442-dacb" primary="false" name="Sacerdoce de Bronze"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Redemptionistes with Rusted chainswords" hidden="false" id="a14f-9f7c-b4fb-19b4">
+    <selectionEntry type="model" import="true" name="Redemptionistes with Rusted chainswords" hidden="false" id="a14f-9f7c-b4fb-19b4">
       <categoryLinks>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="3d55-fee2-de7f-51cf" primary="true" name="Infantry"/>
         <categoryLink targetId="1fb6-c459-62c9-1472" id="7cea-e4d4-8d2a-d71d" primary="false" name="Sacerdoce de Bronze"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Redemptionistes With Flamers" hidden="false" id="80f8-2dec-ebc7-ed35">
+    <selectionEntry type="model" import="true" name="Redemptionistes With Flamers" hidden="false" id="80f8-2dec-ebc7-ed35">
       <categoryLinks>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="0c15-0d86-f2e7-558a" primary="true" name="Infantry"/>
         <categoryLink targetId="1fb6-c459-62c9-1472" id="ff7c-de9a-7fce-d6d2" primary="false" name="Sacerdoce de Bronze"/>
@@ -71,14 +71,14 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="faa2-367f-ca62-b6e9"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Congréganistes" hidden="false" id="d63f-0154-cfc2-a7fd">
+    <selectionEntry type="model" import="true" name="Congréganistes" hidden="false" id="d63f-0154-cfc2-a7fd">
       <categoryLinks>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="26a9-1283-d1c7-8bb8" primary="false" name="Infantry"/>
         <categoryLink targetId="e338-111e-d0c6-b687" id="270c-4e43-9a3f-833e" primary="true" name="Battleline"/>
         <categoryLink targetId="1fb6-c459-62c9-1472" id="2269-6b1d-5c1f-ec11" primary="false" name="Sacerdoce de Bronze"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Pérégrin" hidden="false" id="2f8d-128d-a50b-f5a3">
+    <selectionEntry type="model" import="true" name="Pérégrin" hidden="false" id="2f8d-128d-a50b-f5a3">
       <categoryLinks>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="dfa4-c93a-0ede-28f4" primary="false" name="Infantry"/>
         <categoryLink targetId="e338-111e-d0c6-b687" id="bc6f-85d3-6fc3-4c49" primary="true" name="Battleline"/>
@@ -126,19 +126,19 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0550-ae4a-c09c-7304"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Consacrés d&apos;Assaut" hidden="false" id="c33e-532d-18c5-41ca">
+    <selectionEntry type="model" import="true" name="Consacrés d&apos;Assaut" hidden="false" id="c33e-532d-18c5-41ca">
       <categoryLinks>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="a20a-7bf8-27d8-b277" primary="true" name="Infantry"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Consacrés Lourds" hidden="false" id="3438-7675-18e3-38f5">
+    <selectionEntry type="model" import="true" name="Consacrés Lourds" hidden="false" id="3438-7675-18e3-38f5">
       <categoryLinks>
         <categoryLink targetId="1fb6-c459-62c9-1472" id="7cec-de4d-831e-2227" primary="false" name="Sacerdoce de Bronze"/>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="be13-524c-8869-b93d" primary="true" name="Infantry"/>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="1916-89c7-a1ea-1de6" primary="false" name="Grenades"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Ruinators" hidden="false" id="cd83-efbe-9dcc-fbd3">
+    <selectionEntry type="model" import="true" name="Ruinators" hidden="false" id="cd83-efbe-9dcc-fbd3">
       <categoryLinks>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="afea-0cfc-326a-3c8f" primary="true" name="Infantry"/>
       </categoryLinks>
@@ -257,7 +257,7 @@
         <infoLink name="Sacerdoce de bronze" id="7e37-f791-659c-a575" hidden="false" type="profile" targetId="e93c-5e08-50f1-fc37"/>
       </infoLinks>
     </entryLink>
-    <entryLink import="true" name="Redemptionistes With flamers" hidden="false" id="b8ea-5e21-19d0-1155" type="selectionEntry" targetId="80f8-2dec-ebc7-ed35">
+    <entryLink import="true" name="Redemptionistes With Flamers" hidden="false" id="b8ea-5e21-19d0-1155" type="selectionEntry" targetId="80f8-2dec-ebc7-ed35">
       <profiles>
         <profile name="Redemptionistes With Flamers" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="d190-959b-a7e0-a3c9">
           <characteristics>
@@ -288,7 +288,7 @@
         <infoLink name="Sacerdoce de bronze" id="bdcf-3d2f-604b-2d97" hidden="false" type="profile" targetId="e93c-5e08-50f1-fc37"/>
       </infoLinks>
     </entryLink>
-    <entryLink import="true" name="Faveur de l&apos;Empereur" hidden="false" id="08b6-f957-7577-62ed" type="selectionEntry" targetId="d63f-0154-cfc2-a7fd">
+    <entryLink import="true" name="Congréganistes" hidden="false" id="08b6-f957-7577-62ed" type="selectionEntry" targetId="d63f-0154-cfc2-a7fd">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Faveur de l&apos;Empereur" hidden="false" id="ac20-9657-7180-ec44">
           <profiles>
@@ -323,7 +323,7 @@
         </profile>
         <profile name="To Burn Bright" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a519-9cbf-955d-f6d9">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573"> Apres avoir reussi une charge les fire flails passent à Attaque 6 et gagnent [Hazardous] et  [Sustained Hit 1]</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Apres avoir reussi une charge les fire flails passent à Attaque 6 et gagnent [Hazardous] et  [Sustained Hit 1]</characteristic>
           </characteristics>
         </profile>
       </profiles>
