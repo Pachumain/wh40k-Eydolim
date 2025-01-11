@@ -207,6 +207,7 @@
         <infoLink name="Invulnerable Save" id="f9e0-ecab-cf06-fa71" hidden="false" type="profile" targetId="e8d7-25a1-aa23-c1d4"/>
         <infoLink name="Scouts" id="c62c-c467-759e-e1d0" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7"/>
         <infoLink name="Lone Operative" id="0f5a-d8e3-d729-1444" hidden="false" type="rule" targetId="a8a0-8fe7-898-e0f3"/>
+        <infoLink name="Sacerdoce de bronze" id="d355-7a86-194d-cb16" hidden="false" type="profile" targetId="e93c-5e08-50f1-fc37"/>
       </infoLinks>
     </entryLink>
     <entryLink import="true" name="Redemptionistes with Rusted chainswords" hidden="false" id="6a71-33d5-3faa-3cee" type="selectionEntry" targetId="a14f-9f7c-b4fb-19b4">
@@ -253,6 +254,7 @@
       </selectionEntries>
       <infoLinks>
         <infoLink name="Oint par les Larmes" id="65ce-f409-8ff3-86b8" hidden="false" type="profile" targetId="3d6b-f3f3-79df-af32"/>
+        <infoLink name="Sacerdoce de bronze" id="7e37-f791-659c-a575" hidden="false" type="profile" targetId="e93c-5e08-50f1-fc37"/>
       </infoLinks>
     </entryLink>
     <entryLink import="true" name="Redemptionistes With flamers" hidden="false" id="b8ea-5e21-19d0-1155" type="selectionEntry" targetId="80f8-2dec-ebc7-ed35">
@@ -282,6 +284,9 @@
         <entryLink import="true" name="Flamers" hidden="false" id="bb19-1e96-4ba6-1c7d" type="selectionEntry" targetId="673b-ddca-e950-dbfa"/>
         <entryLink import="true" name="Close combat weapons" hidden="false" id="5f4c-73ee-b9d3-63f0" type="selectionEntry" targetId="e52f-1417-55c8-7d35"/>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="Sacerdoce de bronze" id="bdcf-3d2f-604b-2d97" hidden="false" type="profile" targetId="e93c-5e08-50f1-fc37"/>
+      </infoLinks>
     </entryLink>
     <entryLink import="true" name="Faveur de l&apos;Empereur" hidden="false" id="08b6-f957-7577-62ed" type="selectionEntry" targetId="d63f-0154-cfc2-a7fd">
       <selectionEntries>
@@ -322,6 +327,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Sacerdoce de bronze" id="2306-8d08-4a58-fb13" hidden="false" type="profile" targetId="e93c-5e08-50f1-fc37"/>
+      </infoLinks>
     </entryLink>
     <entryLink import="true" name="Pérégrin" hidden="false" id="b484-feb7-552b-f700" type="selectionEntry" targetId="2f8d-128d-a50b-f5a3">
       <entryLinks>
@@ -340,6 +348,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Sacerdoce de bronze" id="f93f-b769-d3b0-f359" hidden="false" type="profile" targetId="e93c-5e08-50f1-fc37"/>
+      </infoLinks>
     </entryLink>
     <entryLink import="true" name="Consacrés d&apos;Assaut" hidden="false" id="d0a4-59c6-e6a0-1f2d" type="selectionEntry" targetId="c33e-532d-18c5-41ca">
       <profiles>
@@ -362,6 +373,7 @@
       <infoLinks>
         <infoLink name="Invulnerable Save" id="e6e3-2e41-2b9d-04e5" hidden="false" type="profile" targetId="98ef-4dff-2a3d-9776"/>
         <infoLink name="Oint par les Larmes" id="c084-e55f-9f5d-87da" hidden="false" type="profile" targetId="3d6b-f3f3-79df-af32"/>
+        <infoLink name="Sacerdoce de bronze" id="3e5d-bac6-3df3-3fa3" hidden="false" type="profile" targetId="e93c-5e08-50f1-fc37"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Rusted Swords" hidden="false" id="d3c6-eec5-c19f-5988">
@@ -433,6 +445,7 @@
       </profiles>
       <infoLinks>
         <infoLink name="Invulnerable Save" id="bee7-b078-7a31-f664" hidden="false" type="profile" targetId="e8d7-25a1-aa23-c1d4"/>
+        <infoLink name="Sacerdoce de bronze" id="5e26-2400-d8a5-6329" hidden="false" type="profile" targetId="e93c-5e08-50f1-fc37"/>
       </infoLinks>
     </entryLink>
     <entryLink import="true" name="Ruinators" hidden="false" id="813c-09a3-453e-2af5" type="selectionEntry" targetId="cd83-efbe-9dcc-fbd3">
@@ -453,6 +466,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Sacerdoce de bronze" id="8020-564c-3bb3-2882" hidden="false" type="profile" targetId="e93c-5e08-50f1-fc37"/>
+      </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Close combat weapons" hidden="false" id="1cf2-dd68-15eb-a0c1" type="selectionEntry" targetId="e52f-1417-55c8-7d35"/>
       </entryLinks>
