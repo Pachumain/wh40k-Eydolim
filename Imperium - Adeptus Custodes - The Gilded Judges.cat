@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="5526-6f99-bf7d-8092" name="Imperium - Adeptus Custodes - The Gilded Judges" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="25" revision="1" authorContact="Roueijin" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Imperium - Adeptus Custodes" id="0011-f721-8d12-9e4c" targetId="1f19-6509-d906-ca10" importRootEntries="true"/>
+  </catalogueLinks>
+  <sharedSelectionEntries>
+    <selectionEntry type="model" import="true" name="Tiberius Iudicarian" hidden="false" id="3a4d-77f0-632b-4bc4" collective="false">
+      <profiles>
+        <profile name="Tiberius Iudicarian" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="d857-5bfb-5ff6-f441">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">6</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c3ed-ebe3-234d-59c4">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units:
+■ Custodian Guard
+■ Custodian Wardens</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Golden Laurels" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="473c-4b77-0f9c-da87">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, each time a melee attack targets that unit, worsen that Armour Penetration characteristic of that attack by 1.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Companion of the Emperor" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="55dd-e562-0a99-aa90">
+          <characteristics>
+            <characteristic name="Description" id="aa7d-5c3f-8382-cd77" hidden="false" typeId="9b8f-694b-e5e-b573">Once per battle, after making a Hit roll, Wound roll or saving throw for this model, you can change the result of that roll to an unmodified 6.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Let the Just be Avenged" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="dbe6-60d5-f5d6-8704">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, when a friendly unit, improve the Attack score of Ekdikesis&apos;s Melee profile by 2 until your Opponent&apos;s next Command Phase</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Feel No Pain" id="cea6-ff59-480f-07eb" hidden="false" targetId="9bf4-280f-bbe2-6fbb" type="rule">
+          <modifiers>
+            <modifier type="append" value="6+" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Martial Ka&apos;tah" id="af88-4314-ff0f-2ba0" hidden="false" targetId="e348-7090-3aff-ee2c" type="rule"/>
+        <infoLink name="Leader" id="2147-0e80-7b7a-28a4" hidden="false" targetId="b4dd-3e1f-41cb-218f" type="rule"/>
+        <infoLink name="Invulnerable Save" id="e825-b564-d274-c8cb" hidden="false" targetId="4042-b2c1-d581-dbe7" type="profile"/>
+        <infoLink name="Talons" id="7247-c350-c4ac-156b" hidden="false" type="infoGroup" targetId="1cd2-aeaf-6c00-ec0"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Faction: Adeptus Custodes" hidden="false" id="e2f2-db5a-688f-8558" targetId="eea5-aeaf-bbf0-d5ee" primary="false"/>
+        <categoryLink name="Infantry" hidden="false" id="2c27-936b-79f5-2c1e" targetId="cf47-a0d7-7207-29dc" primary="false"/>
+        <categoryLink name="Character" hidden="false" id="e772-3baa-a3f8-0bdd" targetId="9cfd-1c32-585f-7d5c" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="9b5b-760c-3163-a182" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
+        <categoryLink name="Shield-Captain" hidden="false" id="ee4b-9a6d-f6ca-c471" targetId="6bfb-3b18-fd53-9ff1" primary="false"/>
+        <categoryLink name="Epic Hero" hidden="false" id="5d98-c5df-8d65-8f4b" targetId="4f3a-f0f7-6647-348d" primary="true"/>
+        <categoryLink name="Tiberius Iudicarian" hidden="false" id="2585-1d57-d180-fd5b" targetId="69fd-3b9b-4c7d-2786" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Warlord" hidden="false" id="2702-c471-4158-b880" collective="false" targetId="0574-f558-2957-584f" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="110"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Ekdikesis" hidden="false" id="edd0-89ca-c459-7c26">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e47-c0d8-dcc7-f48d"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a727-2299-c3c7-27f2"/>
+          </constraints>
+          <profiles>
+            <profile name="Ekdikesis" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="89f1-e82d-1079-bf39">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Ekdikesis" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="7117-f1bc-199d-ef70">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">7</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-3</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Assault" id="6afe-1a9a-6990-69ac" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <categoryEntries>
+    <categoryEntry name="Tiberius Iudicarian" id="69fd-3b9b-4c7d-2786" hidden="false"/>
+  </categoryEntries>
+  <entryLinks>
+    <entryLink import="true" name="Tiberius Iudicarian" hidden="false" id="359e-274d-3bb7-ea61" type="selectionEntry" targetId="3a4d-77f0-632b-4bc4"/>
+  </entryLinks>
+</catalogue>
