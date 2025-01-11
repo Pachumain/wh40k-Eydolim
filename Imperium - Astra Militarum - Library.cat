@@ -8671,6 +8671,18 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b04-a27d-5637-84ec" includeChildSelections="true" includeChildForces="true"/>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ce9e-872c-ed2d-4835" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b0ae-12a5-c84-ea45" shared="true" includeChildForces="true" includeChildSelections="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="6cc7-4732-769d-80ab" shared="true" includeChildForces="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Power Weapon" hidden="false" id="600b-6aef-1737-a654">
       <profiles>
@@ -20003,7 +20015,7 @@ Improve the Leadership and Objective Control characteristics of models in this u
             <conditionGroup type="and">
               <conditions>
                 <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b0ae-12a5-c84-ea45" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="6cc7-4732-769d-80ab" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="6cc7-4732-769d-80ab" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
