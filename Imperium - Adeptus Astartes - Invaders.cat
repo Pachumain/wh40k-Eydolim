@@ -284,7 +284,7 @@ by 1.</characteristic>
         </profile>
         <profile name="Frontal Impact" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f848-5691-8eb7-6e4f">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per Battle ,when using the Tank Shock stratagem on a VEHICLE with TRANSPORT Capacity : inflict mortal wounds on a 4+ to a maximum of 9 mortal wounds instead.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per Battle ,when using the Tank Shock stratagem on a VEHICLE TRANSPORT: inflict mortal wounds on a 4+ to a maximum of 9 mortal wounds instead.</characteristic>
           </characteristics>
         </profile>
         <profile name="Peerless Pilot" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6ae3-58d3-91ee-11bf">
@@ -298,9 +298,7 @@ If your army includes one or more of the Vehicle models listed below, Captain Ne
 
 ■ Predator Annihilator
 ■ Predator Destructor
-■ Vindicator
-
-</characteristic>
+■ Vindicator</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -319,7 +317,7 @@ If your army includes one or more of the Vehicle models listed below, Captain Ne
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="47f5-b79b-170b-545e" targetId="6e7-40c-58d9-e402" primary="false"/>
         <categoryLink name="Gravis" hidden="false" id="faf9-66a7-44af-254a" targetId="81f0-f40e-c36c-5a30" primary="false"/>
         <categoryLink name="Epic Hero" hidden="false" id="aeb2-7d85-bf17-79e5" targetId="4f3a-f0f7-6647-348d" primary="true"/>
-        <categoryLink name="Captain Nemo" hidden="false" id="7fe2-c625-f5f1-4e90" targetId="26a5-efa5-ad77-2ce6" primary="false"/>
+        <categoryLink targetId="7334-cf73-eefc-6dca" id="4889-395c-936a-0584" primary="false" name="Captain Nemo"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" id="7883-41d2-d08a-27a9" collective="false" targetId="caa-f869-3cbd-b48e" type="selectionEntry">
@@ -355,10 +353,7 @@ If your army includes one or more of the Vehicle models listed below, Captain Ne
                 <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
                 <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
                 <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
-                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">
-
-
-</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c"/>
               </characteristics>
             </profile>
           </profiles>
@@ -512,6 +507,7 @@ If your army includes one or more of the Vehicle models listed below, Captain Ne
         <categoryLink name="Techmarine" hidden="false" id="087f-7f36-7bd0-3018" targetId="b957-d9cd-ee81-560" primary="false"/>
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="54eb-dd37-8014-6ff2" targetId="6e7-40c-58d9-e402" primary="false"/>
         <categoryLink targetId="4f3a-f0f7-6647-348d" id="016a-5925-3253-092f" primary="true" name="Epic Hero"/>
+        <categoryLink targetId="be67-2fa4-26f2-a9e8" id="e571-c6ad-6d1a-4d39" primary="false" name="Techmarine Argus"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" id="c13e-2ea1-f797-2c4b" collective="false" targetId="caa-f869-3cbd-b48e" type="selectionEntry">
@@ -819,6 +815,8 @@ Attacks characteristic of 7.</characteristic>
         <categoryLink name="Imperium" hidden="false" id="f54d-7134-f5fb-769f" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
         <categoryLink name="Dreadnought" hidden="false" id="80b3-6ac3-2a78-c724" targetId="a820-cf8-f29d-7b06" primary="false"/>
         <categoryLink targetId="4f3a-f0f7-6647-348d" id="a6d4-eb90-18a3-909d" primary="true" name="Epic Hero"/>
+        <categoryLink targetId="1fb1-3603-a4bd-485" id="8756-5338-e018-1aa7" primary="false" name="Chaplain"/>
+        <categoryLink targetId="1f73-8258-3324-5d75" id="14e8-5acf-5256-b346" primary="false" name="Dreadnought Typhis"/>
       </categoryLinks>
       <profiles>
         <profile name="Dreadnought Typhis" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="d1cb-9fb8-57d4-d998">
@@ -852,12 +850,19 @@ Attacks characteristic of 7.</characteristic>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapons" id="21f4-896c-c628-d749" hidden="false">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="fdb3-8d6e-d5b3-6a2c"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="cd19-0e51-1470-5a48"/>
-          </constraints>
           <entryLinks>
-            <entryLink import="true" name="Heavy Flamer" hidden="false" id="c51e-56a9-24cf-624f" type="selectionEntry" targetId="b3e6-f7a7-8357-2055"/>
+            <entryLink import="true" name="Heavy Flamer" hidden="false" id="c51e-56a9-24cf-624f" type="selectionEntry" targetId="b3e6-f7a7-8357-2055">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d214-a6a6-996a-5205"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6924-0608-5c97-eaee"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Heavy Flamer" hidden="false" id="071f-f9bc-c450-c96b" type="selectionEntry" targetId="b3e6-f7a7-8357-2055">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5d72-85be-619d-b756"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a83-8743-d356-99b2"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <profiles>
             <profile name="Great hammer" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="d788-058a-9bac-e898">
@@ -879,9 +884,6 @@ Attacks characteristic of 7.</characteristic>
           </profiles>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d0e7-f5ed-9f69-657c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Apothecary Biologis Boutés" hidden="false" id="1c61-5b1c-06e8-906b">
       <costs>
@@ -900,6 +902,7 @@ Attacks characteristic of 7.</characteristic>
         <categoryLink name="Apothecary" hidden="false" id="e6d1-b89a-f503-0122" targetId="2170-4f11-9bf7-ae56" primary="false"/>
         <categoryLink name="Biologis" hidden="false" id="1f3f-6d6c-b7c2-9f43" targetId="6820-5587-dd68-4d0f" primary="false"/>
         <categoryLink targetId="4f3a-f0f7-6647-348d" id="e94d-0611-6e52-fa4b" primary="true" name="Epic Hero"/>
+        <categoryLink targetId="6a6b-8486-4328-d9ff" id="93f8-abac-432f-e14c" primary="false" name="Apothecary Boutés"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="74e4-af7d-573b-be09"/>
@@ -974,4 +977,10 @@ You can attach this model to one of the above units even if one Captain or Chap
       </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
+  <categoryEntries>
+    <categoryEntry name="Captain Nemo" id="7334-cf73-eefc-6dca" hidden="false"/>
+    <categoryEntry name="Apothecary Boutés" id="6a6b-8486-4328-d9ff" hidden="false"/>
+    <categoryEntry name="Dreadnought Typhis" id="1f73-8258-3324-5d75" hidden="false"/>
+    <categoryEntry name="Techmarine Argus" id="be67-2fa4-26f2-a9e8" hidden="false"/>
+  </categoryEntries>
 </catalogue>
