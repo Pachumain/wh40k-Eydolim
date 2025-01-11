@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="6cc7-4732-769d-80ab" name="Imperium - Astra Militarum - Kairos XLIXth" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="25" revision="1" authorContact="NodaNodaNoda" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Imperium - Astra Militarum" id="5539-3bbe-b3eb-ac0d" targetId="b0ae-12a5-c84-ea45" importRootEntries="true"/>
+  </catalogueLinks>
+  <sharedSelectionEntries>
+    <selectionEntry type="model" import="true" name="Lord Commander Friednanth Fox" hidden="false" id="298a-a563-31e7-cc62">
+      <categoryLinks>
+        <categoryLink name="Epic Hero" hidden="false" id="b8b5-84f1-b2c1-acb0" targetId="4f3a-f0f7-6647-348d" primary="true"/>
+        <categoryLink name="Imperium" hidden="false" id="a9a9-ab0d-833b-935d" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
+        <categoryLink name="Faction: Astra Militarum" hidden="false" id="3969-de54-fa4a-dee4" targetId="fa45-57e-930e-602b" primary="false"/>
+        <categoryLink name="Character" hidden="false" id="f92e-1e34-27f6-a552" targetId="9cfd-1c32-585f-7d5c" primary="false"/>
+        <categoryLink name="Officer" hidden="false" id="53c0-cc40-1853-5e50" targetId="e4d8-c6a1-7c23-ae25" primary="false"/>
+        <categoryLink name="Infantry" hidden="false" id="8c57-c8c1-b475-0a36" targetId="cf47-a0d7-7207-29dc" primary="false"/>
+        <categoryLink name="Lord Commander Friednanth Fox" hidden="false" id="ce0a-a49e-ccb3-e3d1" targetId="ee76-1558-b1e8-1ea7" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="6cc7-4732-769d-80ab" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="06e7-e26b-211e-e09e" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Invulnerable Save 5+" id="ee86-cd66-87cf-fed3" hidden="false" type="profile" targetId="3a3d-9e14-64a6-c032"/>
+        <infoLink name="Voice Of Command" id="9897-e8ea-f741-65b1" hidden="false" type="rule" targetId="53c9-34f6-2443-a95e"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Lord Commander Friednanth Fox" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="d827-af16-b0df-5ee4">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Officer" typeId="3fc9-16d8-8670-c8e2" typeName="Orders" hidden="false" id="6b3c-cb00-23e4-310d">
+          <characteristics>
+            <characteristic name="Officer" typeId="36b-c3c9-245f-e97d">This Officer can issue up to 3 Orders to:
+- REGIMENT units
+- SQUADRON units</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Center is giving way, Flanks are in retreat; Situation excellent. Attack" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f604-3c35-0640-7030">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If this model is on the battlefield at the start of your Command phase, Take a Leadership test for this model, if that test is passed, gain 1CP.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Pound Them to Dust !" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8a38-bd16-986f-7d14">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of your Shooting phase, select one enemy unit within 30&quot; of and visible to this model that has not already been selected for this ability this phase. Until the end of the phase, Heavy weapons equipped by friendly REGIMENT and SQUADRON models have the [SUSTAINED HITS 1] ability when targeting that unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup name="Leader" id="7d33-a02b-ffcc-f04f" hidden="false">
+          <infoLinks>
+            <infoLink name="Leader" id="b51a-24ba-c1a2-0050" hidden="false" type="rule" targetId="b4dd-3e1f-41cb-218f"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7b8e-978f-5697-f846">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units:
+- Attilan Rough Riders
+- Cadian Shock Troops
+- Catachan Jungle Fighters
+- Death Korps of Krieg
+- Infantry Squad
+- Kasrkin
+- Tempestus Scions</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+      <entryLinks>
+        <entryLink import="true" name="Warlord" hidden="false" id="ff24-6d83-c08b-8fb2" type="selectionEntry" targetId="ea3f-b52b-8dc7-d365">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fa08-6abb-0776-7671"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Imperial Regards" hidden="false" id="01b3-5a81-6dfb-b0bd">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c0cd-8d02-3ecf-65f7"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6320-9d15-5aaa-19c8"/>
+          </constraints>
+          <profiles>
+            <profile name="Imperial Regards" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="b0a7-2306-facb-5713">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Pistol" id="1e49-ea51-da20-42b0" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Fly Power Sword" hidden="false" id="0e19-428f-7252-e17e">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cb85-bb55-7901-a86d"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac14-99a2-ed72-8a6a"/>
+          </constraints>
+          <profiles>
+            <profile name="Fly Power Sword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="2f82-5af0-197d-3ba2">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <categoryEntries>
+    <categoryEntry name="Lord Commander Friednanth Fox" id="ee76-1558-b1e8-1ea7" hidden="false"/>
+  </categoryEntries>
+  <entryLinks>
+    <entryLink import="true" name="Lord Commander Friednanth Fox" hidden="false" id="166b-b110-6b0c-1b14" type="selectionEntry" targetId="298a-a563-31e7-cc62"/>
+  </entryLinks>
+</catalogue>
