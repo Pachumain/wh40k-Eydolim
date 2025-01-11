@@ -2,6 +2,7 @@
 <catalogue library="false" id="b070-de3d-de21-3dd9" name="Horde du Sacerdoce de bronze" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="25" revision="1" authorName="Pac" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Alexya Vickel" id="0026-e801-9c7d-3bac" hidden="false"/>
+    <categoryEntry name="Sacerdoce de Bronze" id="1fb6-c459-62c9-1472" hidden="false"/>
   </categoryEntries>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Heavy Flamer" hidden="false" id="6197-fe4d-891b-1ab4">
@@ -28,7 +29,39 @@
         <categoryLink targetId="4f3a-f0f7-6647-348d" id="429d-fa7b-2e9e-9b87" primary="false" name="Epic Hero"/>
         <categoryLink targetId="9cfd-1c32-585f-7d5c" id="deb8-db28-2577-b7b8" primary="false" name="Character"/>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="aea9-91b5-a301-9da6" primary="false" name="Infantry"/>
+        <categoryLink targetId="1fb6-c459-62c9-1472" id="5c1a-5861-6442-dacb" primary="false" name="Sacerdoce de Bronze"/>
       </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Redemptionistes with Rusted chainswords" hidden="false" id="a14f-9f7c-b4fb-19b4">
+      <categoryLinks>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="3d55-fee2-de7f-51cf" primary="true" name="Infantry"/>
+        <categoryLink targetId="1fb6-c459-62c9-1472" id="7cea-e4d4-8d2a-d71d" primary="false" name="Sacerdoce de Bronze"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Redemptionistes With Flamers" hidden="false" id="80f8-2dec-ebc7-ed35">
+      <categoryLinks>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="0c15-0d86-f2e7-558a" primary="true" name="Infantry"/>
+        <categoryLink targetId="1fb6-c459-62c9-1472" id="ff7c-de9a-7fce-d6d2" primary="false" name="Sacerdoce de Bronze"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Flamers" hidden="false" id="673b-ddca-e950-dbfa">
+      <profiles>
+        <profile name="Flamer" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="82d7-ebe5-3278-869e">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Ignores Cover" id="6bdf-9af0-7479-f641" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
+        <infoLink name="Torrent" id="0690-ed1a-b922-3a22" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
@@ -52,6 +85,16 @@
         <profile name="End of machines" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2d9f-9894-2cc5-b9db">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Au debut de la fight phase Alexya peut cibler un vehicule dans une aura de 6&quot;. Elle lance un d6, sur 1 rien ne se passe; de 2 à 5 le vehicule subit 1d3 mortal wound, sur un 6 le véhicule subit 3d3 mortal wound.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Alexya Vickel" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="5363-ec6f-b9ad-6f2e">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -82,7 +125,78 @@
       </selectionEntries>
       <infoLinks>
         <infoLink name="Invulnerable Save" id="f9e0-ecab-cf06-fa71" hidden="false" type="profile" targetId="e8d7-25a1-aa23-c1d4"/>
+        <infoLink name="Scouts" id="c62c-c467-759e-e1d0" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7"/>
+        <infoLink name="Lone Operative" id="0f5a-d8e3-d729-1444" hidden="false" type="rule" targetId="a8a0-8fe7-898-e0f3"/>
       </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Redemptionistes with Rusted chainswords" hidden="false" id="6a71-33d5-3faa-3cee" type="selectionEntry" targetId="a14f-9f7c-b4fb-19b4">
+      <profiles>
+        <profile name="Redemptionistes with Rusted chainswords" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="bc47-e910-f284-3647">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Porteur de lanterne" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ee9c-817f-602b-e897">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Si une unité est détruite par les rusted chainsword, toutes les unités ennemies dans une aura de 6&quot; doivent faire un battle shock test.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Rusted chainsword" hidden="false" id="6451-923f-2bb0-e8ab">
+          <profiles>
+            <profile name="Rusted chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="ff77-1ca2-bb7c-77c2">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">2</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Hazardous</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Hazardous" id="221b-7cb9-6958-2126" hidden="false" type="rule" targetId="8367-374c-f87-c627"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Oint par les Larmes" id="65ce-f409-8ff3-86b8" hidden="false" type="profile" targetId="3d6b-f3f3-79df-af32"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Redemptionistes With flamers" hidden="false" id="b8ea-5e21-19d0-1155" type="selectionEntry" targetId="80f8-2dec-ebc7-ed35">
+      <profiles>
+        <profile name="Redemptionistes With Flamers" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="d190-959b-a7e0-a3c9">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Dans l&apos;Eclat de la Flamme" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f766-a938-854b-daf5">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Si L&apos;unité est prise pour cible par une unité à plus de 12&quot;, elle bénéficie du couvert.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Héraut de la fureur" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0693-65f6-1806-306c">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Pendant la shooting phase, apres qu&apos;une unité est été prise pour cible par les redemptionistes w/ flamers, elle doit effectuer un battleshock test.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Flamers" hidden="false" id="bb19-1e96-4ba6-1c7d" type="selectionEntry" targetId="673b-ddca-e950-dbfa"/>
+      </entryLinks>
     </entryLink>
   </entryLinks>
   <sharedProfiles>
