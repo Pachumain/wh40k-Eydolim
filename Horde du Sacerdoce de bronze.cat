@@ -23,6 +23,10 @@
         <infoLink name="Ignores Cover" id="7c92-20c4-86ca-0809" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
         <infoLink name="Torrent" id="68b7-ca14-3c49-a9fd" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
       </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a0c9-10d9-7629-85c8"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d318-780e-d3cf-e937"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Alexya Vickel" hidden="false" id="a0c1-a7a4-9913-cc7e">
       <categoryLinks>
@@ -38,7 +42,7 @@
         <categoryLink targetId="1fb6-c459-62c9-1472" id="7cea-e4d4-8d2a-d71d" primary="false" name="Sacerdoce de Bronze"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Redemptionistes With Flamers" hidden="false" id="80f8-2dec-ebc7-ed35">
+    <selectionEntry type="unit" import="true" name="Redemptionistes With Flamers" hidden="false" id="80f8-2dec-ebc7-ed35">
       <categoryLinks>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="0c15-0d86-f2e7-558a" primary="true" name="Infantry"/>
         <categoryLink targetId="1fb6-c459-62c9-1472" id="ff7c-de9a-7fce-d6d2" primary="false" name="Sacerdoce de Bronze"/>
@@ -62,6 +66,78 @@
         <infoLink name="Ignores Cover" id="6bdf-9af0-7479-f641" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
         <infoLink name="Torrent" id="0690-ed1a-b922-3a22" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
       </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3e49-efc9-7044-8d53"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="faa2-367f-ca62-b6e9"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Congréganistes" hidden="false" id="d63f-0154-cfc2-a7fd">
+      <categoryLinks>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="26a9-1283-d1c7-8bb8" primary="false" name="Infantry"/>
+        <categoryLink targetId="e338-111e-d0c6-b687" id="270c-4e43-9a3f-833e" primary="false" name="Battleline"/>
+        <categoryLink targetId="1fb6-c459-62c9-1472" id="2269-6b1d-5c1f-ec11" primary="false" name="Sacerdoce de Bronze"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Pérégrin" hidden="false" id="2f8d-128d-a50b-f5a3">
+      <categoryLinks>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="dfa4-c93a-0ede-28f4" primary="false" name="Infantry"/>
+        <categoryLink targetId="e338-111e-d0c6-b687" id="bc6f-85d3-6fc3-4c49" primary="false" name="Battleline"/>
+        <categoryLink targetId="1fb6-c459-62c9-1472" id="73fc-4181-4348-5250" primary="false" name="Sacerdoce de Bronze"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Close combat weapons" hidden="false" id="e52f-1417-55c8-7d35">
+      <profiles>
+        <profile name="Close combat weapons" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="d0cc-871b-2965-4811">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ce7d-5c71-c280-a5e4"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f649-5f84-5815-a202"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Autopistol" hidden="false" id="ef48-9ebb-85ab-7243">
+      <profiles>
+        <profile name="Autopistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="233d-6196-a71c-9b04">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Pistol" id="a3c2-e446-2541-7d01" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="debc-cebe-145c-1f11"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0550-ae4a-c09c-7304"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Consacrés d&apos;Assaut" hidden="false" id="c33e-532d-18c5-41ca"/>
+    <selectionEntry type="unit" import="true" name="Consacrés Lourds" hidden="false" id="3438-7675-18e3-38f5">
+      <categoryLinks>
+        <categoryLink targetId="1fb6-c459-62c9-1472" id="7cec-de4d-831e-2227" primary="false" name="Sacerdoce de Bronze"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="be13-524c-8869-b93d" primary="true" name="Infantry"/>
+        <categoryLink targetId="5a61-81ac-eb7c-a87e" id="1916-89c7-a1ea-1de6" primary="false" name="Grenades"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ruinators" hidden="false" id="cd83-efbe-9dcc-fbd3">
+      <categoryLinks>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="afea-0cfc-326a-3c8f" primary="false" name="Infantry"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
@@ -198,6 +274,197 @@
         <entryLink import="true" name="Flamers" hidden="false" id="bb19-1e96-4ba6-1c7d" type="selectionEntry" targetId="673b-ddca-e950-dbfa"/>
       </entryLinks>
     </entryLink>
+    <entryLink import="true" name="Faveur de l&apos;Empereur" hidden="false" id="08b6-f957-7577-62ed" type="selectionEntry" targetId="d63f-0154-cfc2-a7fd">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Faveur de l&apos;Empereur" hidden="false" id="ac20-9657-7180-ec44">
+          <profiles>
+            <profile name="Faveur de l&apos;Empereur" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="95da-e2cd-bc6c-ae8f">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Congréganistes" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="014f-5bb5-c422-b278">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="To Burn Bright" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a519-9cbf-955d-f6d9">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573"> Apres avoir reussi une charge les fire flails passent à Attaque 6 et gagnent [Hazardous] et  [Sustained Hit 1]</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </entryLink>
+    <entryLink import="true" name="Pérégrin" hidden="false" id="b484-feb7-552b-f700" type="selectionEntry" targetId="2f8d-128d-a50b-f5a3">
+      <entryLinks>
+        <entryLink import="true" name="Autopistol" hidden="false" id="0fa2-fd53-e9e6-340b" type="selectionEntry" targetId="ef48-9ebb-85ab-7243"/>
+        <entryLink import="true" name="Close combat weapons" hidden="false" id="c7aa-1770-b9eb-79de" type="selectionEntry" targetId="e52f-1417-55c8-7d35"/>
+      </entryLinks>
+      <profiles>
+        <profile name="In the Light of the Emperor!" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b7c0-70a6-c7dd-05a3">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Le tour où l&apos;unité est spawn, ses armes ont [Devastating Wound] et reroll wound contre les unités Battleshock.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="To bathe in It&apos;s flammes" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1918-abcc-f49f-dc4a">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Quand l&apos;unité est détruite pendant la fight phase, l&apos;unité qui a détruit les pérégrins fait un battle shock test. Si le test est reussi l&apos;unité subit D3 mortal wounds, si le jet est échoué elle subit D6 mortal wounds.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </entryLink>
+    <entryLink import="true" name="Consacrés d&apos;Assaut" hidden="false" id="d0a4-59c6-e6a0-1f2d" type="selectionEntry" targetId="c33e-532d-18c5-41ca">
+      <profiles>
+        <profile name="Consacrés d&apos;Assaut" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="a461-0b4c-dc31-213f">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">2</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Purity of intent" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9ab6-62a1-21bd-ca00">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Reroll 1 to wound, si la cible est sur un point Reroll wound</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Invulnerable Save" id="e6e3-2e41-2b9d-04e5" hidden="false" type="profile" targetId="98ef-4dff-2a3d-9776"/>
+        <infoLink name="Oint par les Larmes" id="c084-e55f-9f5d-87da" hidden="false" type="profile" targetId="3d6b-f3f3-79df-af32"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Rusted Swords" hidden="false" id="d3c6-eec5-c19f-5988">
+          <profiles>
+            <profile name="Rusted Swords" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="80f4-29c3-3213-091b">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff61-cd1d-6174-5442"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1715-99f5-2d81-a348"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Fusion charge" hidden="false" id="1b13-aab7-2dbf-f538">
+          <profiles>
+            <profile name="Fusion charge" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="3c01-5833-ffc4-0c21">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">6&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">5+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">10</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault, Hazardous, One Shot</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Hazardous" id="9616-e29a-3061-1523" hidden="false" type="rule" targetId="8367-374c-f87-c627"/>
+            <infoLink name="Assault" id="cfc9-7502-66fd-e1af" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
+            <infoLink name="One Shot" id="8ff8-1767-96bc-37e4" hidden="false" type="rule" targetId="cd26-1611-860a-91e4"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </entryLink>
+    <entryLink import="true" name="Consacrés Lourds" hidden="false" id="7817-3568-c40c-baa3" type="selectionEntry" targetId="3438-7675-18e3-38f5">
+      <entryLinks>
+        <entryLink import="true" name="Heavy Flamer" hidden="false" id="3660-6ebd-e85c-88a7" type="selectionEntry" targetId="6197-fe4d-891b-1ab4"/>
+        <entryLink import="true" name="Close combat weapons" hidden="false" id="1d97-5de3-45b7-b2c4" type="selectionEntry" targetId="e52f-1417-55c8-7d35"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Purity of intent" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cbc7-bf68-7071-004b">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Reroll 1 to wound, si la cible est sur un point Reroll wound</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Consacrés Lourds" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="b33a-ef4d-3210-a535">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Invulnerable Save" id="bee7-b078-7a31-f664" hidden="false" type="profile" targetId="e8d7-25a1-aa23-c1d4"/>
+      </infoLinks>
+    </entryLink>
+    <entryLink import="true" name="Ruinators" hidden="false" id="813c-09a3-453e-2af5" type="selectionEntry" targetId="cd83-efbe-9dcc-fbd3">
+      <profiles>
+        <profile name="Ruinators" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="876c-9780-cfbd-aaca">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Seize victory!" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1dd0-9469-13dc-67f7">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Pendant la shooting phase, apres avoir été selectionné pour tirer, les ruinators peuvent faire un mouvement à hauteur de 6&quot;</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Close combat weapons" hidden="false" id="1cf2-dd68-15eb-a0c1" type="selectionEntry" targetId="e52f-1417-55c8-7d35"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Fusil de précision" hidden="false" id="bedc-ba2e-afdb-0f18">
+          <profiles>
+            <profile name="Fusil de précision" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="1ea3-e01e-155e-af00">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy, Précision</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Heavy" id="0de8-62db-88c1-ebf1" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
+            <infoLink name="Precision" id="cc0d-ea7b-5187-4731" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc5d-8e21-68e0-384c"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3482-7443-d999-642f"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </entryLink>
   </entryLinks>
   <sharedProfiles>
     <profile name="Oint par les Larmes" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3d6b-f3f3-79df-af32">
@@ -210,6 +477,17 @@
         <characteristic name="Description" typeId="9b8f-694b-e5e-b573">5+</characteristic>
       </characteristics>
       <comment>5+</comment>
+    </profile>
+    <profile name="Sacerdoce de bronze" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e93c-5e08-50f1-fc37">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">+1 pour blesser quand l&apos;unité cible une unité battleshock</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="98ef-4dff-2a3d-9776">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">6+</characteristic>
+      </characteristics>
+      <comment>6+</comment>
     </profile>
   </sharedProfiles>
 </catalogue>
