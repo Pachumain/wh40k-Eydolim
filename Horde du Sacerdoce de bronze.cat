@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="b070-de3d-de21-3dd9" name="Horde du Sacerdoce de bronze" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="25" revision="1" authorName="Pac" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry name="Alexya Vickel" id="0026-e801-9c7d-3bac" hidden="false"/>
+  </categoryEntries>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Heavy Flamer" hidden="false" id="6197-fe4d-891b-1ab4">
+      <profiles>
+        <profile name="Heavy Flamer" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="b52e-453d-a839-d6dc">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Ignores Cover" id="7c92-20c4-86ca-0809" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
+        <infoLink name="Torrent" id="68b7-ca14-3c49-a9fd" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Alexya Vickel" hidden="false" id="a0c1-a7a4-9913-cc7e">
+      <categoryLinks>
+        <categoryLink targetId="4f3a-f0f7-6647-348d" id="429d-fa7b-2e9e-9b87" primary="false" name="Epic Hero"/>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="deb8-db28-2577-b7b8" primary="false" name="Character"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="aea9-91b5-a301-9da6" primary="false" name="Infantry"/>
+      </categoryLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedRules>
+    <rule name="Sacerdoce de bronze" id="2130-b826-2dbf-3e0c" hidden="false">
+      <description>+1 pour blesser quand l&apos;unité cible une unité battleshock</description>
+    </rule>
+  </sharedRules>
+  <entryLinks>
+    <entryLink import="true" name="Alexya Vickel" hidden="false" id="1a5f-1fa6-d82b-c081" type="selectionEntry" targetId="a0c1-a7a4-9913-cc7e">
+      <profiles>
+        <profile name="Mercenary veteran" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6fb3-d8da-3135-bbcc">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Donne fallback charge à l&apos;unité qu&apos;elle lead</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Herald of rust" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0cec-9773-b1c9-1f8b">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Une fois par phase pendant la shooting ou la fight phase; Si Alexya est prise pour cible par une unité à 18&quot; ou moins, Alexya donne [Hazardous] à toutes les armes de l&apos;unité.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="End of machines" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2d9f-9894-2cc5-b9db">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Au debut de la fight phase Alexya peut cibler un vehicule dans une aura de 6&quot;. Elle lance un d6, sur 1 rien ne se passe; de 2 à 5 le vehicule subit 1d3 mortal wound, sur un 6 le véhicule subit 3d3 mortal wound.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Uruk&apos;s fangs" hidden="false" id="f13b-5657-4415-3b96">
+          <profiles>
+            <profile name="Uruk&apos;s fangs" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="25dc-41fc-cb14-1580">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">3</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Anti-Vehicle 5+, Devastating Wound</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6091-1eff-272c-7188"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="26e2-07c9-eda3-9b2f"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Anti-" id="a375-2007-9a8c-8338" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+            <infoLink name="Devastating Wounds" id="7979-d9ba-4e96-2427" hidden="false" type="rule" targetId="be1e-ac8e-1e2c-3528"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Invulnerable Save" id="f9e0-ecab-cf06-fa71" hidden="false" type="profile" targetId="e8d7-25a1-aa23-c1d4"/>
+      </infoLinks>
+    </entryLink>
+  </entryLinks>
+  <sharedProfiles>
+    <profile name="Oint par les Larmes" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3d6b-f3f3-79df-af32">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+      </characteristics>
+    </profile>
+    <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e8d7-25a1-aa23-c1d4">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">5+</characteristic>
+      </characteristics>
+      <comment>5+</comment>
+    </profile>
+  </sharedProfiles>
+</catalogue>
