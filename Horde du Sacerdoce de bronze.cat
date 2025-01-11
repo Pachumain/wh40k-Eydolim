@@ -30,7 +30,7 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Alexya Vickel" hidden="false" id="a0c1-a7a4-9913-cc7e">
       <categoryLinks>
-        <categoryLink targetId="4f3a-f0f7-6647-348d" id="429d-fa7b-2e9e-9b87" primary="false" name="Epic Hero"/>
+        <categoryLink targetId="4f3a-f0f7-6647-348d" id="429d-fa7b-2e9e-9b87" primary="true" name="Epic Hero"/>
         <categoryLink targetId="9cfd-1c32-585f-7d5c" id="deb8-db28-2577-b7b8" primary="false" name="Character"/>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="aea9-91b5-a301-9da6" primary="false" name="Infantry"/>
         <categoryLink targetId="1fb6-c459-62c9-1472" id="5c1a-5861-6442-dacb" primary="false" name="Sacerdoce de Bronze"/>
@@ -74,14 +74,14 @@
     <selectionEntry type="unit" import="true" name="Congréganistes" hidden="false" id="d63f-0154-cfc2-a7fd">
       <categoryLinks>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="26a9-1283-d1c7-8bb8" primary="false" name="Infantry"/>
-        <categoryLink targetId="e338-111e-d0c6-b687" id="270c-4e43-9a3f-833e" primary="false" name="Battleline"/>
+        <categoryLink targetId="e338-111e-d0c6-b687" id="270c-4e43-9a3f-833e" primary="true" name="Battleline"/>
         <categoryLink targetId="1fb6-c459-62c9-1472" id="2269-6b1d-5c1f-ec11" primary="false" name="Sacerdoce de Bronze"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Pérégrin" hidden="false" id="2f8d-128d-a50b-f5a3">
       <categoryLinks>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="dfa4-c93a-0ede-28f4" primary="false" name="Infantry"/>
-        <categoryLink targetId="e338-111e-d0c6-b687" id="bc6f-85d3-6fc3-4c49" primary="false" name="Battleline"/>
+        <categoryLink targetId="e338-111e-d0c6-b687" id="bc6f-85d3-6fc3-4c49" primary="true" name="Battleline"/>
         <categoryLink targetId="1fb6-c459-62c9-1472" id="73fc-4181-4348-5250" primary="false" name="Sacerdoce de Bronze"/>
       </categoryLinks>
     </selectionEntry>
@@ -126,7 +126,11 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0550-ae4a-c09c-7304"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Consacrés d&apos;Assaut" hidden="false" id="c33e-532d-18c5-41ca"/>
+    <selectionEntry type="unit" import="true" name="Consacrés d&apos;Assaut" hidden="false" id="c33e-532d-18c5-41ca">
+      <categoryLinks>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="a20a-7bf8-27d8-b277" primary="true" name="Infantry"/>
+      </categoryLinks>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Consacrés Lourds" hidden="false" id="3438-7675-18e3-38f5">
       <categoryLinks>
         <categoryLink targetId="1fb6-c459-62c9-1472" id="7cec-de4d-831e-2227" primary="false" name="Sacerdoce de Bronze"/>
@@ -136,7 +140,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ruinators" hidden="false" id="cd83-efbe-9dcc-fbd3">
       <categoryLinks>
-        <categoryLink targetId="cf47-a0d7-7207-29dc" id="afea-0cfc-326a-3c8f" primary="false" name="Infantry"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="afea-0cfc-326a-3c8f" primary="true" name="Infantry"/>
       </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -241,6 +245,10 @@
           <infoLinks>
             <infoLink name="Hazardous" id="221b-7cb9-6958-2126" hidden="false" type="rule" targetId="8367-374c-f87-c627"/>
           </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8790-f42a-7686-2bdb"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ad72-8b8c-174f-26f8"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -273,6 +281,10 @@
       <entryLinks>
         <entryLink import="true" name="Flamers" hidden="false" id="bb19-1e96-4ba6-1c7d" type="selectionEntry" targetId="673b-ddca-e950-dbfa"/>
       </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea90-c401-cb63-229f"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9a8c-d356-ace4-d471"/>
+      </constraints>
     </entryLink>
     <entryLink import="true" name="Faveur de l&apos;Empereur" hidden="false" id="08b6-f957-7577-62ed" type="selectionEntry" targetId="d63f-0154-cfc2-a7fd">
       <selectionEntries>
@@ -290,6 +302,10 @@
               </characteristics>
             </profile>
           </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c331-819f-cd85-1ec2"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4aca-64c8-acb2-b6c5"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <profiles>
@@ -389,6 +405,10 @@
             <infoLink name="Assault" id="cfc9-7502-66fd-e1af" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
             <infoLink name="One Shot" id="8ff8-1767-96bc-37e4" hidden="false" type="rule" targetId="cd26-1611-860a-91e4"/>
           </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d16d-0db9-2f8c-595a"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e251-c7c7-1db1-699a"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
     </entryLink>
