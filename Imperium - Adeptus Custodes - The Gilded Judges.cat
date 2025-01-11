@@ -35,7 +35,7 @@
         </profile>
         <profile name="Let the Just be Avenged" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="dbe6-60d5-f5d6-8704">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, when a friendly unit, improve the Attack score of Ekdikesis&apos;s Melee profile by 2 until your Opponent&apos;s next Command Phase</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, when a friendly unit within 9&quot; is reduced to below half-strength or destroyed, improve the Attack score of Ekdikesis&apos;s Melee profile by 2 until your Opponent&apos;s next Command Phase</characteristic>
           </characteristics>
         </profile>
       </profiles>
