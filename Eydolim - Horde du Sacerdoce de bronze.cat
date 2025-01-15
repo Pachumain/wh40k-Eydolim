@@ -526,6 +526,10 @@
         <infoLink name="Torrent" id="8242-7e87-4a6c-8aad" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
         <infoLink name="Pistol" id="5cd3-7c1e-3ca6-f976" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
       </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3cbb-9163-01eb-2b92"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb9d-aea8-0296-bfcf"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Chariot" hidden="false" id="fc52-1fad-bd91-2b21">
       <categoryLinks>
@@ -621,40 +625,6 @@ Lancer un D6 sur 1 retirer D3 modele de l&apos;unité, sur 2-6 retirer un model,
             <infoLink name="Psychic" id="09dc-4f3e-d73b-2da4" hidden="false" type="rule" targetId="e9c4-2bb8-12ee-cd1b"/>
             <infoLink name="Hazardous" id="4671-6b73-cce7-37ad" hidden="false" type="rule" targetId="8367-374c-f87-c627"/>
           </infoLinks>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Breath of fire" hidden="false" id="2da8-66e1-26c4-a525">
-              <profiles>
-                <profile name="Breath of fire" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="1f3b-2fe3-bef2-2543">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">d3</characteristic>
-                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
-                    <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignore Cover, Torrent, Psychic</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Breath of fire - Focused" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="9395-121f-4376-6b2e">
-                  <characteristics>
-                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">d3</characteristic>
-                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
-                    <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
-                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
-                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignore Cover, Torrent, Psychic, Hazardous</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Ignores Cover" id="6d40-75f5-7b5c-11eb" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
-                <infoLink name="Torrent" id="8168-b0d7-8411-64b1" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
-                <infoLink name="Psychic" id="a4b4-fdb3-11b9-74ca" hidden="false" type="rule" targetId="e9c4-2bb8-12ee-cd1b"/>
-                <infoLink name="Hazardous" id="6669-f763-2703-0e26" hidden="false" type="rule" targetId="8367-374c-f87-c627"/>
-              </infoLinks>
-            </selectionEntry>
-          </selectionEntries>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="61fd-5dcd-7923-6b98"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="344b-39b7-39a5-2ae6"/>
@@ -760,8 +730,6 @@ Dans l&apos;aura du choriste un test d&apos;hazardous est echoué sur 1-2</chara
             <infoLink name="Hazardous" id="8440-b814-5d37-495a" hidden="false" type="rule" targetId="8367-374c-f87-c627"/>
           </infoLinks>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="42c8-4f48-cc58-683a"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6459-4187-24db-12fa"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="136d-acbf-3d13-f4ac"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2341-59bb-a089-de3c"/>
           </constraints>
@@ -804,8 +772,6 @@ Dans l&apos;aura du choriste un test d&apos;hazardous est echoué sur 1-2</chara
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5de5-13bf-b51f-52c5"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7ddb-bafd-4375-25c8"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb9d-aea8-0296-bfcf"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3cbb-9163-01eb-2b92"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
@@ -841,6 +807,8 @@ Dans l&apos;aura du choriste un test d&apos;hazardous est echoué sur 1-2</chara
       </infoLinks>
     </entryLink>
     <entryLink import="true" name="Chariot" hidden="false" id="f4cb-903f-ed33-529a" type="selectionEntry" targetId="fc52-1fad-bd91-2b21"/>
+    <entryLink import="true" name="Choriste de bataille" hidden="false" id="9809-66fd-e5e1-a13a" type="selectionEntry" targetId="8d00-9728-30ce-a347"/>
+    <entryLink import="true" name="Officiant" hidden="false" id="8a31-7509-f842-0860" type="selectionEntry" targetId="e539-7952-0be6-b879"/>
   </entryLinks>
   <sharedProfiles>
     <profile name="Oint par les Larmes" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3d6b-f3f3-79df-af32">
