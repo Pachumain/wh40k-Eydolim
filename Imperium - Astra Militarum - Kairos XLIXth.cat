@@ -312,7 +312,7 @@
         <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="3a36-0a4e-147f-db4f"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Heavy Weapons Gunner" hidden="false" id="dd55-c650-c936-ebf2" collective="true">
+        <selectionEntry type="model" import="true" name="Heavy Weapons Gunner" hidden="false" id="dd55-c650-c936-ebf2" collective="true" flatten="true">
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="ab59-c529-00e2-5b59-min"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="ab59-c529-00e2-5b59-max"/>
@@ -500,7 +500,7 @@
       <profiles>
         <profile name="Final Duty" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9121-8d6c-bcc5-3deb">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this unit contains a Fire Coordinator, each time a Heavy Weapon Gunner model is destroyed, roll one D6. On a 3+, do not remove it from play. The destroyed model can shoot after the attacking model&apos;s unit has finished making its attacks, and is then removed from play.</characteristic>
           </characteristics>
         </profile>
       </profiles>
