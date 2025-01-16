@@ -312,7 +312,7 @@
         <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="3a36-0a4e-147f-db4f"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Heavy Weapons Gunner" hidden="false" id="dd55-c650-c936-ebf2" collective="true" flatten="true">
+        <selectionEntry type="model" import="true" name="Heavy Weapons Gunner" hidden="false" id="dd55-c650-c936-ebf2" collective="true" flatten="false">
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="ab59-c529-00e2-5b59-min"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="ab59-c529-00e2-5b59-max"/>
