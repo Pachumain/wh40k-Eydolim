@@ -13,14 +13,9 @@
     <entryLink import="true" name="Apothecary Biologis Boutés" hidden="false" id="036c-e5df-1d6b-2cd5" type="selectionEntry" targetId="1c61-5b1c-06e8-906b"/>
     <entryLink import="true" name="Apothecary Boutés" hidden="false" id="01de-cb04-d5df-d094" type="selectionEntry" targetId="d92c-edf5-b105-33fe"/>
     <entryLink import="true" name="Lieutenant Zétès in Phobos Armour" hidden="false" id="d28f-dd4a-f8ef-0bd9" type="selectionEntry" targetId="3765-d50f-dc74-0cec"/>
-    <entryLink import="true" name="Company Heroes" hidden="false" id="a437-d347-df9e-7d1f" type="selectionEntry" targetId="020d-01be-8904-bab0">
-      <entryLinks>
-        <entryLink import="true" name="Lieutenant with Combi-weapon" hidden="false" id="9573-55bf-2c49-9fdd" type="selectionEntry" targetId="109f-f71d-56-d9eb"/>
-      </entryLinks>
-    </entryLink>
+    <entryLink import="true" name="Company Heroes" hidden="false" id="a437-d347-df9e-7d1f" type="selectionEntry" targetId="020d-01be-8904-bab0"/>
     <entryLink import="true" name="Lieutenant Calais" hidden="false" id="a963-ca1c-0990-9b62" type="selectionEntry" targetId="d334-b45b-5e2b-7c8d"/>
-    <entryLink import="true" name="Lieutenant with Combi-weapon" hidden="false" id="61a3-7ce8-b596-6507" type="selectionEntry" targetId="109f-f71d-56-d9eb"/>
-    <entryLink import="true" name="Lieutenant with Combi-weapon" hidden="false" id="8a14-d579-aabf-bfef" type="selectionEntry" targetId="109f-f71d-56-d9eb"/>
+    <entryLink import="true" name="Lieutenant Calais with Combi-weapon" hidden="false" id="8827-46dd-cb1b-1546" type="selectionEntry" targetId="17be-d8e9-cfe2-cf6b"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Aggressor Squad Invaders" hidden="false" id="d24a-820c-d8b9-486c">
