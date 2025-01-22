@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue library="false" id="5931-5831-bcc8-bbbe" name="Imperium - Adeptus Astartes - Invaders" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="21" revision="1" authorName="Pac" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="Imperium - Space Marines" id="57b7-9f2c-8cec-caf2" targetId="e0af-67df-9d63-8fb7" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Imperium - Space Marines" id="57b7-9f2c-8cec-caf2" targetId="e0af-67df-9d63-8fb7" importRootEntries="false"/>
   </catalogueLinks>
   <entryLinks>
     <entryLink import="true" name="Aggressor Squad Crusade" hidden="false" id="7cc4-9d29-3817-602b" type="selectionEntry" targetId="d24a-820c-d8b9-486c"/>
@@ -13,9 +13,14 @@
     <entryLink import="true" name="Apothecary Biologis Boutés" hidden="false" id="036c-e5df-1d6b-2cd5" type="selectionEntry" targetId="1c61-5b1c-06e8-906b"/>
     <entryLink import="true" name="Apothecary Boutés" hidden="false" id="01de-cb04-d5df-d094" type="selectionEntry" targetId="d92c-edf5-b105-33fe"/>
     <entryLink import="true" name="Lieutenant Zétès in Phobos Armour" hidden="false" id="d28f-dd4a-f8ef-0bd9" type="selectionEntry" targetId="3765-d50f-dc74-0cec"/>
-    <entryLink import="true" name="Company Heroes" hidden="false" id="a437-d347-df9e-7d1f" type="selectionEntry" targetId="020d-01be-8904-bab0"/>
-    <entryLink import="true" name="Lieutenant Calais" hidden="false" id="79c9-36b8-fbdf-6e67" type="selectionEntry" targetId="d334-b45b-5e2b-7c8d"/>
+    <entryLink import="true" name="Company Heroes" hidden="false" id="a437-d347-df9e-7d1f" type="selectionEntry" targetId="020d-01be-8904-bab0">
+      <entryLinks>
+        <entryLink import="true" name="Lieutenant with Combi-weapon" hidden="false" id="9573-55bf-2c49-9fdd" type="selectionEntry" targetId="109f-f71d-56-d9eb"/>
+      </entryLinks>
+    </entryLink>
     <entryLink import="true" name="Lieutenant Calais" hidden="false" id="a963-ca1c-0990-9b62" type="selectionEntry" targetId="d334-b45b-5e2b-7c8d"/>
+    <entryLink import="true" name="Lieutenant with Combi-weapon" hidden="false" id="61a3-7ce8-b596-6507" type="selectionEntry" targetId="109f-f71d-56-d9eb"/>
+    <entryLink import="true" name="Lieutenant with Combi-weapon" hidden="false" id="8a14-d579-aabf-bfef" type="selectionEntry" targetId="109f-f71d-56-d9eb"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Aggressor Squad Invaders" hidden="false" id="d24a-820c-d8b9-486c">
@@ -1164,7 +1169,7 @@ You can attach this model to a unit it can lead units even if one Captain or Ch
         <entryLink import="true" name="Enhancements" hidden="false" id="3704-5564-baee-1743" type="selectionEntryGroup" targetId="5d92-085c-f963-01e1"/>
       </entryLinks>
       <constraints>
-        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="fee5-3232-c1e5-29c1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="fee5-3232-c1e5-29c1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Master-crafted Scoped Bolt Carbine" hidden="false" id="3f2b-d3a1-97dd-c43f">
@@ -1547,7 +1552,7 @@ You can attach this model to a unit it can lead units even if one Captain or Ch
         <categoryLink name="Lieutenant" hidden="false" id="9dc1-5c92-b0a4-1c1a" targetId="9c1a-42ff-a418-11d1" primary="false"/>
       </categoryLinks>
       <constraints>
-        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="1736-a252-d11b-d512" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1736-a252-d11b-d512" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" id="4918-a304-a87a-b382" collective="false" targetId="caa-f869-3cbd-b48e" type="selectionEntry">
@@ -1705,6 +1710,96 @@ You can attach this model to a unit it can lead even if one Captain or Chapter 
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Lieutenant Calais with Combi-weapon" hidden="false" id="17be-d8e9-cfe2-cf6b">
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Character" hidden="false" id="5c4f-41e0-c243-af87" targetId="9cfd-1c32-585f-7d5c" primary="true"/>
+        <categoryLink name="Infantry" hidden="false" id="4db8-9c8e-1615-eb76" targetId="cf47-a0d7-7207-29dc" primary="false"/>
+        <categoryLink name="Grenades" hidden="false" id="476b-475f-47aa-5af1" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="5ac8-0a15-68b8-0858" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
+        <categoryLink name="Lieutenant with Combi-weapon" hidden="false" id="daf6-5619-2ebe-3313" targetId="8aae-3dc4-861e-47ab" primary="false"/>
+        <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="f3a4-11d2-5353-35bf" targetId="6e7-40c-58d9-e402" primary="false"/>
+        <categoryLink name="Phobos" hidden="false" id="fad8-58ab-21f8-eaa3" targetId="7295-ed65-8ff4-7a5f" primary="false"/>
+        <categoryLink name="Lieutenant" hidden="false" id="c140-deb7-594e-a550" targetId="9c1a-42ff-a418-11d1" primary="false"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Feel No Pain" id="84cc-956c-bc97-8b18" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
+          <modifiers>
+            <modifier type="append" value="5+" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Infiltrators" id="2814-d720-a19b-732d" hidden="false" type="rule" targetId="c05d-f4c3-f091-4938"/>
+        <infoLink name="Lone Operative" id="1567-83fe-fd51-90b6" hidden="false" type="rule" targetId="a8a0-8fe7-898-e0f3"/>
+        <infoLink name="Stealth" id="f23b-6638-59b9-99d2" hidden="false" type="rule" targetId="bec5-4288-34a6-ccfa"/>
+        <infoLink name="Oath of Moment" id="57e5-004a-6f4f-7cdd" hidden="false" type="rule" targetId="3b76-4053-ece9-6e7d"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Combi-weapon" hidden="false" id="02ab-bc89-a6f5-21c3" type="selectionEntry" targetId="2c13-8cdd-f66b-bcae">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b4a7-3fec-296a-a8b6"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a79-7cea-742e-2991"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Enhancements" hidden="false" id="4b70-bcd6-4c83-c307" type="selectionEntryGroup" targetId="5d92-085c-f963-01e1"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Lieutenant with Combi-weapon" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="cd26-06b7-6505-f59e">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Priority Objective Identified [Aura]" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5140-251a-b723-f77c">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the first battle round, if your army includes one or more models with this ability, you can select one objective marker on the battlefield. Until the end of the battle, while one or more models with this ability are on the battlefield, each time a friendly ADEPTUS ASTARTES model makes an attack that targets an enemy unit that is within range of that objective marker, re-roll a Wound roll of 1.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Evade and Survive" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="206f-faee-a390-c2a2">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per turn, when an enemy unit ends a Normal, Advance or Fall Back move within 9&quot; of this unit, if this unit is not within Engagement Range of one or more enemy units, it can make a Normal move</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Lone Survivor" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f498-1343-37c9-855b">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model cannot be Warlord</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Paired Combat Blades" hidden="false" id="05c0-6f26-3b63-cbb0">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a426-22c3-c35f-cfcb"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bda0-1791-6a0d-ae15"/>
+          </constraints>
+          <profiles>
+            <profile name="Paired Combat Blades" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="1dc3-d830-b15a-34db">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Anti-Infantry 4+, Sustained Hits 1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Anti-" id="0254-65d3-7334-2870" hidden="false" type="rule" targetId="4111-82e3-9444-e942"/>
+            <infoLink name="Sustained Hits" id="8896-ecd6-92e4-72d0" hidden="false" type="rule" targetId="1897-c22c-9597-12b1"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="152c-3ab5-9991-1e77"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
