@@ -396,7 +396,7 @@
                     <infoLink name="Twin-linked" id="4410-3778-0608-ace6" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
                     <infoLink name="Rapid Fire" id="e4a8-889d-9a40-3da4" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786">
                       <modifiers>
-                        <modifier type="append" value="1" field="name" join=" "/>
+                        <modifier type="append" value="3" field="name" join=" "/>
                       </modifiers>
                     </infoLink>
                     <infoLink name="Heavy" id="95d0-8aff-ba83-2ea3" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
@@ -410,7 +410,7 @@
                         <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
                         <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
                         <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy, Rapid Fire 1, Twin Linked</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy, Rapid Fire 3, Twin Linked</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -487,7 +487,7 @@
             <profile name="Fire Coordinator" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="8203-1c19-afd5-9bdd">
               <characteristics>
                 <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
-                <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3	</characteristic>
+                <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
                 <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
                 <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
                 <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
@@ -520,6 +520,385 @@
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="[Placeholder Death Korps of Krieg]" hidden="false" id="5828-eba4-ff96-6f65">
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="65"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Composition" id="45ce-5d72-ec9c-c6a1" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="2 Death Korps Watchmaster and 18 Death Korps Troopers" hidden="false" id="90dc-89a0-7ca7-3caf">
+              <entryLinks>
+                <entryLink import="true" name="Death Korps Watchmaster" hidden="false" id="4b0e-1aa6-c80d-65e3" type="selectionEntry" targetId="f6b1-f8d1-1117-46a2" collective="true" flatten="false">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="0c87-06f3-0eac-1eaf"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="522a-f6f6-6e5e-d6e3"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Trooper Selection" id="b6c4-ae12-846e-0710" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="[Placeholder] Death Korp Trooper Specialist" hidden="false" id="6cef-bf26-3ad6-9bcd" type="selectionEntry" targetId="8b98-ffa0-1ccc-6ef5" collective="true">
+                      <constraints>
+                        <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="5f61-6c27-1ce7-9455"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="[Placeholder] Basic Death Korp Trooper" hidden="false" id="170b-ff90-8e63-ff62" type="selectionEntry" targetId="b31e-7606-19c6-c3bf" collective="true">
+                      <constraints>
+                        <constraint type="min" value="18" field="selections" scope="parent" shared="true" id="bb1f-bc14-3ee0-81e7"/>
+                        <constraint type="max" value="18" field="selections" scope="parent" shared="true" id="2c0b-4de8-80fb-2ef4"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="decrement" value="1" field="bb1f-bc14-3ee0-81e7">
+                          <repeats>
+                            <repeat value="1" repeats="1" field="selections" scope="90dc-89a0-7ca7-3caf" childId="3e67-9363-8783-ef65" shared="true" roundUp="false" includeChildSelections="true"/>
+                            <repeat value="1" repeats="1" field="selections" scope="90dc-89a0-7ca7-3caf" childId="6cef-bf26-3ad6-9bcd" shared="true" roundUp="false" includeChildSelections="true"/>
+                            <repeat value="1" repeats="1" field="selections" scope="90dc-89a0-7ca7-3caf" childId="8f73-1841-d5fa-d21d" shared="true" roundUp="false" includeChildSelections="true"/>
+                          </repeats>
+                        </modifier>
+                        <modifier type="decrement" value="1" field="2c0b-4de8-80fb-2ef4">
+                          <repeats>
+                            <repeat value="1" repeats="1" field="selections" scope="90dc-89a0-7ca7-3caf" childId="3e67-9363-8783-ef65" shared="true" roundUp="false" includeChildSelections="true"/>
+                            <repeat value="1" repeats="1" field="selections" scope="90dc-89a0-7ca7-3caf" childId="6cef-bf26-3ad6-9bcd" shared="true" roundUp="false" includeChildSelections="true"/>
+                            <repeat value="1" repeats="1" field="selections" scope="90dc-89a0-7ca7-3caf" childId="8f73-1841-d5fa-d21d" shared="true" roundUp="false" includeChildSelections="true"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="[Placeholder] Death Korp Trooper Gunner" hidden="false" id="3e67-9363-8783-ef65" type="selectionEntry" targetId="e18e-354a-1c68-f437" collective="false" flatten="true">
+                      <constraints>
+                        <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="92b7-80b5-03f4-2fb5"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="[Placeholder] Death Korp Trooper Medic" hidden="false" id="8f73-1841-d5fa-d21d" type="selectionEntry" targetId="1aaa-5038-54f7-00f0" collective="false" flatten="true">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7ba4-23ef-ca0c-fdc6"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="18" field="selections" scope="parent" shared="true" id="8c46-c921-e195-ac6c" includeChildSelections="true"/>
+                    <constraint type="max" value="18" field="selections" scope="parent" shared="true" id="c39c-3562-f0e1-8080" includeChildSelections="true"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="1 Death Korps Watchmaster and 9 Death Korps Troopers" hidden="false" id="afd8-e4a0-84e6-c1b8">
+              <entryLinks>
+                <entryLink import="true" name="[Placeholder] Death Korps Watchmaster" hidden="false" id="4a35-c5ee-318b-cf86" type="selectionEntry" targetId="f6b1-f8d1-1117-46a2" collective="false">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="310f-1a6b-10aa-3d7a"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d045-3297-500e-ba21"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="[Placeholder] Basic Death Korp Trooper" hidden="false" id="9d94-73f7-4947-b0a7" type="selectionEntry" targetId="b31e-7606-19c6-c3bf">
+                  <constraints>
+                    <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="39a3-0872-2026-e3fd"/>
+                    <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="a92c-3940-9bda-4cdb"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="39a3-0872-2026-e3fd">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="afd8-e4a0-84e6-c1b8" childId="4b80-065e-59fc-686c" shared="true" roundUp="false"/>
+                        <repeat value="1" repeats="1" field="selections" scope="afd8-e4a0-84e6-c1b8" childId="2268-4a35-fba7-1304" shared="true" roundUp="false"/>
+                        <repeat value="1" repeats="1" field="selections" scope="afd8-e4a0-84e6-c1b8" childId="449e-7b10-c406-8fb0" shared="true" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" value="1" field="a92c-3940-9bda-4cdb">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="afd8-e4a0-84e6-c1b8" childId="4b80-065e-59fc-686c" shared="true" roundUp="false"/>
+                        <repeat value="1" repeats="1" field="selections" scope="afd8-e4a0-84e6-c1b8" childId="2268-4a35-fba7-1304" shared="true" roundUp="false"/>
+                        <repeat value="1" repeats="1" field="selections" scope="afd8-e4a0-84e6-c1b8" childId="449e-7b10-c406-8fb0" shared="true" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="[Placeholder] Death Korp Trooper Gunner" hidden="false" id="4b80-065e-59fc-686c" type="selectionEntry" targetId="e18e-354a-1c68-f437">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d8f8-841b-b458-01f4"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="[Placeholder] Death Korp Trooper Medic" hidden="false" id="449e-7b10-c406-8fb0" type="selectionEntry" targetId="1aaa-5038-54f7-00f0">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d8a-c97d-1307-fa3e"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="[Placeholder] Death Korp Trooper Specialist" hidden="false" id="2268-4a35-fba7-1304" type="selectionEntry" targetId="8b98-ffa0-1ccc-6ef5">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="60d6-15e6-54d6-51cf"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f918-ddab-0e2b-289a"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a39f-a710-9520-999c"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="130" field="51b2-306e-1021-d207">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="90dc-89a0-7ca7-3caf" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="43e6-d7de-1e01-1b01"/>
+      </constraints>
+      <profiles>
+        <profile name="Grim Demeanour" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="627e-a687-1882-dd1d">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes an attack, add 1 to the Hit roll if this init is below its Starting Strength and 1 to the Wound roll as well if this unit is Below Half-strength</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Unit Composition" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0460-a34f-7b1c-e4c6">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit can have up to two Leader units attached to it, provided than no more than one of those units is a COMMAND SQUAD unit. If it does, and this Bodyguard unit is destroyed, the Leader units attached to it becme separate units, wi their original Starting Strengths.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="model" import="false" name="[Placeholder] Death Korps Watchmaster" hidden="false" id="f6b1-f8d1-1117-46a2">
+      <profiles>
+        <profile name="Death Korps Watchmaster" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="8cd3-9b80-5f72-920c">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Pistol Selection" id="3163-7782-4ebe-0a01" hidden="false" defaultSelectionEntryId="3b8a-01a1-f9d5-9561">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4898-9831-08b8-492c" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a50d-2bfa-3b8a-508d" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Plasma Pistol" hidden="false" id="4493-aef7-0cd4-bbf1" type="selectionEntry" targetId="abf2-656d-322e-3c7e"/>
+            <entryLink import="true" name="Bolt Pistol" hidden="false" id="1456-8bda-864d-f46f" type="selectionEntry" targetId="edce-b2da-b8c3-7c8b"/>
+            <entryLink import="true" name="Laspistol" hidden="false" id="3b8a-01a1-f9d5-9561" type="selectionEntry" targetId="2689-4c0e-cdfb-3e5"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Melee Weapon Selection" id="c9c5-bc02-cf62-4c39" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5060-06fa-1070-8d74" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e226-0969-e0e9-23ca" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Chainsword" hidden="false" id="cc81-807b-eafd-1914" type="selectionEntry" targetId="7934-5223-153f-104e"/>
+            <entryLink import="true" name="Close Combat Weapon" hidden="false" id="9e9f-7cc7-8042-2e9e" type="selectionEntry" targetId="cf1a-83df-3717-3bdf"/>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Power Weapon" hidden="false" id="8fd0-eec3-5f6f-d59b">
+              <profiles>
+                <profile name="Power Weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="0846-896a-0010-47ab">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="[Placeholder] Basic Death Korp Trooper" hidden="false" id="b31e-7606-19c6-c3bf">
+      <entryLinks>
+        <entryLink import="true" name="Lasgun" hidden="false" id="5c48-39b3-7b48-51db" type="selectionEntry" targetId="a09c-6de4-e1c1-708a"/>
+        <entryLink import="true" name="Close Combat Weapon" hidden="false" id="8c34-b628-4dba-ed96" type="selectionEntry" targetId="cf1a-83df-3717-3bdf"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Death Korp Trooper" id="569c-f12b-0a70-d647" hidden="false" type="profile" targetId="9e8b-bdb5-49dc-c291"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="[Placeholder] Death Korp Trooper Gunner" hidden="false" id="e18e-354a-1c68-f437">
+      <entryLinks>
+        <entryLink import="true" name="Close Combat Weapon" hidden="false" id="fdd1-be1a-570c-6a38" type="selectionEntry" targetId="cf1a-83df-3717-3bdf"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon" id="d571-bec1-34d2-af19" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="325c-942a-d5c2-ca5e"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a83b-5f2b-b392-77ed"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Long-las" hidden="false" id="db53-a35c-719e-3fa2">
+              <modifiers>
+                <modifier type="set" value="2" field="2f91-8ce3-8040-0bfe">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="90dc-89a0-7ca7-3caf" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f91-8ce3-8040-0bfe"/>
+              </constraints>
+              <profiles>
+                <profile name="Long-las" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="3b59-a574-fc2f-e57b">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy, Precision</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Heavy" id="fa28-3de6-fafa-52c9" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
+                <infoLink name="Precision" id="67cd-b94a-edd1-f109" hidden="false" type="rule" targetId="9143-31ae-e0a6-6007"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Grenade Launcher" hidden="false" id="9ea7-e0f8-04fc-f2fd" type="selectionEntry" targetId="2308-9c9a-53a1-116f">
+              <modifiers>
+                <modifier type="set" value="2" field="c4c3-4794-9bd8-bbd1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="90dc-89a0-7ca7-3caf" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4c3-4794-9bd8-bbd1"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Flamer" hidden="false" id="e7a2-6c9b-94b7-ad81" type="selectionEntry" targetId="5779-e27a-e226-5a66">
+              <modifiers>
+                <modifier type="set" value="2" field="c227-b3ae-c792-3aef">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="90dc-89a0-7ca7-3caf" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c227-b3ae-c792-3aef"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Death Korp Trooper" id="a7f1-1444-5df7-a909" hidden="false" type="profile" targetId="9e8b-bdb5-49dc-c291"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="[Placeholder] Death Korp Trooper Specialist" hidden="false" id="8b98-ffa0-1ccc-6ef5">
+      <entryLinks>
+        <entryLink import="true" name="Close Combat Weapon" hidden="false" id="42a7-0a90-8bf3-014e" type="selectionEntry" targetId="cf1a-83df-3717-3bdf"/>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Option" id="c143-089e-3acd-be19" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e61a-69ba-ac68-c0d6"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e43c-04bc-641d-8914"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Lasgun and Vox-caster" hidden="false" id="58a3-4875-270d-42c1">
+              <entryLinks>
+                <entryLink import="true" name="Lasgun" hidden="false" id="3473-e641-15f0-4ff3" type="selectionEntry" targetId="a09c-6de4-e1c1-708a">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="08ff-2604-207f-547f"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="30d0-bcb9-d60e-9953"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <profiles>
+                <profile name="Vox-caster" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0433-e886-b07f-6132">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time you target the bearer&apos;s unit with a Stratagem, roll one D6, adding 1 if there are one or more friendly OFFICER models within 6&quot; ; on a 5+, you gain 1 CP.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Meltagun" hidden="false" id="cbc8-304f-8310-5310" type="selectionEntry" targetId="e701-7c4-8b3b-49d6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9564-778d-fbf4-0751"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="2" field="9564-778d-fbf4-0751">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="90dc-89a0-7ca7-3caf" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Plasma Gun" hidden="false" id="2caa-b43d-00f0-176d" type="selectionEntry" targetId="d0dc-eb53-4dc1-c69e">
+              <modifiers>
+                <modifier type="set" value="2" field="bcf0-4614-e5ad-7911">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="90dc-89a0-7ca7-3caf" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bcf0-4614-e5ad-7911"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Death Korp Trooper" id="8f6d-e55b-fada-495d" hidden="false" type="profile" targetId="9e8b-bdb5-49dc-c291"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="[Placeholder] Death Korp Trooper Medic" hidden="false" id="1aaa-5038-54f7-00f0">
+      <profiles>
+        <profile name="Death Korp Medi-pack" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="862c-af9e-2930-1485">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of your command phase, if the bearer&apos;s unit is below its Starting Strength, you can return up to D3 destroyed Death Korps Troopers to this unit. If this unit contains two models equipped with a Death Korps Medipack, return up to D3+1 destroyed Death Korps Troopers to this unit instead.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Close Combat Weapon" hidden="false" id="094e-b387-d1d8-6368" type="selectionEntry" targetId="cf1a-83df-3717-3bdf"/>
+        <entryLink import="true" name="Lasgun" hidden="false" id="c790-0020-4494-e03a" type="selectionEntry" targetId="a09c-6de4-e1c1-708a">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c6b3-2927-6505-aae4"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c21-8328-f0e0-dbb6"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Death Korp Trooper" id="260a-497f-bd59-326c" hidden="false" type="profile" targetId="9e8b-bdb5-49dc-c291"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Close Combat Weapon" hidden="false" id="cf1a-83df-3717-3bdf">
+      <profiles>
+        <profile name="Close Combat Weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="ded7-21a4-cd43-3100">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <comment>1A Collective</comment>
+    </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
     <categoryEntry name="Lord Commander Friednanth Fox" id="ee76-1558-b1e8-1ea7" hidden="false"/>
@@ -530,5 +909,18 @@
     <entryLink import="true" name="Lord Commander Friednanth Fox" hidden="false" id="166b-b110-6b0c-1b14" type="selectionEntry" targetId="298a-a563-31e7-cc62"/>
     <entryLink import="true" name="[Placeholder Artillery Team]" hidden="false" id="de10-d463-30a9-144a" targetId="7de2-ba5e-0729-27e1" type="selectionEntry"/>
     <entryLink import="true" name="[Placeholder Krieg Heavy Weapon Squad]" hidden="false" id="8054-3d55-08be-bc4c" targetId="26c4-dff0-c57a-5f50" type="selectionEntry"/>
+    <entryLink import="true" name="[Placeholder Death Korps of Krieg]" hidden="false" id="a2de-488f-0a37-bbe1" targetId="5828-eba4-ff96-6f65" type="selectionEntry"/>
   </entryLinks>
+  <sharedProfiles>
+    <profile name="Death Korp Trooper" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="9e8b-bdb5-49dc-c291">
+      <characteristics>
+        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+        <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </catalogue>
