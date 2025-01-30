@@ -654,6 +654,16 @@
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink name="Infantry" hidden="false" id="7ad1-919d-a808-3df6" targetId="cf47-a0d7-7207-29dc" primary="false"/>
+        <categoryLink name="Battleline" hidden="false" id="8a47-ac06-f584-d765" targetId="e338-111e-d0c6-b687" primary="true"/>
+        <categoryLink name="Imperium" hidden="false" id="1b95-b1fa-7132-cd5c" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
+        <categoryLink name="Grenades" hidden="false" id="7739-2c50-6ca5-397d" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
+        <categoryLink name="Regiment" hidden="false" id="a5ad-7016-df83-993c" targetId="c8a1-fef-5569-61c9" primary="false"/>
+        <categoryLink name="Platoon" hidden="false" id="7577-26f7-ea94-d97a" targetId="edff-c2d-8999-4f45" primary="false"/>
+        <categoryLink name="Death Korps of Krieg" hidden="false" id="c694-7427-0bf8-01d7" targetId="63d0-faf2-6fc0-8270" primary="false"/>
+        <categoryLink name="Faction: Astra Militarum" hidden="false" id="802a-10f2-c2a5-13d0" targetId="fa45-57e-930e-602b" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="false" name="[Placeholder] Death Korps Watchmaster" hidden="false" id="f6b1-f8d1-1117-46a2">
       <profiles>
