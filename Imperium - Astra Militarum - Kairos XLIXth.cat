@@ -533,7 +533,7 @@
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="2 Death Korps Watchmaster and 18 Death Korps Troopers" hidden="false" id="90dc-89a0-7ca7-3caf">
               <entryLinks>
-                <entryLink import="true" name="Death Korps Watchmaster" hidden="false" id="4b0e-1aa6-c80d-65e3" type="selectionEntry" targetId="f6b1-f8d1-1117-46a2" collective="true" flatten="false">
+                <entryLink import="true" name="[Placeholder] Death Korps Watchmaster" hidden="false" id="4b0e-1aa6-c80d-65e3" type="selectionEntry" targetId="f6b1-f8d1-1117-46a2" collective="true" flatten="false">
                   <constraints>
                     <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="0c87-06f3-0eac-1eaf"/>
                     <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="522a-f6f6-6e5e-d6e3"/>
@@ -635,7 +635,7 @@
       <modifiers>
         <modifier type="set" value="130" field="51b2-306e-1021-d207">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="90dc-89a0-7ca7-3caf" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="90dc-89a0-7ca7-3caf" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -780,17 +780,379 @@
       </profiles>
       <comment>1A Collective</comment>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="[Placeholder Death Korp Command Squad]" hidden="false" id="f34d-9c75-fdd9-712c">
+      <categoryLinks>
+        <categoryLink name="Infantry" hidden="false" id="f27b-a2dd-1613-242c" targetId="cf47-a0d7-7207-29dc" primary="false"/>
+        <categoryLink name="Character" hidden="false" id="4521-2b11-1d68-d64d" targetId="9cfd-1c32-585f-7d5c" primary="true"/>
+        <categoryLink name="Officer" hidden="false" id="2389-283e-73f8-24ef" targetId="e4d8-c6a1-7c23-ae25" primary="false"/>
+        <categoryLink name="Platoon" hidden="false" id="8aef-c6e6-63a6-3f08" targetId="edff-c2d-8999-4f45" primary="false"/>
+        <categoryLink name="Grenades" hidden="false" id="7bb5-bcb9-9898-d252" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="0b5d-4117-ca86-9524" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
+        <categoryLink name="Krieg Command Squad" hidden="false" id="7531-d0d7-205c-f8b6" targetId="7028-6c21-d428-d3df" primary="false"/>
+        <categoryLink name="Faction: Astra Militarum" hidden="false" id="9c38-1900-ac14-7266" targetId="fa45-57e-930e-602b" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="65"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Lord Commissar" hidden="false" id="3407-e27b-d64f-fad6">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1165-e677-e2d0-cdf1" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5823-adc7-5207-daa4" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Lord Commissar" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="fef6-423d-f6e9-1d3c">
+              <characteristics>
+                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+                <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
+                <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+                <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Pistol Selection" id="7c60-c389-fa1a-871a" hidden="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b419-18f6-06a2-10cd"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51e9-1853-bef1-8108" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Laspistol" hidden="false" id="7973-7b60-e26c-9116" type="selectionEntry" targetId="2689-4c0e-cdfb-3e5"/>
+                <entryLink import="true" name="Plasma Pistol" hidden="false" id="c067-fc6e-7211-3564" type="selectionEntry" targetId="abf2-656d-322e-3c7e"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Melee Weapon Selection" id="23e1-8659-6485-035c" hidden="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9ba5-8881-ee12-2075" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c52b-881e-a23a-96ba" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Power Weapon" hidden="false" id="4de9-1aef-2f5c-475c">
+                  <profiles>
+                    <profile name="Power Weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="9e82-5831-c544-a877">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Power Fist" hidden="false" id="d119-7a44-8fbd-ccca">
+                  <profiles>
+                    <profile name="Power Fist" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="ce17-a316-21ad-bc50">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Warlord" hidden="false" id="f73e-d04d-f4c9-f2fc" type="selectionEntry" targetId="ea3f-b52b-8dc7-d365">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="17e6-0fc8-ac5a-2a1c"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Veteran Guardsman with Alchemyk Counteragents and Servo-Scribes" hidden="false" id="f8d0-56ba-acfa-5b95">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Veteran Guardsman" hidden="false" id="ea1d-fbbc-8be6-3395">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="afea-89ba-317a-e190" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b9c-abb1-bbe5-0fde" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="221d-57bf-0edb-17ac" type="selectionEntry" targetId="cf1a-83df-3717-3bdf">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="693b-e40f-ae23-98d6" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0601-c9e1-44c0-5839" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Laspistol" hidden="false" id="e8c3-835b-894d-fef0" type="selectionEntry" targetId="2689-4c0e-cdfb-3e5">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="394d-f1d3-2151-e294" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a511-ce4c-5d82-e356" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Veteran Guardsman" id="b72d-d516-78a1-f35b" hidden="false" type="profile" targetId="f893-82eb-4cf2-96a7"/>
+              </infoLinks>
+              <profiles>
+                <profile name="Servo-scribes" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1170-2b93-5e40-e1f3">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, when issuing an Order, the Lord Comissar can issue one additional Order</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Alchemyk Counteragents" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e42d-1beb-5be7-ed39">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">The bearer&apos;s unit has the Feel No Pain 6+ ability against Mortal Wounds</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Servo-scribe Token" hidden="false" id="8e30-8a93-36bd-b209">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dd06-9e56-e648-b1e6" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc08-c5bc-7146-1d63" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Servo-scribe Token" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="true" id="923d-f264-3ace-1ae3">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">-</characteristic>
+                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">-</characteristic>
+                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">-</characteristic>
+                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">-</characteristic>
+                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">-</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="Servo-scribe Token" id="28ae-732e-feed-570b" hidden="false">
+                  <description>Remove this token when the Servo-scribes ability has been used</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c209-b986-b595-af3b" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="72d7-da51-846d-dfe5" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Veteran Guardsman Melee Specialist" hidden="false" id="8d75-0a53-43ca-35ec">
+          <infoLinks>
+            <infoLink name="Veteran Guardsman" id="4c33-f47d-458b-dc2a" hidden="false" type="profile" targetId="f893-82eb-4cf2-96a7"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Pistol Selection" id="dab5-6928-cae4-4a0e" hidden="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cabf-94a7-95ca-a710"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f548-1deb-4f5a-2ea9" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Laspistol" hidden="false" id="e6b1-8422-fc6f-3b06" type="selectionEntry" targetId="2689-4c0e-cdfb-3e5"/>
+                <entryLink import="true" name="Plasma Pistol" hidden="false" id="7275-504b-84c0-1da8" type="selectionEntry" targetId="abf2-656d-322e-3c7e"/>
+                <entryLink import="true" name="Bolt Pistol" hidden="false" id="8787-aa31-d2fe-09a4" type="selectionEntry" targetId="edce-b2da-b8c3-7c8b"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Melee Weapon Selection" id="21e8-c0f1-f53c-9900" hidden="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e0c2-f391-c5c0-f455" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac26-d472-a6e5-0e2d" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Power Weapon" hidden="false" id="7be2-f0fa-5b95-72ce">
+                  <profiles>
+                    <profile name="Power Weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="be72-9809-063c-baf8">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Trench Club" hidden="false" id="e025-accf-2173-d96a">
+                  <profiles>
+                    <profile name="Trench Club" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="4858-82a1-fd13-2466">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Chainsword" hidden="false" id="cc34-a6e0-a085-07e4">
+                  <profiles>
+                    <profile name="Chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="e7b3-c46d-429b-1350">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d753-bce8-594b-8b38" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="effe-7ee8-36b4-b6da" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Veteran Guardsman with Master Vox" hidden="false" id="039e-89d6-4c7c-1fc7">
+          <entryLinks>
+            <entryLink import="true" name="Close Combat Weapon" hidden="false" id="15a4-5a49-90f8-0a39" type="selectionEntry" targetId="cf1a-83df-3717-3bdf">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c449-93d6-72c7-f168" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf77-fdb7-1a4c-6912" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Lasgun" hidden="false" id="e291-48d4-95ce-6e59" type="selectionEntry" targetId="a09c-6de4-e1c1-708a">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6d02-a36a-5453-0096" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5375-0cfa-1ecb-1c4c" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="55cc-8261-a6a6-793a" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="14ea-5f0a-4bc0-79e4" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Veteran Guardsman" id="73ff-a5e6-c632-6410" hidden="false" type="profile" targetId="f893-82eb-4cf2-96a7"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Master Vox" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6630-4bc2-428c-3395">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time the Officer in the bearer’s unit issues an Order, it can issue it to an eligible unit up to 24&quot; away.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Veteran Guardsman with Regimental Standard" hidden="false" id="ddf8-a113-8942-917d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9d68-2eba-9aef-38c1" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f1e-fb30-916f-4a89" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Lasgun" hidden="false" id="1c64-5a08-ee0a-fcb0" type="selectionEntry" targetId="a09c-6de4-e1c1-708a">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f3a2-1213-3bbb-4cf6" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ac9-4132-a496-7400" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Close Combat Weapon" hidden="false" id="798a-c5dd-058b-42cc" type="selectionEntry" targetId="cf1a-83df-3717-3bdf">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b0f4-cb3a-185f-d72d" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe67-61e1-db89-f1f4" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Veteran Guardsman" id="dda2-f9d5-2ae8-2590" hidden="false" type="profile" targetId="f893-82eb-4cf2-96a7"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Regimental Standard" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1a7b-b7c8-f7f7-a02b">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add 1 to the Objective Control characteristic of models in the bearer’s unit.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Veteran Guardsman Heavy Weapon Specialist" hidden="false" id="af54-dd6b-7a2f-f3a3">
+          <infoLinks>
+            <infoLink name="Veteran Guardsman" id="efd8-e59d-301f-a900" hidden="false" type="profile" targetId="f893-82eb-4cf2-96a7"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Close Combat Weapon" hidden="false" id="2a1e-7571-7f45-f9ae" type="selectionEntry" targetId="cf1a-83df-3717-3bdf">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="51c2-f5f0-c4fb-cff7" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="43cc-5545-ad3e-3283" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e39f-922d-470e-2d0e" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3da8-4f6f-d290-27d7" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Heavy Weapon Selection" id="96dc-6249-3ccc-3e49" hidden="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c0f9-0bd3-74ef-d911" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e6f2-1d47-985c-2839" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Boltgun" hidden="false" id="ed12-6c9a-87ec-56fd" type="selectionEntry" targetId="491a-2bbc-b43c-b4d"/>
+                <entryLink import="true" name="Plasma Gun" hidden="false" id="0ba9-dd67-3abc-4a68" type="selectionEntry" targetId="d0dc-eb53-4dc1-c69e"/>
+                <entryLink import="true" name="Flamer" hidden="false" id="49db-a006-9f55-0092" type="selectionEntry" targetId="ddae-e6-79d8-3f66"/>
+                <entryLink import="true" name="Meltagun" hidden="false" id="afd6-20cb-f461-d436" type="selectionEntry" targetId="e701-7c4-8b3b-49d6"/>
+                <entryLink import="true" name="Grenade Launcher" hidden="false" id="3aaa-6113-1199-8925" type="selectionEntry" targetId="56dc-438-2698-6a6a"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <infoGroups>
+        <infoGroup name="Leader" id="3d9e-97f9-711a-7073" hidden="false">
+          <infoLinks>
+            <infoLink name="Leader" id="8491-9081-4fe2-f96b" hidden="false" type="rule" targetId="b4dd-3e1f-41cb-218f"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7ce8-27ea-129e-2bd5">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit can be attached to the following units:
+- Death Korps of Krieg
+- Krieg Combat Engineers</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+      <infoLinks>
+        <infoLink name="Voice Of Command" id="bd80-465e-ff7f-df36" hidden="false" type="rule" targetId="53c9-34f6-2443-a95e"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Officer" typeId="3fc9-16d8-8670-c8e2" typeName="Orders" hidden="false" id="42b1-e255-cc9c-1fe7">
+          <characteristics>
+            <characteristic name="Officer" typeId="36b-c3c9-245f-e97d">This unit&apos;s OFFICER can issue 1 Order to a REGIMENT unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Grim Determination" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8e40-fe9e-6d8b-4334">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this unit contains an OFFICER, you can target this unit with Stratagems even while it is Battle-Shocked and Orders issued to this unit do not cease to affect this unit if it becomes Battle-Shocked.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
     <categoryEntry name="Lord Commander Friednanth Fox" id="ee76-1558-b1e8-1ea7" hidden="false"/>
     <categoryEntry name="Artillery Team" id="8a11-7006-d861-1dbc" hidden="false"/>
     <categoryEntry name="Krieg Heavy Weapons Squad" id="a475-b02c-dcc1-2b00" hidden="false"/>
+    <categoryEntry name="Krieg Command Squad" id="7028-6c21-d428-d3df" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink import="true" name="Lord Commander Friednanth Fox" hidden="false" id="166b-b110-6b0c-1b14" type="selectionEntry" targetId="298a-a563-31e7-cc62"/>
     <entryLink import="true" name="[Placeholder Artillery Team]" hidden="false" id="de10-d463-30a9-144a" targetId="7de2-ba5e-0729-27e1" type="selectionEntry"/>
     <entryLink import="true" name="[Placeholder Krieg Heavy Weapon Squad]" hidden="false" id="8054-3d55-08be-bc4c" targetId="26c4-dff0-c57a-5f50" type="selectionEntry"/>
     <entryLink import="true" name="[Placeholder Death Korps of Krieg]" hidden="false" id="a2de-488f-0a37-bbe1" targetId="5828-eba4-ff96-6f65" type="selectionEntry"/>
+    <entryLink import="true" name="[Placeholder Death Korp Command Squad]" hidden="false" id="cf85-e2b2-6d46-6a86" targetId="f34d-9c75-fdd9-712c" type="selectionEntry"/>
   </entryLinks>
   <sharedProfiles>
     <profile name="Death Korp Trooper" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="9e8b-bdb5-49dc-c291">
@@ -801,6 +1163,16 @@
         <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
         <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
         <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Veteran Guardsman" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="f893-82eb-4cf2-96a7">
+      <characteristics>
+        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+        <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
@@ -895,7 +1267,7 @@
     </selectionEntryGroup>
     <selectionEntryGroup name="[Placeholder Death Korp Trooper Gunner]" id="1ea1-266c-ca50-e47f" hidden="false">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Death Korp Trooper with Flamer" hidden="false" id="f7f4-70fd-9bfb-f317">
+        <selectionEntry type="model" import="true" name="Death Korp Trooper with Flamer" hidden="false" id="f7f4-70fd-9bfb-f317">
           <entryLinks>
             <entryLink import="true" name="Flamer" hidden="false" id="e7a2-6c9b-94b7-ad81" type="selectionEntry" targetId="5779-e27a-e226-5a66">
               <constraints>
@@ -924,7 +1296,7 @@
             <infoLink name="Death Korp Trooper" id="bd72-9af8-3326-a4f9" hidden="false" type="profile" targetId="9e8b-bdb5-49dc-c291"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Death Korp Trooper with Grenade Launcher" hidden="false" id="114d-ccbe-5ee8-5be7">
+        <selectionEntry type="model" import="true" name="Death Korp Trooper with Grenade Launcher" hidden="false" id="114d-ccbe-5ee8-5be7">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db7a-27b6-4f8d-5ee6"/>
           </constraints>
@@ -953,7 +1325,7 @@
             </entryLink>
           </entryLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Death Korp Trooper with Long-las" hidden="false" id="0f82-6a6c-4dd6-d79d">
+        <selectionEntry type="model" import="true" name="Death Korp Trooper with Long-las" hidden="false" id="0f82-6a6c-4dd6-d79d">
           <modifiers>
             <modifier type="set" value="2" field="054b-a769-2f94-f2bc">
               <conditions>
