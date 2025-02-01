@@ -1805,6 +1805,567 @@
         <entryLink import="true" name="Warlord" hidden="false" id="cbca-61d8-13c4-8583" type="selectionEntry" targetId="ea3f-b52b-8dc7-d365"/>
       </entryLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="[Placeholder Tempestus Command Squad]" hidden="false" id="8851-ce1a-e5ad-5856">
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Militarum Tempestus" hidden="false" id="7bb8-46c3-dd62-72aa" targetId="f168-1b04-e10d-e9a" primary="false"/>
+        <categoryLink name="Faction: Astra Militarum" hidden="false" id="6d2e-cca1-cfc0-28ef" targetId="fa45-57e-930e-602b" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="83d7-ec2a-43c1-4681" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
+        <categoryLink name="Infantry" hidden="false" id="a659-4300-decd-a981" targetId="cf47-a0d7-7207-29dc" primary="false"/>
+        <categoryLink name="Character" hidden="false" id="4024-5524-b721-2469" targetId="9cfd-1c32-585f-7d5c" primary="true"/>
+        <categoryLink name="Grenades" hidden="false" id="e22b-686b-843d-b616" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
+        <categoryLink name="Regiment" hidden="false" id="0726-cc01-4a34-c9c7" targetId="c8a1-fef-5569-61c9" primary="false"/>
+        <categoryLink name="Command Squad" hidden="false" id="6757-291d-8fa6-e5da" targetId="4100-95dc-a489-ffbc" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Tempestor Prime" hidden="false" id="5005-d687-1eb1-eea5">
+          <categoryLinks>
+            <categoryLink name="Character" hidden="false" id="5eba-a268-ec13-7954" targetId="9cfd-1c32-585f-7d5c" primary="false"/>
+            <categoryLink name="Officer" hidden="false" id="faa7-e5b8-562d-393b" targetId="e4d8-c6a1-7c23-ae25" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0eb4-f226-9e9b-df3a"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a900-e9a3-42a8-73ab"/>
+          </constraints>
+          <profiles>
+            <profile name="Tempestor Prime" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="0f7e-e06a-0f4f-5569">
+              <characteristics>
+                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+                <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+                <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
+                <characteristic name="W" typeId="750a-a2ec-90d3-21fe">3</characteristic>
+                <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Warlord" hidden="false" id="4d59-d25d-2203-4756">
+              <entryLinks>
+                <entryLink import="true" name="Warlord" hidden="false" id="8d98-b5cf-523d-ee1f" type="selectionEntry" targetId="ea3f-b52b-8dc7-d365" flatten="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f204-3096-e764-baff"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="Militarum Tempestus Warlord" field="name"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d00-c401-8736-177f"/>
+              </constraints>
+              <comment>Scions</comment>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Tempestus Dagger" hidden="false" id="061a-2ca2-5c17-f9c3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="523c-0588-fa07-b3fb"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4804-fc02-9167-4c1d"/>
+              </constraints>
+              <profiles>
+                <profile name="Tempestus Dagger" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="95f6-c980-aff6-a7be">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Bolt Pistol Option" id="c557-080e-ca7e-b82e" hidden="false" defaultSelectionEntryId="9c65-ce53-a479-7a7d">
+              <entryLinks>
+                <entryLink import="true" name="Bolt Pistol" hidden="false" id="ad8e-922a-1536-45b2" type="selectionEntry" targetId="edce-b2da-b8c3-7c8b"/>
+                <entryLink import="true" name="Plasma Pistol" hidden="false" id="e51c-ae63-2ccd-8b88" type="selectionEntry" targetId="abf2-656d-322e-3c7e"/>
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Command Rod" hidden="false" id="6447-eba4-168e-1253">
+                  <profiles>
+                    <profile name="Command Rod" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="956e-2f27-2d38-3752">
+                      <characteristics>
+                        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While the bearer is leading a unit, that unit can be affected by up to two different Orders at the same time</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7786-e620-319a-4486"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cbac-a4aa-8ad7-ad13"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Enhancements" hidden="false" id="e2b4-14b4-f64f-a5af" type="selectionEntryGroup" targetId="33fd-bb93-1bf4-f1c"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="528e-4dd3-fe54-1b41" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Tempestus Scions" id="4c0a-be9d-992f-05d2" hidden="false" defaultSelectionEntryId="d17f-ef28-3a34-3a1e">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Tempestus Scion w/ Special Weapon" hidden="false" id="8f26-f67a-cead-d487">
+              <infoLinks>
+                <infoLink name="Tempestus Scion" id="ebf2-fb94-7c10-61ae" hidden="false" targetId="8f0a-f21-ee33-e69f" type="profile"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Special Weapon Selection" id="99a3-93ea-3b7b-b0db" hidden="false">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff77-ee79-ebf7-db3c"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9130-39c0-5afd-4d7b"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Flamer" hidden="false" id="fd20-abd2-1444-f118" type="selectionEntry" targetId="5779-e27a-e226-5a66">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="8851-ce1a-e5ad-5856" shared="true" id="5e40-bd75-f37d-825e" includeChildSelections="true"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Grenade Launcher" hidden="false" id="5f56-7047-0722-65f9" type="selectionEntry" targetId="4e85-9167-68ce-8738">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="8851-ce1a-e5ad-5856" shared="true" id="a7d9-19ab-a6fd-4275" includeChildSelections="true"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Meltagun" hidden="false" id="198c-94a5-4927-97f3" type="selectionEntry" targetId="5953-e173-bc8b-1109">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="8851-ce1a-e5ad-5856" shared="true" id="58ba-40e2-e1b2-e8c7" includeChildSelections="true"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Hot-shot Volley Gun" hidden="false" id="a10d-b889-e5cd-01d6" type="selectionEntry" targetId="7cc0-e698-77e7-2f5e">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="8851-ce1a-e5ad-5856" shared="true" id="d707-3992-70f2-ec78" includeChildSelections="true"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Plasma Gun" hidden="false" id="8bb9-4aff-78f4-e23a" type="selectionEntry" targetId="280a-959f-4c4f-aa28">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="8851-ce1a-e5ad-5856" shared="true" id="782b-3fd2-6964-0ea8" includeChildSelections="true"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="0e4a-f358-0028-5e25" type="selectionEntry" targetId="b349-9d3a-1a65-3e48">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1f5d-0b8b-c325-885f"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a75-204d-b8bb-c9cc"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="b57e-ca1a-d956-226e" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Tempestus Scion w/ Regimental Standard" hidden="false" id="4767-df68-ee80-c791">
+              <infoLinks>
+                <infoLink name="Tempestus Scion" id="505e-72fd-e298-91c3" hidden="false" targetId="8f0a-f21-ee33-e69f" type="profile"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Regimental Standard" hidden="false" id="774d-c51c-d4af-8fd8" type="selectionEntry" targetId="92e4-774c-a0a-a822">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5d0a-f39b-6729-15c9" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Hot-shot Lasgun" hidden="false" id="c352-559c-5d26-585e" type="selectionEntry" targetId="6536-7b98-3b50-d68a"/>
+                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="14eb-891d-389e-624f" type="selectionEntry" targetId="b349-9d3a-1a65-3e48">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ad60-3bfd-63a6-a4dc"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0610-d537-870c-b4f2"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4da5-57c3-f098-8f6e" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Tempestus Scion w/ Master Vox" hidden="false" id="41ef-750e-6c37-0caf">
+              <entryLinks>
+                <entryLink import="true" name="Master Vox" hidden="false" id="3c98-1aa3-786c-a7b4" type="selectionEntry" targetId="1f75-a238-cc23-a70f"/>
+                <entryLink import="true" name="Hot-shot Laspistol" hidden="false" id="a42b-a4d0-084a-6b61" type="selectionEntry" targetId="56ad-b03d-517e-124a">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ee34-991d-809a-8c88" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e1c-134f-ade7-0590" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="810e-c8c7-1392-77d3" type="selectionEntry" targetId="b349-9d3a-1a65-3e48">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9eee-96ff-f5ad-f6b9"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cbdf-fe8d-b026-36ab"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Tempestus Scion" id="ab6f-ca7c-7b1f-f355" hidden="false" type="profile" targetId="8f0a-f21-ee33-e69f"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="74a2-aa97-1eb2-2b2a" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Tempestus Scion w/ Medi-pack" hidden="false" id="76ed-28ea-839c-2efc">
+              <infoLinks>
+                <infoLink name="Tempestus Scion" id="73a9-c644-edc8-7c8c" hidden="false" type="profile" targetId="8f0a-f21-ee33-e69f"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Selection" id="f76f-e516-b71c-6c46" hidden="false" defaultSelectionEntryId="a2f0-bdd0-fdee-eda6">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Hot-shot Laspistol and Medi-pack" hidden="false" id="a9ce-6d0e-b1ed-61bd">
+                      <entryLinks>
+                        <entryLink import="true" name="Hot-shot Laspistol" hidden="false" id="350a-1a3d-fe19-d26b" type="selectionEntry" targetId="56ad-b03d-517e-124a">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="84f8-8d69-701c-3e48"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ad8-4525-90d0-60f3"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Medi-pack" hidden="false" id="f086-a6ae-ed2f-2688">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6acf-0c9b-a585-f136"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac91-550e-e6a8-a0a2" includeChildSelections="false"/>
+                          </constraints>
+                          <profiles>
+                            <profile name="Medi-pack" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="566f-5136-b6fc-e501">
+                              <characteristics>
+                                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start if your Command phase, if the bearer&apos;s unit is below its Starting Strength, you can return up to D3 destroyed Tempestus Scions models to this unit.</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Hot-shot Lasgun, Hot-shot Laspistol, and Medi-pack" hidden="false" id="093a-dcd6-7c97-dca2">
+                      <entryLinks>
+                        <entryLink import="true" name="Hot-shot Laspistol" hidden="false" id="8d27-50b3-1ee1-dcf8" type="selectionEntry" targetId="56ad-b03d-517e-124a">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="83a2-5d27-172f-e5e9"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d8b-712f-4ac8-588b"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink import="true" name="Hot-shot Lasgun" hidden="false" id="069a-aeee-07d3-d222" type="selectionEntry" targetId="6536-7b98-3b50-d68a"/>
+                      </entryLinks>
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Medi-pack" hidden="false" id="7896-776d-84ac-6393">
+                          <constraints>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="82a3-18d8-aa65-b5f1"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="535c-4a2c-9d97-a34a" includeChildSelections="false"/>
+                          </constraints>
+                          <profiles>
+                            <profile name="Medi-pack" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e503-a111-9793-bc1f">
+                              <characteristics>
+                                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start if your Command phase, if the bearer&apos;s unit is below its Starting Strength, you can return up to D3 destroyed Tempestus Scions models to this unit.</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1aa9-1b07-c0f3-30a0"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d9eb-b3bc-4428-56fe"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="1931-e678-d7f8-4d33" type="selectionEntry" targetId="b349-9d3a-1a65-3e48">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9b6a-0dba-dfe3-c1f6"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3348-9d5d-f038-b260"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="173c-17ed-4399-d54f" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Tempestus Scion" hidden="false" id="2398-2b69-1c2a-bdba">
+              <entryLinks>
+                <entryLink import="true" name="Hot-shot Lasgun" hidden="false" id="b352-5a2e-c4f9-ffbf" type="selectionEntry" targetId="6536-7b98-3b50-d68a"/>
+                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="2acb-55d0-7a6b-54da" type="selectionEntry" targetId="f61b-a631-1446-4453">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="533d-da3d-ccf6-ffc9"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="76db-7e4d-81a6-654d"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Tempestus Scion" id="1afc-16e3-c2f2-71af" hidden="false" type="profile" targetId="8f0a-f21-ee33-e69f"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="74e7-fe67-ed98-1f6b"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="225d-0bd8-d835-8776"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="936e-f6f4-b745-a8d1"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Tempestor Prime" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5070-7470-52a4-00e1">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this unit contains a Tempestor Prime, ranged weapons equipped by models in this unit have the [SUSTAINED HITS 1] ability.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Officer" typeId="3fc9-16d8-8670-c8e2" typeName="Orders" hidden="false" id="912b-c3e7-d19f-8551">
+          <characteristics>
+            <characteristic name="Officer" typeId="36b-c3c9-245f-e97d">This unit’s Officer can issue 1 Order to a Regiment unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="9ba2-f54a-859f-8361" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="1d6e-2579-8e7f-1ed4" shared="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <infoGroups>
+        <infoGroup name="Leader" id="38e1-e630-710f-21d0" hidden="false">
+          <infoLinks>
+            <infoLink name="Leader" id="7c39-7b90-4f08-7957" hidden="false" type="rule" targetId="b4dd-3e1f-41cb-218f"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="75bc-ec58-86e8-3521">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit can be attached to the following unit:
+- Tempestus Scions</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="[Placeholder Tempestus Scions]" hidden="false" id="7037-bd8f-d35d-fb93">
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="65"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="130" field="51b2-306e-1021-d207">
+          <conditions>
+            <condition type="greaterThan" value="5" field="selections" scope="7037-bd8f-d35d-fb93" childId="model" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Tempestus Scions" hidden="false" id="4faf-10be-f641-27c3" targetId="9b26-c4c5-8af0-8ea4" primary="false"/>
+        <categoryLink name="Faction: Astra Militarum" hidden="false" id="df56-9b18-6324-1c5e" targetId="fa45-57e-930e-602b" primary="false"/>
+        <categoryLink name="Infantry" hidden="false" id="eab3-2d19-1e88-a53e" targetId="cf47-a0d7-7207-29dc" primary="true"/>
+        <categoryLink name="Grenades" hidden="false" id="28a6-d9c8-2bf8-5e0f" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
+        <categoryLink name="Regiment" hidden="false" id="4d60-c9ce-d3a0-1a3c" targetId="c8a1-fef-5569-61c9" primary="false"/>
+        <categoryLink name="Militarum Tempestus" hidden="false" id="2420-4bd7-4cea-9224" targetId="f168-1b04-e10d-e9a" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="2f5e-cca8-81cd-0fee" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="94b8-b503-c111-166b" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="e422-f0f9-2a60-559e" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
+        <infoLink name="Unit Composition" id="4470-d69d-fcce-497e" hidden="false" type="profile" targetId="b592-33bc-a25d-b3a9"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Tempestor" hidden="false" id="8fe9-7b99-b294-3d4d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6eff-50fb-28f1-7d15"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e35-cd4a-17f0-0a8b"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Tempestus Scions" id="75bd-12e1-ceac-d91f" hidden="false" type="profile" targetId="2cd7-38d1-8603-afb5"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Hot-shot Laspistol option" id="ea30-9404-1bea-1a72" hidden="false" defaultSelectionEntryId="a8e7-97ab-5dea-305b">
+              <entryLinks>
+                <entryLink import="true" name="Hot-shot Laspistol" hidden="false" id="9ba4-f8e7-74ab-ce27" type="selectionEntry" targetId="56ad-b03d-517e-124a"/>
+                <entryLink import="true" name="Bolt Pistol" hidden="false" id="7694-506b-97dc-7eff" type="selectionEntry" targetId="edce-b2da-b8c3-7c8b"/>
+                <entryLink import="true" name="Plasma Pistol" hidden="false" id="8135-e610-36bd-0281" type="selectionEntry" targetId="abf2-656d-322e-3c7e"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5f74-bcaa-a6a3-445d"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1eec-4934-a87a-5289"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Chainsword Option" id="0bba-9dac-5f7e-8b7d" hidden="false" defaultSelectionEntryId="eef5-378f-e231-7c54">
+              <entryLinks>
+                <entryLink import="true" name="Chainsword" hidden="false" id="ac72-0fcb-5b1e-9a7c" type="selectionEntry" targetId="7934-5223-153f-104e"/>
+                <entryLink import="true" name="Power Fist" hidden="false" id="2ce9-7890-573d-817d" type="selectionEntry" targetId="f054-ef04-f991-1ccb"/>
+                <entryLink import="true" name="Power Weapon" hidden="false" id="5f61-cfe2-2d00-61c2" type="selectionEntry" targetId="600b-6aef-1737-a654"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="caee-6945-66d4-6f0c"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b19a-ef1f-3bcb-5712"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Storm Troopers" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="dc73-494e-9bc2-1533">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes an attack, re-roll a Wound roll of 1. If the target of that attack is an enemy unit within range of an objective marker, you can re-roll the Wound roll instead.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Tempestus Scions" id="49e3-02f4-da5d-3842" hidden="false" defaultSelectionEntryId="cb6f-b118-f52e-71ed">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Tempestus Scion w/ Special Weapon" hidden="false" id="5db2-ace8-b24e-49e9">
+              <infoLinks>
+                <infoLink name="Tempestus Scions" id="a262-388d-2d00-aa52" hidden="false" targetId="2cd7-38d1-8603-afb5" type="profile"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Special Weapon Selection" id="d57c-bc99-0d40-cffd" hidden="false">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5149-3050-2eab-ace7"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2383-4ed4-26a6-1673"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Flamer" hidden="false" id="9d5c-e83f-1218-47b1" type="selectionEntry" targetId="5779-e27a-e226-5a66">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="7037-bd8f-d35d-fb93" shared="true" id="94ab-e2c0-2b37-733e" includeChildSelections="true"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="94ab-e2c0-2b37-733e">
+                          <conditions>
+                            <condition type="equalTo" value="10" field="selections" scope="7037-bd8f-d35d-fb93" childId="model" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Grenade Launcher" hidden="false" id="7596-6145-c7c0-2442" type="selectionEntry" targetId="4e85-9167-68ce-8738">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="7037-bd8f-d35d-fb93" shared="true" id="855e-43b5-7ff2-7bfe" includeChildSelections="true"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="94ab-e2c0-2b37-733e">
+                          <conditions>
+                            <condition type="equalTo" value="10" field="selections" scope="7037-bd8f-d35d-fb93" childId="model" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Meltagun" hidden="false" id="91ec-ae28-b3a6-b849" type="selectionEntry" targetId="5953-e173-bc8b-1109">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="7037-bd8f-d35d-fb93" shared="true" id="8e03-18b0-136d-ff24" includeChildSelections="true"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="94ab-e2c0-2b37-733e">
+                          <conditions>
+                            <condition type="equalTo" value="10" field="selections" scope="7037-bd8f-d35d-fb93" childId="model" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Hot-shot Volley Gun" hidden="false" id="9ef4-be2d-4df6-7fc9" type="selectionEntry" targetId="7cc0-e698-77e7-2f5e">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="7037-bd8f-d35d-fb93" shared="true" id="f589-b55b-92ab-40fa" includeChildSelections="true"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="94ab-e2c0-2b37-733e">
+                          <conditions>
+                            <condition type="equalTo" value="10" field="selections" scope="7037-bd8f-d35d-fb93" childId="model" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Plasma Gun" hidden="false" id="4530-ceef-e257-8c40" type="selectionEntry" targetId="280a-959f-4c4f-aa28">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="7037-bd8f-d35d-fb93" shared="true" id="daef-806b-befd-311a" includeChildSelections="true"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="94ab-e2c0-2b37-733e">
+                          <conditions>
+                            <condition type="equalTo" value="10" field="selections" scope="7037-bd8f-d35d-fb93" childId="model" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="600f-eb8a-3319-b945" type="selectionEntry" targetId="f61b-a631-1446-4453">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a502-10db-fb31-3813"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b858-1d54-4c5b-4c9b"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <modifiers>
+                <modifier type="increment" value="2" field="4b18-5a61-3608-3a14">
+                  <conditions>
+                    <condition type="equalTo" value="10" field="selections" scope="7037-bd8f-d35d-fb93" childId="model" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4b18-5a61-3608-3a14"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Tempestus Scion w/ Vox-caster" hidden="false" id="0030-221a-ab98-ec2a">
+              <entryLinks>
+                <entryLink import="true" name="Vox-caster" hidden="false" id="ba18-cccd-7d5f-a49c" type="selectionEntry" targetId="6bfd-18be-90d3-2398"/>
+                <entryLink import="true" name="Hot-shot Laspistol" hidden="false" id="ebfa-c452-64c1-830e" type="selectionEntry" targetId="56ad-b03d-517e-124a">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a84e-aa45-e550-b062"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86e3-a8a8-175b-540b"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="35c5-1036-a2cf-8e1b" type="selectionEntry" targetId="f61b-a631-1446-4453">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="571d-4de4-a191-d1a8"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="36c4-fd43-3bff-03e6"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Tempestus Scions" id="794d-46cc-f661-80a4" hidden="false" type="profile" targetId="2cd7-38d1-8603-afb5"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e5a3-86a4-649c-30a1"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Tempestus Scion" hidden="false" id="ee45-eafd-de46-9b7b">
+              <entryLinks>
+                <entryLink import="true" name="Hot-shot Lasgun" hidden="false" id="7030-f4ca-b618-55ba" type="selectionEntry" targetId="6536-7b98-3b50-d68a"/>
+                <entryLink import="true" name="Close Combat Weapon" hidden="false" id="eff8-5141-8cd1-9965" type="selectionEntry" targetId="f61b-a631-1446-4453">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="52d7-a5c6-5e07-112b"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f87-6345-30f1-3b24"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Tempestus Scions" id="6136-0e47-d701-adcb" hidden="false" type="profile" targetId="2cd7-38d1-8603-afb5"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="ac04-e33e-9333-c803"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="665e-49d8-e64d-0999"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
     <categoryEntry name="Lord Commander Friednanth Fox" id="ee76-1558-b1e8-1ea7" hidden="false"/>
@@ -1839,16 +2400,6 @@
         <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
         <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
         <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
-        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
-        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
-        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Tempestus Scion" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="8e23-fe8b-d43f-97cd">
-      <characteristics>
-        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
-        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
-        <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
         <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
         <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
         <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
