@@ -18,6 +18,7 @@
     <entryLink import="true" name="Reiver Squad" hidden="false" id="5520-c820-def1-8b82" type="selectionEntry" targetId="a7ae-e495-683b-7c90"/>
     <entryLink import="true" name="Crusader Squad" hidden="false" id="9d78-60f0-de05-6ba4" type="selectionEntry" targetId="f01e-19eb-4ca3-39dc"/>
     <entryLink import="true" name="Whirlwind Scorpius Orion" hidden="false" id="a88f-1636-2a75-03ca" type="selectionEntry" targetId="ff8a-1573-50cc-b24f"/>
+    <entryLink import="true" name="Sternguard Veteran Squad" hidden="false" id="45a4-31ce-5e0f-1089" type="selectionEntry" targetId="907f-11-c4d1-ec21"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Aggressor Squad Invaders" hidden="false" id="d24a-820c-d8b9-486c">
