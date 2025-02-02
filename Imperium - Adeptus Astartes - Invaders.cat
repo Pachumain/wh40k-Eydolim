@@ -2,7 +2,6 @@
 <catalogue library="false" id="5931-5831-bcc8-bbbe" name="Imperium - Adeptus Astartes - Invaders" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="21" revision="1" authorName="Pac" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Imperium - Space Marines" id="57b7-9f2c-8cec-caf2" targetId="e0af-67df-9d63-8fb7" importRootEntries="false"/>
-    <catalogueLink type="catalogue" name="Imperium - Adeptus Astartes - Black Templars" id="55fd-c044-5153-c719" targetId="36d3-36bc-68dd-40ac"/>
   </catalogueLinks>
   <entryLinks>
     <entryLink import="true" name="Aggressor Squad Invaders" hidden="false" id="7cc4-9d29-3817-602b" type="selectionEntry" targetId="d24a-820c-d8b9-486c"/>
@@ -18,7 +17,7 @@
     <entryLink import="true" name="Librarian Calais" hidden="false" id="a963-ca1c-0990-9b62" type="selectionEntry" targetId="6faf-df19-a2ad-b175"/>
     <entryLink import="true" name="Reiver Squad" hidden="false" id="5520-c820-def1-8b82" type="selectionEntry" targetId="a7ae-e495-683b-7c90"/>
     <entryLink import="true" name="Crusader Squad" hidden="false" id="9d78-60f0-de05-6ba4" type="selectionEntry" targetId="f01e-19eb-4ca3-39dc"/>
-    <entryLink import="true" name="Whirlwind Scorpius [Legends]" hidden="false" id="a88f-1636-2a75-03ca" type="selectionEntry" targetId="ff8a-1573-50cc-b24f"/>
+    <entryLink import="true" name="Whirlwind Scorpius Orion" hidden="false" id="a88f-1636-2a75-03ca" type="selectionEntry" targetId="ff8a-1573-50cc-b24f"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Aggressor Squad Invaders" hidden="false" id="d24a-820c-d8b9-486c">
@@ -1695,7 +1694,7 @@ You can attach this model to a unit it can lead units even if one Captain or Ch
         <categoryLink name="Imperium" hidden="false" id="5ee8-db1b-c728-c029" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="cdbc-4afb-f49f-704d" targetId="6e7-40c-58d9-e402" primary="false"/>
         <categoryLink name="Faction: Black Templars" hidden="false" id="ab78-63b8-ad34-2dc5" targetId="9249-acae-2882-d95" primary="false"/>
-        <categoryLink name="Crusader Squad" hidden="false" id="153b-a30b-096d-e1b6" targetId="9e2c-48af-8c2b-ea68" primary="false"/>
+        <categoryLink targetId="eed2-556c-2504-5dcb" id="1e08-fe7d-c0fc-3f2f" primary="false" name="Crusader Squad"/>
       </categoryLinks>
       <profiles>
         <profile name="Righteous Zeal" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8433-2640-540a-04a3">
@@ -1982,7 +1981,21 @@ You can attach this model to a unit it can lead units even if one Captain or Ch
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="00bb-de75-d719-b9f7"/>
                       </constraints>
                     </entryLink>
-                    <entryLink import="true" name="Astartes Chainsword" hidden="false" id="6792-35b6-c5cb-c25c" type="selectionEntry" targetId="62f4-10d1-8d22-b116"/>
+                    <entryLink import="true" name="Astartes Chainsword" hidden="false" id="6792-35b6-c5cb-c25c" type="selectionEntry" targetId="efcd-180-d07-b4d6">
+                      <profiles>
+                        <profile name="Astartes Chainsword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="d5a1-4348-ea7c-93c9">
+                          <characteristics>
+                            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                            <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                            <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </entryLink>
                     <entryLink import="true" name="Power Fist" hidden="false" id="285d-613f-c20b-a6c2" type="selectionEntry" targetId="5d22-a8d8-8e57-b8ab"/>
                     <entryLink import="true" name="Power Weapon" hidden="false" id="e9af-9c9d-d29e-f9ac" type="selectionEntry" targetId="a7b6-eeb7-d0e4-b84c"/>
                     <entryLink import="true" name="Thunder Hammer" hidden="false" id="e32b-7978-ae26-be7e" type="selectionEntry" targetId="7ead-a4ee-c2e-fcf9"/>
