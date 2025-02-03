@@ -15,7 +15,7 @@
         <categoryLink name="Lord Commander Friednanth Fox" hidden="false" id="ce0a-a49e-ccb3-e3d1" targetId="ee76-1558-b1e8-1ea7" primary="false"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
@@ -58,11 +58,6 @@
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If this model is on the battlefield at the start of your Command phase, Take a Leadership test for this model, if that test is passed, gain 1CP.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Pound Them to Dust !" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8a38-bd16-986f-7d14">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of your Shooting phase, select one enemy unit within 30&quot; of and visible to this model that has not already been selected for this ability this phase. Until the end of the phase, Heavy weapons equipped by friendly REGIMENT and SQUADRON models have the [SUSTAINED HITS 1] ability when targeting that unit.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <infoGroups>
         <infoGroup name="Leader" id="7d33-a02b-ffcc-f04f" hidden="false">
@@ -84,6 +79,42 @@
             </profile>
           </profiles>
         </infoGroup>
+        <infoGroup name="Veteran Tactician" id="4a5f-ac17-c2f0-ab93" hidden="false">
+          <profiles>
+            <profile name="Veteran Tactician" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fbfc-db65-f6ab-11d6">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Lord Commander Friednanth Fox gains one of the following ability depending on the detachment selected for the current battle :
+
+Siege Regiment - Never interrupt your enemy when he is making a mistake : ARTILLERY and HEAVY WEAPON SQUAD units ordered to TAKE AIM! by this model gain the Pound Them to Dust! ability until the end of your turn.
+
+Combined Regiment - Character is the virtue of hard times : MILITARUM TEMPESTUS, KASRKIN and PLATOON units ordered DUTY AND HONOUR! by this model that Advance or Fall Back are still eligible to perform an Action this turn.
+
+Bridgehead Strike - He who fears being conquered is certain of defeat : In your Shooting Phase, Each time a MILITARUM TEMPESTUS, KASRKIN and PLATOON units ordered to FIRST RANK, FIRE! SECOND RANK, FIRE! makes an attack that targets a MONSTER or VEHICLE, Rapid Fire weapons used for that attack gain HAZARDOUS and MELTA 1.
+
+Recon Element - To reconnoitre is the constant duty of the advanced guard : Each time an enemy unit declares a charge that targets a REGIMENT or WALKER unit ordered to TAKE COVER! by this model, substract 2 from the charge roll.
+
+Mechanised Assault - The laurels of victory must be plucked at the point of the enemy&apos;s bayonets : Each time a PLATOON unit ordered to FIX BAYONET! by this model makes a melee attack, every succesful Hit roll scores a Critical Hit.
+
+Hammer of the Emperor - Ability is nothing without opportunity : In your shooting phase, REGIMENT units ordered to MOVE! MOVE! MOVE! by this model that are not within Engagement Range can make a normal move up to 6&quot; after they have shot but they must end up within 3&quot; of a friendly NON-WALKER VEHICLE unit. Any unit that does is not eligible to declare a charge until the end of the turn.
+</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Pound Them to Dust !" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7e35-e0b9-b912-2950">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">After this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the turn, each time a friendly unit with this ability makes a ranged attack that targets that enemy unit, improve the Armour Penetration characteristic of that attack by 1. The same enemy unit can only be affected by this ability once per turn.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Rapid Fire" id="4560-2b91-7bea-5525" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786"/>
+            <infoLink name="Melta" id="afbd-b533-e82a-0187" hidden="false" type="rule" targetId="7cdb-fb99-44a9-8849">
+              <modifiers>
+                <modifier type="append" value="1" field="name" join=" "/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Hazardous" id="3951-774f-7f07-a2fd" hidden="false" type="rule" targetId="8367-374c-f87-c627"/>
+          </infoLinks>
+        </infoGroup>
       </infoGroups>
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" id="ff24-6d83-c08b-8fb2" type="selectionEntry" targetId="ea3f-b52b-8dc7-d365">
@@ -101,18 +132,22 @@
           <profiles>
             <profile name="Imperial Regards" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="b0a7-2306-facb-5713">
               <characteristics>
-                <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
                 <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
                 <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
                 <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
                 <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
                 <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 1</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Pistol" id="1e49-ea51-da20-42b0" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
+            <infoLink name="Rapid Fire" id="1e49-ea51-da20-42b0" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786">
+              <modifiers>
+                <modifier type="append" value="1" field="name" join=" "/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Fly Power Sword" hidden="false" id="0e19-428f-7252-e17e">
