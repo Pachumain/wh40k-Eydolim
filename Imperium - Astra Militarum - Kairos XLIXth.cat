@@ -51,7 +51,7 @@
           <characteristics>
             <characteristic name="Officer" typeId="36b-c3c9-245f-e97d">This Officer can issue up to 3 Orders to:
 - REGIMENT units
-- SQUADRON units</characteristic>
+- ARTILLERY units</characteristic>
           </characteristics>
         </profile>
         <profile name="Center is giving way, Flanks are in retreat; Situation excellent. Attack" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f604-3c35-0640-7030">
@@ -88,7 +88,7 @@ Siege Regiment - Never interrupt your enemy when he is making a mistake : ARTILL
 
 Combined Regiment - Character is the virtue of hard times : MILITARUM TEMPESTUS, KASRKIN and PLATOON units ordered DUTY AND HONOUR! by this model that Advance or Fall Back are still eligible to perform an Action this turn.
 
-Bridgehead Strike - He who fears being conquered is certain of defeat : In your Shooting Phase, Each time a MILITARUM TEMPESTUS, KASRKIN and PLATOON units ordered to FIRST RANK, FIRE! SECOND RANK, FIRE! makes an attack that targets a MONSTER or VEHICLE, Rapid Fire weapons used for that attack gain HAZARDOUS and MELTA 1.
+Bridgehead Strike - He who fears being conquered is certain of defeat : In your Shooting Phase, Each time a MILITARUM TEMPESTUS, KASRKIN and PLATOON units ordered to FIRST RANK, FIRE! SECOND RANK, FIRE! makes an attack that targets a MONSTER or VEHICLE, Rapid Fire weapons used for that attack gain Hazardous and Melta 1.
 
 Recon Element - To reconnoitre is the constant duty of the advanced guard : Each time an enemy unit declares a charge that targets a REGIMENT or WALKER unit ordered to TAKE COVER! by this model, substract 2 from the charge roll.
 
@@ -97,9 +97,9 @@ Mechanised Assault - The laurels of victory must be plucked at the point of the 
 Hammer of the Emperor - Ability is nothing without opportunity : In your shooting phase, REGIMENT units ordered to MOVE! MOVE! MOVE! by this model that are not within Engagement Range can make a normal move up to 6&quot; after they have shot but they must end up within 3&quot; of a friendly NON-WALKER VEHICLE unit. Any unit that does is not eligible to declare a charge until the end of the turn.</characteristic>
               </characteristics>
             </profile>
-            <profile name="Pound Them to Dust !" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7e35-e0b9-b912-2950">
+            <profile name="Pound Them to Dust!" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7e35-e0b9-b912-2950">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">After this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the turn, each time a friendly unit with this ability makes a ranged attack that targets that enemy unit, improve the Armour Penetration characteristic of that attack by 1. The same enemy unit can only be affected by this ability once per turn.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">During your shooting phase, after this model has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, each time a friendly unit with this ability makes a ranged attack that targets that enemy unit, improve the Armour Penetration characteristic of that attack by 1. The same enemy unit can only be affected by this ability once per turn.</characteristic>
               </characteristics>
             </profile>
           </profiles>
