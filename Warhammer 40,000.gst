@@ -857,6 +857,12 @@ If a model is in Hover mode,  then until the end of the battle, its Move charact
     <rule id="cd26-1611-860a-91e4" name="One Shot" hidden="false">
       <description>The bearer can only shoot with this weapon once per battle.</description>
     </rule>
+    <rule name="Flexible Leadership" id="141e-3681-e845-6ec4" hidden="false">
+      <description>During the Declare Battle Formations :
+- If this model is attached to a unit with the Scout abililty, it gains the Scout 6&quot; ability. 
+- If this model is attached to a unit with the Deep Strike ability, it gains the Deep Strike ability.
+- If this model is attached to a unit with the Infiltrators ability, it gains the Infiltrators ability.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="fa4e-5ac8-11a6-78d2" name="Fortification" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">

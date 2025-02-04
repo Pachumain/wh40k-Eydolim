@@ -34,6 +34,7 @@
       <infoLinks>
         <infoLink name="Invulnerable Save 5+" id="ee86-cd66-87cf-fed3" hidden="false" type="profile" targetId="3a3d-9e14-64a6-c032"/>
         <infoLink name="Voice Of Command" id="9897-e8ea-f741-65b1" hidden="false" type="rule" targetId="53c9-34f6-2443-a95e"/>
+        <infoLink name="Flexible Leadership" id="6a64-ed2e-5b43-d75e" hidden="false" type="rule" targetId="141e-3681-e845-6ec4"/>
       </infoLinks>
       <profiles>
         <profile name="Lord Commander Friednanth Fox" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="d827-af16-b0df-5ee4">
@@ -68,11 +69,9 @@
             <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7b8e-978f-5697-f846">
               <characteristics>
                 <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units:
-- Attilan Rough Riders
 - Cadian Shock Troops
 - Catachan Jungle Fighters
 - Death Korps of Krieg
-- Infantry Squad
 - Kasrkin
 - Tempestus Scions</characteristic>
               </characteristics>
@@ -95,8 +94,7 @@ Recon Element - To reconnoitre is the constant duty of the advanced guard : Each
 
 Mechanised Assault - The laurels of victory must be plucked at the point of the enemy&apos;s bayonets : Each time a PLATOON unit ordered to FIX BAYONET! by this model makes a melee attack, every succesful Hit roll scores a Critical Hit.
 
-Hammer of the Emperor - Ability is nothing without opportunity : In your shooting phase, REGIMENT units ordered to MOVE! MOVE! MOVE! by this model that are not within Engagement Range can make a normal move up to 6&quot; after they have shot but they must end up within 3&quot; of a friendly NON-WALKER VEHICLE unit. Any unit that does is not eligible to declare a charge until the end of the turn.
-</characteristic>
+Hammer of the Emperor - Ability is nothing without opportunity : In your shooting phase, REGIMENT units ordered to MOVE! MOVE! MOVE! by this model that are not within Engagement Range can make a normal move up to 6&quot; after they have shot but they must end up within 3&quot; of a friendly NON-WALKER VEHICLE unit. Any unit that does is not eligible to declare a charge until the end of the turn.</characteristic>
               </characteristics>
             </profile>
             <profile name="Pound Them to Dust !" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7e35-e0b9-b912-2950">
