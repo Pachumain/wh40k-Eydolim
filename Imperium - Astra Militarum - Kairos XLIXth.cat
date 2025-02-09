@@ -1480,7 +1480,7 @@
           <selectionEntryGroups>
             <selectionEntryGroup name="Lascannon Option" id="5488-cc78-991d-d910" hidden="false" defaultSelectionEntryId="c08d-c2ed-78a7-140d">
               <entryLinks>
-                <entryLink import="true" name="Heavy Bolter" hidden="false" id="cab3-632d-571c-4a3a" type="selectionEntry" targetId="51a8-ffe2-928f-3f50"/>
+                <entryLink import="true" name="Heavy bolter" hidden="false" id="cab3-632d-571c-4a3a" type="selectionEntry" targetId="51a8-ffe2-928f-3f50"/>
                 <entryLink import="true" name="Lascannon" hidden="false" id="b80e-e4ab-af93-b7c3" type="selectionEntry" targetId="af85-b936-7f-430c"/>
                 <entryLink import="true" name="Heavy Flamer" hidden="false" id="e6f5-ad45-cda7-b211" type="selectionEntry" targetId="6fef-cbbd-be33-44a4"/>
               </entryLinks>
@@ -1496,7 +1496,7 @@
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Two Heavy Bolters" hidden="false" id="e9a5-3364-dd4c-b152">
                   <entryLinks>
-                    <entryLink import="true" name="Heavy Bolter" hidden="false" id="96df-8c89-1228-d933" type="selectionEntry" targetId="51a8-ffe2-928f-3f50">
+                    <entryLink import="true" name="Heavy bolter" hidden="false" id="96df-8c89-1228-d933" type="selectionEntry" targetId="51a8-ffe2-928f-3f50">
                       <constraints>
                         <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="ba53-ad50-7910-c3ac" includeChildSelections="true"/>
                         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="98e8-529f-68e3-660c"/>
@@ -1566,8 +1566,8 @@
             </selectionEntryGroup>
             <selectionEntryGroup name="Storm Bolter or Heavy Stubber" id="bc26-c9b4-cd01-ba7a" hidden="false">
               <entryLinks>
-                <entryLink import="true" name="Storm Bolter" hidden="false" id="e624-3b0d-9973-197a" type="selectionEntry" targetId="65b3-173f-4e96-13a5"/>
-                <entryLink import="true" name="Heavy Stubber" hidden="false" id="4719-a3c3-a0f0-b09e" type="selectionEntry" targetId="d20f-db4b-d083-7c0a"/>
+                <entryLink import="true" name="Storm bolter" hidden="false" id="e624-3b0d-9973-197a" type="selectionEntry" targetId="65b3-173f-4e96-13a5"/>
+                <entryLink import="true" name="Heavy stubber" hidden="false" id="4719-a3c3-a0f0-b09e" type="selectionEntry" targetId="d20f-db4b-d083-7c0a"/>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b31-84d0-dbaf-9749"/>
@@ -1694,7 +1694,7 @@
           <selectionEntryGroups>
             <selectionEntryGroup name="Lascannon Option" id="b666-7cd1-a312-4d70" hidden="false" defaultSelectionEntryId="c08d-c2ed-78a7-140d">
               <entryLinks>
-                <entryLink import="true" name="Heavy Bolter" hidden="false" id="df35-a194-71cd-39b2" type="selectionEntry" targetId="51a8-ffe2-928f-3f50"/>
+                <entryLink import="true" name="Heavy bolter" hidden="false" id="df35-a194-71cd-39b2" type="selectionEntry" targetId="51a8-ffe2-928f-3f50"/>
                 <entryLink import="true" name="Lascannon" hidden="false" id="693e-1400-9b38-b7a6" type="selectionEntry" targetId="af85-b936-7f-430c"/>
                 <entryLink import="true" name="Heavy Flamer" hidden="false" id="f516-4999-00c5-e1b9" type="selectionEntry" targetId="6fef-cbbd-be33-44a4"/>
               </entryLinks>
@@ -1710,7 +1710,7 @@
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Two Heavy Bolters" hidden="false" id="a008-6303-9260-2493">
                   <entryLinks>
-                    <entryLink import="true" name="Heavy Bolter" hidden="false" id="39ae-cc6a-000e-b383" type="selectionEntry" targetId="51a8-ffe2-928f-3f50">
+                    <entryLink import="true" name="Heavy bolter" hidden="false" id="39ae-cc6a-000e-b383" type="selectionEntry" targetId="51a8-ffe2-928f-3f50">
                       <constraints>
                         <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="c2d4-5d7b-bb58-d92d" includeChildSelections="true"/>
                         <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="cf17-8322-7452-0644"/>
@@ -1780,8 +1780,8 @@
             </selectionEntryGroup>
             <selectionEntryGroup name="Storm Bolter or Heavy Stubber" id="d4a1-adce-90ff-83e8" hidden="false">
               <entryLinks>
-                <entryLink import="true" name="Storm Bolter" hidden="false" id="b8e9-cd68-4d24-b080" type="selectionEntry" targetId="65b3-173f-4e96-13a5"/>
-                <entryLink import="true" name="Heavy Stubber" hidden="false" id="d5cf-7d31-efa8-b3bc" type="selectionEntry" targetId="d20f-db4b-d083-7c0a"/>
+                <entryLink import="true" name="Storm bolter" hidden="false" id="b8e9-cd68-4d24-b080" type="selectionEntry" targetId="65b3-173f-4e96-13a5"/>
+                <entryLink import="true" name="Heavy stubber" hidden="false" id="d5cf-7d31-efa8-b3bc" type="selectionEntry" targetId="d20f-db4b-d083-7c0a"/>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0829-735b-775b-af14"/>
@@ -2274,12 +2274,12 @@
                   <entryLinks>
                     <entryLink import="true" name="Flamer" hidden="false" id="9d5c-e83f-1218-47b1" type="selectionEntry" targetId="5779-e27a-e226-5a66">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="7037-bd8f-d35d-fb93" shared="true" id="94ab-e2c0-2b37-733e" includeChildSelections="true"/>
+                        <constraint type="max" value="1" field="selections" scope="7037-bd8f-d35d-fb93" shared="true" id="94ab-e2c0-2b37-733e" includeChildSelections="false"/>
                       </constraints>
                       <modifiers>
                         <modifier type="increment" value="1" field="94ab-e2c0-2b37-733e">
                           <conditions>
-                            <condition type="equalTo" value="10" field="selections" scope="7037-bd8f-d35d-fb93" childId="model" shared="true"/>
+                            <condition type="atLeast" value="10" field="selections" scope="7037-bd8f-d35d-fb93" childId="model" shared="true"/>
                           </conditions>
                         </modifier>
                       </modifiers>
@@ -2289,9 +2289,9 @@
                         <constraint type="max" value="1" field="selections" scope="7037-bd8f-d35d-fb93" shared="true" id="855e-43b5-7ff2-7bfe" includeChildSelections="true"/>
                       </constraints>
                       <modifiers>
-                        <modifier type="increment" value="1" field="94ab-e2c0-2b37-733e">
+                        <modifier type="increment" value="1" field="855e-43b5-7ff2-7bfe">
                           <conditions>
-                            <condition type="equalTo" value="10" field="selections" scope="7037-bd8f-d35d-fb93" childId="model" shared="true"/>
+                            <condition type="atLeast" value="10" field="selections" scope="7037-bd8f-d35d-fb93" childId="model" shared="true"/>
                           </conditions>
                         </modifier>
                       </modifiers>
@@ -2301,9 +2301,9 @@
                         <constraint type="max" value="1" field="selections" scope="7037-bd8f-d35d-fb93" shared="true" id="8e03-18b0-136d-ff24" includeChildSelections="true"/>
                       </constraints>
                       <modifiers>
-                        <modifier type="increment" value="1" field="94ab-e2c0-2b37-733e">
+                        <modifier type="increment" value="1" field="8e03-18b0-136d-ff24">
                           <conditions>
-                            <condition type="equalTo" value="10" field="selections" scope="7037-bd8f-d35d-fb93" childId="model" shared="true"/>
+                            <condition type="atLeast" value="10" field="selections" scope="7037-bd8f-d35d-fb93" childId="model" shared="true"/>
                           </conditions>
                         </modifier>
                       </modifiers>
@@ -2313,9 +2313,9 @@
                         <constraint type="max" value="1" field="selections" scope="7037-bd8f-d35d-fb93" shared="true" id="f589-b55b-92ab-40fa" includeChildSelections="true"/>
                       </constraints>
                       <modifiers>
-                        <modifier type="increment" value="1" field="94ab-e2c0-2b37-733e">
+                        <modifier type="increment" value="1" field="f589-b55b-92ab-40fa">
                           <conditions>
-                            <condition type="equalTo" value="10" field="selections" scope="7037-bd8f-d35d-fb93" childId="model" shared="true"/>
+                            <condition type="atLeast" value="10" field="selections" scope="7037-bd8f-d35d-fb93" childId="model" shared="true"/>
                           </conditions>
                         </modifier>
                       </modifiers>
@@ -2325,9 +2325,9 @@
                         <constraint type="max" value="1" field="selections" scope="7037-bd8f-d35d-fb93" shared="true" id="daef-806b-befd-311a" includeChildSelections="true"/>
                       </constraints>
                       <modifiers>
-                        <modifier type="increment" value="1" field="94ab-e2c0-2b37-733e">
+                        <modifier type="increment" value="1" field="daef-806b-befd-311a">
                           <conditions>
-                            <condition type="equalTo" value="10" field="selections" scope="7037-bd8f-d35d-fb93" childId="model" shared="true"/>
+                            <condition type="atLeast" value="10" field="selections" scope="7037-bd8f-d35d-fb93" childId="model" shared="true"/>
                           </conditions>
                         </modifier>
                       </modifiers>
@@ -2346,7 +2346,7 @@
               <modifiers>
                 <modifier type="increment" value="2" field="4b18-5a61-3608-3a14">
                   <conditions>
-                    <condition type="equalTo" value="10" field="selections" scope="7037-bd8f-d35d-fb93" childId="model" shared="true"/>
+                    <condition type="atLeast" value="10" field="selections" scope="7037-bd8f-d35d-fb93" childId="model" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2416,6 +2416,8 @@
     <entryLink import="true" name="Russ Command Tank Marjorie" hidden="false" id="aaf5-bc71-05c2-e95c" targetId="cee4-6e4d-d428-6554" type="selectionEntry"/>
     <entryLink import="true" name="[Placeholder Cadian Heavy Weapons Squad]" hidden="false" id="72bc-239b-61c6-3776" targetId="b9ca-1b89-3b32-c688" type="selectionEntry"/>
     <entryLink import="true" name="[Placeholder Catachan Heavy Weapons Squad]" hidden="false" id="fe63-01c2-8828-89d3" targetId="2075-a80b-f76e-16fb" type="selectionEntry"/>
+    <entryLink import="true" name="[Placeholder Tempestus Scions]" hidden="false" id="189c-4eb2-90f2-6bcf" targetId="7037-bd8f-d35d-fb93" type="selectionEntry"/>
+    <entryLink import="true" name="[Placeholder Tempestus Command Squad]" hidden="false" id="23a1-ae64-e1e7-892a" targetId="8851-ce1a-e5ad-5856" type="selectionEntry"/>
   </entryLinks>
   <sharedProfiles>
     <profile name="Death Korp Trooper" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="9e8b-bdb5-49dc-c291">
