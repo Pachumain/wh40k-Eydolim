@@ -1624,7 +1624,7 @@
         <entryLink import="true" name="Warlord" hidden="false" id="f2ab-29fd-f798-733b" type="selectionEntry" targetId="ea3f-b52b-8dc7-d365"/>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Russ Command Tank Marjorie" hidden="false" id="cee4-6e4d-d428-6554">
+    <selectionEntry type="model" import="true" name="Marjorie - Leman Russ Abrogator Commander" hidden="false" id="cee4-6e4d-d428-6554">
       <categoryLinks>
         <categoryLink name="Tank Commander" hidden="false" id="c970-0e08-c0ab-5ce4" targetId="1256-8491-2de0-6f0" primary="false"/>
         <categoryLink name="Faction: Astra Militarum" hidden="false" id="c3b6-0bb7-8811-6e1b" targetId="fa45-57e-930e-602b" primary="false"/>
@@ -1669,14 +1669,14 @@
             <characteristic name="Officer" typeId="36b-c3c9-245f-e97d">This Officer can issue up to 2 Orders to Squadron units.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Death Befitting An Officer" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2071-517a-6b03-766d">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When this model is destroyed , roll one D6: on a 2+, do not remove it from play – it can, after the attacking model’s unit has finished making its attacks, shoot as if it were your Shooting phase and as if it had its full wounds remaining. This model is then removed from play.</characteristic>
-          </characteristics>
-        </profile>
         <profile name="Vox-net" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="b7d9-62e2-03cd-66d0">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model issues an Order, it can issue it to an eligible unit up to 12&quot; away</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Pride of the Regiment" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="605f-befb-d596-6a5c">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">During the fight phase, whenever a friendly Squadron or Regiment unit makes an attack that targets an enemy unit within Engagement Range of this model, re-roll a hit roll of 1.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1689,154 +1689,47 @@
         <infoLink name="Voice Of Command" id="762c-3294-6666-082c" hidden="false" type="rule" targetId="53c9-34f6-2443-a95e"/>
         <infoLink name="Damaged: 1-4 Wounds Remaining" id="7eaf-e8ae-7867-4598" hidden="false" type="profile" targetId="a626-b90a-cf43-68b4"/>
       </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Loadout" id="5b5b-fa8b-48fa-c696" hidden="false">
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Lascannon Option" id="b666-7cd1-a312-4d70" hidden="false" defaultSelectionEntryId="c08d-c2ed-78a7-140d">
-              <entryLinks>
-                <entryLink import="true" name="Heavy bolter" hidden="false" id="df35-a194-71cd-39b2" type="selectionEntry" targetId="51a8-ffe2-928f-3f50"/>
-                <entryLink import="true" name="Lascannon" hidden="false" id="693e-1400-9b38-b7a6" type="selectionEntry" targetId="af85-b936-7f-430c"/>
-                <entryLink import="true" name="Heavy Flamer" hidden="false" id="f516-4999-00c5-e1b9" type="selectionEntry" targetId="6fef-cbbd-be33-44a4"/>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c2f-d930-c1fa-48ba"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9aec-7ae4-1ca3-1f2a"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Sponsons" id="13d2-bd20-b73f-af3c" hidden="false">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="499e-dd0a-fb70-4c9a"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Two Heavy Bolters" hidden="false" id="a008-6303-9260-2493">
-                  <entryLinks>
-                    <entryLink import="true" name="Heavy bolter" hidden="false" id="39ae-cc6a-000e-b383" type="selectionEntry" targetId="51a8-ffe2-928f-3f50">
-                      <constraints>
-                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="c2d4-5d7b-bb58-d92d" includeChildSelections="true"/>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="cf17-8322-7452-0644"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Two Heavy Flamers" hidden="false" id="1634-e258-437a-a749">
-                  <entryLinks>
-                    <entryLink import="true" name="Heavy Flamer" hidden="false" id="f952-aeef-b7e9-a281" type="selectionEntry" targetId="6fef-cbbd-be33-44a4">
-                      <constraints>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="595b-710f-328c-cace" includeChildSelections="true"/>
-                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a381-5a26-be28-1aa8" includeChildSelections="true"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Two Multi-meltas" hidden="false" id="fba3-ead4-7320-0607">
-                  <entryLinks>
-                    <entryLink import="true" name="Multi-melta" hidden="false" id="075a-d938-e799-814e" type="selectionEntry" targetId="8cd3-2b20-a76b-93ac">
-                      <constraints>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3e21-6a25-12f7-f1c2"/>
-                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="0853-2a83-faa8-d2ef"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Two Militarum Plasma Cannons" hidden="false" id="a560-27a1-4f71-254b">
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Militarum Plasma Cannon" hidden="false" id="f7f7-775a-42f6-b160">
-                      <profiles>
-                        <profile name="➤ Militarum Plasma Cannon - Standard" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="4825-1059-6d54-7248">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
-                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D3</characteristic>
-                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
-                            <characteristic name="S" typeId="2229-f494-25db-c5d3">7</characteristic>
-                            <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
-                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
-                          </characteristics>
-                        </profile>
-                        <profile name="➤ Militarum Plasma Cannon - Supercharge" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="98be-b04c-9eea-d494">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
-                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D3</characteristic>
-                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
-                            <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
-                            <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
-                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
-                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Hazardous</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Blast" id="8cc9-3569-c96e-d417" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
-                        <infoLink name="Hazardous" id="71da-8ccd-9344-2c05" hidden="false" type="rule" targetId="8367-374c-f87-c627"/>
-                      </infoLinks>
-                      <constraints>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b136-cd71-a670-8702" includeChildSelections="true"/>
-                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="4e00-9f06-a10e-e925" includeChildSelections="true"/>
-                      </constraints>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Storm Bolter or Heavy Stubber" id="d4a1-adce-90ff-83e8" hidden="false">
-              <entryLinks>
-                <entryLink import="true" name="Storm bolter" hidden="false" id="b8e9-cd68-4d24-b080" type="selectionEntry" targetId="65b3-173f-4e96-13a5"/>
-                <entryLink import="true" name="Heavy stubber" hidden="false" id="d5cf-7d31-efa8-b3bc" type="selectionEntry" targetId="d20f-db4b-d083-7c0a"/>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0829-735b-775b-af14"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Battle Cannon" id="40c1-ff4d-f87e-18c7" hidden="false" defaultSelectionEntryId="c1f9-42b2-e243-da06">
-              <entryLinks>
-                <entryLink import="true" name="Leman Russ Battle Cannon" hidden="false" id="bccf-bd13-5feb-fe78" type="selectionEntry" targetId="28ad-1d0b-798f-743b"/>
-                <entryLink import="true" name="Vanquisher Battle Cannon" hidden="false" id="00c6-b550-941d-a556" type="selectionEntry" targetId="2e39-f725-75aa-d68c"/>
-                <entryLink import="true" name="Eradicator Nova Cannon" hidden="false" id="6c54-9cba-f697-5011" type="selectionEntry" targetId="4a0f-4867-de5d-3fa3"/>
-                <entryLink import="true" name="Executioner Plasma Cannon" hidden="false" id="a06e-635a-19e2-d5ac" type="selectionEntry" targetId="77b7-c02f-2a0d-c1eb"/>
-                <entryLink import="true" name="Punisher Gatling Cannon" hidden="false" id="8be1-9637-568e-210f" type="selectionEntry" targetId="cb4-7d9a-3afb-a335"/>
-                <entryLink import="true" name="Exterminator Autocannon" hidden="false" id="a7ce-b8b6-5e9d-ded3" type="selectionEntry" targetId="a2d1-dd7a-b0d4-45e4"/>
-              </entryLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cc25-3486-baf2-6af2"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b4d9-0988-8237-bad3"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Demolisher Battle Cannon" hidden="false" id="2e7f-122b-81df-3e48">
-                  <profiles>
-                    <profile name="Demolisher Battle Cannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="ec0d-10c0-be0f-32e0">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+1</characteristic>
-                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">14</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Blast" id="40a5-aef5-16e5-180b" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <entryLinks>
-            <entryLink import="true" name="Hunter-killer Missile" hidden="false" id="3471-d06d-770c-930a" targetId="37aa-e4f5-30bd-c59c" type="selectionEntry">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba03-05a7-fc28-69be"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <entryLinks>
         <entryLink import="true" name="Armoured Tracks" hidden="false" id="8324-ce57-40c9-2aa2" type="selectionEntry" targetId="e635-5c9b-194c-44f2">
           <comment>russ</comment>
         </entryLink>
         <entryLink import="true" name="Warlord" hidden="false" id="cbca-61d8-13c4-8583" type="selectionEntry" targetId="ea3f-b52b-8dc7-d365"/>
       </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Abrogator Battle Cannon" hidden="false" id="0aca-a515-29a4-ddf3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="76ed-8199-ee04-54a5-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="76ed-8199-ee04-54a5-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="➤ Abrogator Battle Cannon - Daemon-Slayers Shells" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="3108-e32b-91c7-fd64">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">3d6</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">1</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">4</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="➤ Abrogator Battle Cannon - Fortress-Breaker Shells" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="5cba-c684-43e4-8f3e">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">72&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">4</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">18</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">12</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Blast" id="e765-8303-7ca7-6191" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="[Placeholder Tempestus Command Squad]" hidden="false" id="8851-ce1a-e5ad-5856">
       <costs>
@@ -2413,7 +2306,7 @@
     <entryLink import="true" name="[Placeholder Death Korps of Krieg]" hidden="false" id="a2de-488f-0a37-bbe1" targetId="5828-eba4-ff96-6f65" type="selectionEntry"/>
     <entryLink import="true" name="[Placeholder Death Korp Command Squad]" hidden="false" id="cf85-e2b2-6d46-6a86" targetId="f34d-9c75-fdd9-712c" type="selectionEntry"/>
     <entryLink import="true" name="[Placeholder Leman Russ Commander]" hidden="false" id="8769-1c35-68c9-07fb" targetId="2a4c-65d3-f538-c8f9" type="selectionEntry"/>
-    <entryLink import="true" name="Russ Command Tank Marjorie" hidden="false" id="aaf5-bc71-05c2-e95c" targetId="cee4-6e4d-d428-6554" type="selectionEntry"/>
+    <entryLink import="true" name="Marjorie - Leman Russ Abrogator Commander" hidden="false" id="aaf5-bc71-05c2-e95c" targetId="cee4-6e4d-d428-6554" type="selectionEntry"/>
     <entryLink import="true" name="[Placeholder Cadian Heavy Weapons Squad]" hidden="false" id="72bc-239b-61c6-3776" targetId="b9ca-1b89-3b32-c688" type="selectionEntry"/>
     <entryLink import="true" name="[Placeholder Catachan Heavy Weapons Squad]" hidden="false" id="fe63-01c2-8828-89d3" targetId="2075-a80b-f76e-16fb" type="selectionEntry"/>
     <entryLink import="true" name="[Placeholder Tempestus Scions]" hidden="false" id="189c-4eb2-90f2-6bcf" targetId="7037-bd8f-d35d-fb93" type="selectionEntry"/>
