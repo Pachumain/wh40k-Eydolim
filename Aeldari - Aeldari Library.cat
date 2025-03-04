@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="dfcf-1214-b57-2205" name="Aeldari - Aeldari Library" revision="70" battleScribeVersion="2.03" library="true" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="dfcf-1214-b57-2205" name="Aeldari - Aeldari Library" revision="75" battleScribeVersion="2.03" library="true" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <publications>
     <publication id="442c-a37c-3908-d701" name="Codex: Aeldari" shortName="C:Aeldari" publisher="Codex: Aeldari" publicationDate="08/02/2025"/>
     <publication id="1427-7c5c-863f-ac94" name="Index: Drukhari" shortName="I:Drukhari" publisher="Index: Drukhari" publicationDate="6/15/2023"/>
@@ -97,51 +97,6 @@
     <categoryEntry id="fa4-eae-8e9e-1921" name="Kabal" hidden="false"/>
     <categoryEntry id="96d-ecf8-2b89-8056" name="Haemonculus Covens" hidden="false"/>
     <categoryEntry id="b165-8f68-caff-407a" name="Wych Cult" hidden="false"/>
-    <categoryEntry id="d39d-c104-5d92-3d58" name="Corsairs and Travelling players" hidden="false">
-      <constraints>
-        <constraint type="max" value="-1" field="51b2-306e-1021-d207" scope="force" shared="true" id="29ed-407d-211c-bd41" includeChildSelections="true" includeChildForces="true"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="250" field="29ed-407d-211c-bd41">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="greaterThan" value="0" field="selections" scope="force" childId="d62d-db22-4893-4bc0" shared="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="e688-8140-bc36-3cee" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" value="500" field="29ed-407d-211c-bd41">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="greaterThan" value="0" field="selections" scope="force" childId="baf8-997f-e323-a090" shared="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="e688-8140-bc36-3cee" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" value="750" field="29ed-407d-211c-bd41">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="greaterThan" value="0" field="selections" scope="force" childId="4204-82d0-908c-a62a" shared="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
-                <condition type="lessThan" value="1" field="selections" scope="force" childId="e688-8140-bc36-3cee" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </categoryEntry>
     <categoryEntry name="Cobra" hidden="false" id="ee68-8c83-511d-c2a4"/>
     <categoryEntry name="Hornet" hidden="false" id="2a31-836c-d34e-dc16"/>
     <categoryEntry name="Irillyth" hidden="false" id="ed15-de8a-9784-649c"/>
@@ -214,6 +169,61 @@
     <categoryEntry name="Shadow Weaver Platform" id="711a-3b82-40bf-5d7b" hidden="false"/>
     <categoryEntry name="Vibro Cannon Platform" id="29f1-9e49-1ffb-8ae2" hidden="false"/>
     <categoryEntry name="Wraithknight with Ghostglaive" id="02d0-507d-a879-bf14" hidden="false"/>
+    <categoryEntry name="Ynnari" id="9032-f917-9bc5-fd47" hidden="true">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="925e-85fb-b477-70be" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="Corsairs and Travelling Players" id="e554-d095-bb9d-c930" hidden="false">
+      <constraints>
+        <constraint type="max" value="-1" field="51b2-306e-1021-d207" scope="force" shared="true" id="f327-7590-64db-0d1b" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="250" field="f327-7590-64db-0d1b">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="d62d-db22-4893-4bc0" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="e688-8140-bc36-3cee" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="500" field="f327-7590-64db-0d1b">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="baf8-997f-e323-a090" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="e688-8140-bc36-3cee" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="750" field="f327-7590-64db-0d1b">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="4204-82d0-908c-a62a" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="e688-8140-bc36-3cee" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="38de-521f-1ce0-44a0" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="Faction: Aeldari Legend" id="1d72-d9f7-b8e8-4b19" hidden="false"/>
   </categoryEntries>
   <sharedSelectionEntries>
     <selectionEntry id="828d-840a-9a67-9074" name="Asurmen" publicationId="442c-a37c-3908-d701" page="7" hidden="false" collective="false" import="true" type="model">
@@ -382,7 +392,7 @@
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry id="69f4-c990-93b4-20fc" name="Autarch Skyrunner" page="13" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="69f4-c990-93b4-20fc" name="Autarch Skyrunner [Legends]" page="13" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="5237-b26c-1dbb-fc81" name="Path of Command" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
@@ -423,6 +433,7 @@
         <categoryLink id="b30c-a772-1652-683b" name="Mounted" hidden="false" targetId="14a0-40c9-2748-ae6e" primary="false"/>
         <categoryLink id="eaf6-2330-3ca0-805" name="Fly" hidden="false" targetId="c619-2086-bbcf-69c9" primary="false"/>
         <categoryLink id="ed8b-43c6-c25f-228a" name="Faction: Asuryani" hidden="false" targetId="4378-1827-4988-be4e" primary="false"/>
+        <categoryLink targetId="1d72-d9f7-b8e8-4b19" id="a4ca-cc44-6a33-4373" primary="false" name="Faction: Aeldari Legend"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="f4a1-5619-60c0-687b" name="Twin Shuriken Catapult" hidden="false" collective="false" import="true" type="upgrade">
@@ -539,6 +550,9 @@
         <entryLink id="3021-fc73-b646-1a9b" name="Warlord" hidden="false" collective="false" import="true" targetId="3f04-19ab-bfb0-6c67" type="selectionEntry"/>
         <entryLink import="true" name="Warhost Enhancements" hidden="false" type="selectionEntryGroup" id="e988-e82a-6959-3a72" targetId="e26f-c156-51e9-9608"/>
         <entryLink import="true" name="Armoured Warhost Enhancements" hidden="false" id="a365-2c2c-614f-f242" type="selectionEntryGroup" targetId="b8b5-e20b-604b-032f"/>
+        <entryLink import="true" name="Windrider Host Enhancements" hidden="false" id="88f1-7654-e037-0de0" type="selectionEntryGroup" targetId="0270-1299-a721-0221"/>
+        <entryLink import="true" name="Aspect Host Enhancements" hidden="false" id="dbd4-bd1c-7e7e-3891" type="selectionEntryGroup" targetId="e105-2285-4d63-819b"/>
+        <entryLink import="true" name="Guardian Battlehost Enhancements" hidden="false" id="6162-b09b-4e41-aa63" type="selectionEntryGroup" targetId="9ca9-da7c-c451-0516"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
@@ -547,6 +561,11 @@
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="forces" scope="roster" childId="1d6e-2579-8e7f-1ed4" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -611,6 +630,7 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
         <categoryLink id="c468-a9a2-cf1-723f" name="Grenades" hidden="false" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
         <categoryLink id="48b1-fc1d-4b55-5d68" name="Faction: Asuryani" hidden="false" targetId="4378-1827-4988-be4e" primary="false"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="53cd-6243-15a8-39ba" primary="false" name="Aeldari"/>
+        <categoryLink targetId="9032-f917-9bc5-fd47" id="fa83-89cd-904f-e228" primary="false" name="Ynnari"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="885b-ad55-1e0e-7394" name="Ranged Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="d375-c25d-432e-f5de">
@@ -906,6 +926,7 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
         <categoryLink id="6a4a-9e2-3c18-1b45" name="Faction: Asuryani" hidden="false" targetId="4378-1827-4988-be4e" primary="false"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="2f27-f538-99c2-838a" primary="false" name="Aeldari"/>
         <categoryLink targetId="dda2-bb0a-215e-ad9c" id="f26a-2434-04fc-3f3c" primary="false" name="Jump Pack"/>
+        <categoryLink targetId="9032-f917-9bc5-fd47" id="a809-6639-37c6-29c0" primary="false" name="Ynnari"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="5388-5ebd-fd74-4676" name="Ranged Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="5656-926a-5282-4036">
@@ -1510,6 +1531,8 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
         <categoryLink id="c845-116-5af2-b7d6" name="Corsair Voidreavers" hidden="false" targetId="98f7-4a8a-dbd3-4a81" primary="false"/>
         <categoryLink id="e962-4e72-d5ab-977f" name="Faction: Asuryani" hidden="false" targetId="4378-1827-4988-be4e" primary="false"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="4556-1f60-b553-47d2" primary="false" name="Aeldari"/>
+        <categoryLink targetId="9032-f917-9bc5-fd47" id="f115-0ea1-cdac-085e" primary="false" name="Ynnari"/>
+        <categoryLink targetId="e554-d095-bb9d-c930" id="d9fd-f394-af71-4e84" primary="false" name="Corsairs and Travelling Players"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="b3ab-c0f4-3253-859c" name="4-9 Voidreavers and 1 Felarch" hidden="false" collective="false" import="true" defaultSelectionEntryId="fcf9-7d09-a246-b925">
@@ -1988,6 +2011,8 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
         <categoryLink id="27a2-c166-ddd1-b86b" name="Faction: Asuryani" hidden="false" targetId="4378-1827-4988-be4e" primary="false"/>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="a21f-a9e0-eb87-59cd" primary="false" name="Grenades"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="ca46-d0e9-9263-d3d7" primary="false" name="Aeldari"/>
+        <categoryLink targetId="9032-f917-9bc5-fd47" id="185c-ce93-ef71-e33f" primary="false" name="Ynnari"/>
+        <categoryLink targetId="e554-d095-bb9d-c930" id="9e7b-24a2-134a-c3d6" primary="false" name="Corsairs and Travelling Players"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="2f7c-b8fd-bf9d-568d" name="4 -9 Voidscarred and 1 Felarch" hidden="false" collective="false" import="true" defaultSelectionEntryId="f61d-c4c6-aee-4c2f">
@@ -2438,9 +2463,14 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
                 <selectionEntry type="model" import="true" name="Voidscarred with fusion pistol" hidden="false" id="acb0-cb13-a7d2-30d" collective="false">
                   <modifiers>
                     <modifier type="add" value="Squad size must be 10" field="error">
-                      <conditions>
-                        <condition type="lessThan" value="10" field="selections" scope="cbb7-6669-a014-36fe" childId="2f7c-b8fd-bf9d-568d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="lessThan" value="10" field="selections" scope="cbb7-6669-a014-36fe" childId="2f7c-b8fd-bf9d-568d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="atLeast" value="1" field="selections" scope="cbb7-6669-a014-36fe" childId="acb0-cb13-a7d2-30d" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -2499,9 +2529,14 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
                       </conditions>
                     </modifier>
                     <modifier type="add" value="Squad size must be 10" field="error">
-                      <conditions>
-                        <condition type="lessThan" value="10" field="selections" scope="cbb7-6669-a014-36fe" childId="2f7c-b8fd-bf9d-568d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="lessThan" value="10" field="selections" scope="cbb7-6669-a014-36fe" childId="2f7c-b8fd-bf9d-568d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="atLeast" value="1" field="selections" scope="cbb7-6669-a014-36fe" childId="e36e-6206-3f00-804e" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -2569,9 +2604,14 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
                 <selectionEntry type="model" import="true" name="Voidscarred with ranger long rifle" hidden="false" id="a05c-764f-33dc-4402" collective="false">
                   <modifiers>
                     <modifier type="add" value="Squad size must be 10" field="error">
-                      <conditions>
-                        <condition type="lessThan" value="10" field="selections" scope="cbb7-6669-a014-36fe" childId="2f7c-b8fd-bf9d-568d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="lessThan" value="10" field="selections" scope="cbb7-6669-a014-36fe" childId="2f7c-b8fd-bf9d-568d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="atLeast" value="1" field="selections" scope="cbb7-6669-a014-36fe" childId="a05c-764f-33dc-4402" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -2755,6 +2795,7 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
         <categoryLink id="53ce-6323-b189-f9b4" name="Faction: Asuryani" hidden="false" targetId="4378-1827-4988-be4e" primary="false"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="1f85-1a66-3993-0a6b" primary="false" name="Aeldari"/>
         <categoryLink targetId="4d82-2943-8868-2782" id="c19e-49e5-6ebc-cf65" primary="false" name="Aspect Warrior"/>
+        <categoryLink targetId="9032-f917-9bc5-fd47" id="7c39-c4c4-0691-6fb1" primary="false" name="Ynnari"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="e8b5-20aa-b1db-d67" name="Pulse Laser" hidden="false" collective="false" import="true" type="upgrade">
@@ -2894,6 +2935,9 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
         <categoryLink id="77e2-7cef-e217-adea" name="Dark Reapers" hidden="false" targetId="6139-391b-2c62-e245" primary="false"/>
         <categoryLink id="ff58-7242-2ee8-db6d" name="Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="true"/>
         <categoryLink id="1e77-f3b9-6b3d-17ac" name="Faction: Asuryani" hidden="false" targetId="4378-1827-4988-be4e" primary="false"/>
+        <categoryLink targetId="4d82-2943-8868-2782" id="95a1-1aa3-33b6-9a42" primary="false" name="Aspect Warrior"/>
+        <categoryLink targetId="e035-51fc-813a-1313" id="4d5b-0a3b-0853-6f01" primary="false" name="Aeldari"/>
+        <categoryLink targetId="9032-f917-9bc5-fd47" id="a034-470d-26d6-c489" primary="false" name="Ynnari"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="1493-2092-51f-b83" name="4-9 Dark Reapers and 1 Exarch" hidden="false" collective="false" import="true">
@@ -3169,6 +3213,7 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
         <categoryLink targetId="83bb-5ddb-b1d9-39b8" id="69b9-5015-b8a4-b177" primary="false" name="Harlequin Allies"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="aa93-45fe-573b-4751" primary="false" name="Aeldari"/>
         <categoryLink targetId="a5a2-d0c0-0349-d226" id="4a36-e1b5-3c62-2749" primary="false" name="Faction: Harlequins"/>
+        <categoryLink targetId="e554-d095-bb9d-c930" id="a2c7-0ac9-b7d7-89dd" primary="false" name="Corsairs and Travelling Players"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
@@ -3350,6 +3395,7 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
         <categoryLink id="6693-9b5c-97a4-2318" name="Faction: Asuryani" hidden="false" targetId="4378-1827-4988-be4e" primary="false"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="d9f4-d161-01c4-fffd" primary="false" name="Aeldari"/>
         <categoryLink targetId="4d82-2943-8868-2782" id="487d-f997-5231-7263" primary="false" name="Aspect Warrior"/>
+        <categoryLink targetId="9032-f917-9bc5-fd47" id="5ba2-b8a3-ebb9-d6e5" primary="false" name="Ynnari"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
@@ -3830,6 +3876,7 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
         <categoryLink id="6546-ff3e-95cf-6cec" name="Vehicle" hidden="false" targetId="dbd4-63-af05-998" primary="true"/>
         <categoryLink id="b097-31d3-46f8-a860" name="Faction: Asuryani" hidden="false" targetId="4378-1827-4988-be4e" primary="false"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="ef87-b163-b5dd-274f" primary="false" name="Aeldari"/>
+        <categoryLink targetId="9032-f917-9bc5-fd47" id="00ca-c030-0a45-8368" primary="false" name="Ynnari"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="130"/>
@@ -3989,6 +4036,7 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
         <categoryLink id="479e-6e60-3103-870d" name="Farseer" hidden="false" targetId="851f-4e16-2f8d-17ae" primary="false"/>
         <categoryLink id="9576-1635-7dfe-819c" name="Faction: Asuryani" hidden="false" targetId="4378-1827-4988-be4e" primary="false"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="217d-d11e-e597-64c1" primary="false" name="Aeldari"/>
+        <categoryLink targetId="9032-f917-9bc5-fd47" id="6b05-bd76-6120-92ef" primary="false" name="Ynnari"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
@@ -4197,6 +4245,7 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
         <categoryLink id="ed89-48f0-1242-45a" name="Psyker" hidden="false" targetId="13bf-2bee-3ae0-b414" primary="false"/>
         <categoryLink id="95a7-b0ef-55f9-4366" name="Faction: Asuryani" hidden="false" targetId="4378-1827-4988-be4e" primary="false"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="b81c-63b0-d67a-0d86" primary="false" name="Aeldari"/>
+        <categoryLink targetId="9032-f917-9bc5-fd47" id="f956-2bdb-f8e1-8c78" primary="false" name="Ynnari"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
@@ -4422,6 +4471,7 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
         <categoryLink id="9ecc-e9b4-9425-f068" name="Faction: Asuryani" hidden="false" targetId="4378-1827-4988-be4e" primary="false"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="0c22-94d8-edc2-4baa" primary="false" name="Aeldari"/>
         <categoryLink targetId="4d82-2943-8868-2782" id="9a5f-2f97-9938-647f" primary="false" name="Aspect Warrior"/>
+        <categoryLink targetId="9032-f917-9bc5-fd47" id="31af-a32d-6143-ec59" primary="false" name="Ynnari"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
@@ -4670,6 +4720,7 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
         <categoryLink id="2a4a-3a13-3cd9-e530" name="Vehicle" hidden="false" targetId="dbd4-63-af05-998" primary="true"/>
         <categoryLink id="f62d-7562-4ebd-871d" name="Faction: Asuryani" hidden="false" targetId="4378-1827-4988-be4e" primary="false"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="46ea-6a1c-bd7f-f588" primary="false" name="Aeldari"/>
+        <categoryLink targetId="9032-f917-9bc5-fd47" id="f4da-9f04-1b43-7fc4" primary="false" name="Ynnari"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="160"/>
@@ -5002,6 +5053,7 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
         <categoryLink id="dfed-4240-9056-44c6" name="Guardians" hidden="false" targetId="f71f-8079-2bf3-d4da" primary="false"/>
         <categoryLink id="331d-cbf-c56c-4240" name="Faction: Asuryani" hidden="false" targetId="4378-1827-4988-be4e" primary="false"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="b8e6-7c43-cb26-da03" primary="false" name="Aeldari"/>
+        <categoryLink targetId="9032-f917-9bc5-fd47" id="4e82-9ba2-e861-3ed2" primary="false" name="Ynnari"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
@@ -5099,6 +5151,7 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
         <categoryLink id="5d82-b807-bf40-5ce8" name="Wraith Construct" hidden="false" targetId="c250-f6c5-ffc8-bcd5" primary="false"/>
         <categoryLink id="40ab-da39-90d1-445" name="Faction: Asuryani" hidden="false" targetId="4378-1827-4988-be4e" primary="false"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="065d-49a6-91b5-ae52" primary="false" name="Aeldari"/>
+        <categoryLink targetId="9032-f917-9bc5-fd47" id="69ce-c691-14b8-43bd" primary="false" name="Ynnari"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="155"/>
@@ -5201,6 +5254,7 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
         <categoryLink id="40a9-2a94-e870-364f" name="Howling Banshees" hidden="false" targetId="a272-87e8-eb5a-e1ff" primary="false"/>
         <categoryLink id="cf0c-dc51-a7ab-24de" name="Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="true"/>
         <categoryLink id="e036-2053-89cd-4eab" name="Faction: Asuryani" hidden="false" targetId="4378-1827-4988-be4e" primary="false"/>
+        <categoryLink targetId="9032-f917-9bc5-fd47" id="884c-2a58-3189-cad7" primary="false" name="Ynnari"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
@@ -5458,13 +5512,14 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
         <entryLink import="true" name="Aspect Shrine Token" hidden="false" id="e820-5768-c9f2-5991" type="selectionEntry" targetId="344f-a1d4-6038-7ee7"/>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry id="2713-f82d-5189-d5de" name="Illic Nightspear" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="2713-f82d-5189-d5de" name="Illic Nightspear [Legends]" hidden="false" collective="false" import="true" type="model">
       <categoryLinks>
         <categoryLink id="2e1d-4455-a605-5b32" name="Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="false"/>
         <categoryLink id="d73b-ad1a-e585-ac5f" name="Character" hidden="false" targetId="9cfd-1c32-585f-7d5c" primary="false"/>
         <categoryLink id="bdc7-25df-70e7-5348" name="Epic Hero" hidden="false" targetId="4f3a-f0f7-6647-348d" primary="true"/>
         <categoryLink id="75df-1053-a508-99a8" name="Illic Nightspear" hidden="false" targetId="f7c5-783f-7f0e-5638" primary="false"/>
         <categoryLink id="3a65-ade-170-9cdd" name="Faction: Asuryani" hidden="false" targetId="4378-1827-4988-be4e" primary="false"/>
+        <categoryLink targetId="1d72-d9f7-b8e8-4b19" id="4192-693f-0882-8bb9" primary="false" name="Faction: Aeldari Legend"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
@@ -5615,6 +5670,11 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
               </conditionGroups>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -5777,7 +5837,7 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry id="c9ed-d190-419c-78d3" name="Karandras" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="c9ed-d190-419c-78d3" name="Karandras [Legends]" hidden="false" collective="false" import="true" type="model">
       <categoryLinks>
         <categoryLink id="48e6-b1cf-e1b6-12c3" name="Epic Hero" hidden="false" targetId="4f3a-f0f7-6647-348d" primary="true"/>
         <categoryLink id="2d76-1eaa-cccc-7fff" name="Character" hidden="false" targetId="9cfd-1c32-585f-7d5c" primary="false"/>
@@ -5785,6 +5845,7 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
         <categoryLink id="4b53-2a27-3431-446c" name="Karandras" hidden="false" targetId="dcaa-d376-d2ea-67fd" primary="false"/>
         <categoryLink id="ab97-132f-8ebc-997b" name="Phoenix Lord" hidden="false" targetId="4e0f-4e9d-c47a-446" primary="false"/>
         <categoryLink id="9aa7-e9d6-727f-8d8e" name="Faction: Asuryani" hidden="false" targetId="4378-1827-4988-be4e" primary="false"/>
+        <categoryLink targetId="1d72-d9f7-b8e8-4b19" id="5810-3262-7e80-f9b5" primary="false" name="Faction: Aeldari Legend"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="90"/>
@@ -5927,6 +5988,11 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
               </conditionGroups>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -6225,13 +6291,14 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="a2c9-1821-93ce-3900" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry id="1fbf-55d9-5ca8-4e9e" name="Prince Yriel" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="1fbf-55d9-5ca8-4e9e" name="Prince Yriel [Legends]" hidden="false" collective="false" import="true" type="model">
       <categoryLinks>
         <categoryLink id="926a-3ee3-c353-b7c8" name="Prince Yriel" hidden="false" targetId="7d1d-6c58-d041-3eb1" primary="false"/>
         <categoryLink id="de82-7bbb-a56e-5a39" name="Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="false"/>
         <categoryLink id="a4fd-15aa-7f16-56f0" name="Character" hidden="false" targetId="9cfd-1c32-585f-7d5c" primary="false"/>
         <categoryLink id="6abc-f2e5-6d73-e5d" name="Epic Hero" hidden="false" targetId="4f3a-f0f7-6647-348d" primary="true"/>
         <categoryLink id="20ed-4c9f-856d-a325" name="Faction: Asuryani" hidden="false" targetId="4378-1827-4988-be4e" primary="false"/>
+        <categoryLink targetId="1d72-d9f7-b8e8-4b19" id="69b5-5325-e009-98f1" primary="false" name="Faction: Aeldari Legend"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
@@ -6363,6 +6430,11 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry id="b98b-701f-9c0c-5437" name="Rangers" hidden="false" collective="false" import="true" type="unit">
@@ -6393,6 +6465,7 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
         <categoryLink id="358c-13d0-720f-93e0" name="Infantry" hidden="false" targetId="cf47-a0d7-7207-29dc" primary="true"/>
         <categoryLink id="e903-9f70-b97e-a0d9" name="Faction: Asuryani" hidden="false" targetId="4378-1827-4988-be4e" primary="false"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="341b-9177-22ae-0127" primary="false" name="Aeldari"/>
+        <categoryLink targetId="9032-f917-9bc5-fd47" id="81f1-ad1d-6bde-0093" primary="false" name="Ynnari"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="55"/>
@@ -6488,6 +6561,7 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
         <categoryLink targetId="83bb-5ddb-b1d9-39b8" id="5f13-a2da-5363-0f09" primary="false" name="Harlequin Allies"/>
         <categoryLink targetId="a5a2-d0c0-0349-d226" id="2002-fae5-7578-3eec" primary="false" name="Faction: Harlequins"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="03fb-d3c0-e80c-d80d" primary="false" name="Aeldari"/>
+        <categoryLink targetId="e554-d095-bb9d-c930" id="84fe-75f1-e0e1-f3dc" primary="false" name="Corsairs and Travelling Players"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
@@ -6994,6 +7068,7 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
         <categoryLink id="ebbf-5a17-86e6-94d4" name="Mounted" hidden="false" targetId="14a0-40c9-2748-ae6e" primary="true"/>
         <categoryLink id="a008-1905-3fa8-a9ba" name="Faction: Asuryani" hidden="false" targetId="4378-1827-4988-be4e" primary="false"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="ef94-4445-0d41-6a16" primary="false" name="Aeldari"/>
+        <categoryLink targetId="9032-f917-9bc5-fd47" id="ebcb-c4d8-644a-0cac" primary="false" name="Ynnari"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
@@ -7120,6 +7195,7 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
         <categoryLink targetId="83bb-5ddb-b1d9-39b8" id="2806-2636-a779-a67e" primary="false" name="Harlequin Allies"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="c272-c774-9d17-873f" primary="false" name="Aeldari"/>
         <categoryLink targetId="a5a2-d0c0-0349-d226" id="271e-0e27-73c1-338c" primary="false" name="Faction: Harlequins"/>
+        <categoryLink targetId="e554-d095-bb9d-c930" id="7371-f5f6-a71d-9ce6" primary="false" name="Corsairs and Travelling Players"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="95"/>
@@ -7266,6 +7342,7 @@ While this model is leading a Striking Scorpions unit, it has the Infiltrators, 
         <categoryLink targetId="83bb-5ddb-b1d9-39b8" id="e1a8-5abc-7585-8888" primary="false" name="Harlequin Allies"/>
         <categoryLink targetId="a5a2-d0c0-0349-d226" id="90ad-face-3e39-2f33" primary="false" name="Faction: Harlequins"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="9a37-f368-d4ce-689c" primary="false" name="Aeldari"/>
+        <categoryLink targetId="e554-d095-bb9d-c930" id="0385-33cf-c78b-c408" primary="false" name="Corsairs and Travelling Players"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="115"/>
@@ -7418,6 +7495,7 @@ Attacks characteristic of this model’s Solitaire weapons.</characteristic>
         <categoryLink id="3965-f938-6f23-d65" name="Psyker" hidden="false" targetId="13bf-2bee-3ae0-b414" primary="false"/>
         <categoryLink id="e3fe-fe28-e252-ac" name="Faction: Asuryani" hidden="false" targetId="4378-1827-4988-be4e" primary="false"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="c1f1-3798-640a-e217" primary="false" name="Aeldari"/>
+        <categoryLink targetId="9032-f917-9bc5-fd47" id="8f6c-eeb6-5261-ad08" primary="false" name="Ynnari"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="65"/>
@@ -7539,6 +7617,7 @@ Attacks characteristic of this model’s Solitaire weapons.</characteristic>
         <categoryLink targetId="e035-51fc-813a-1313" id="fa25-fba7-4823-87f2" primary="false" name="Aeldari"/>
         <categoryLink targetId="a5a2-d0c0-0349-d226" id="3f04-aa3c-7dce-be83" primary="false" name="Faction: Harlequins"/>
         <categoryLink targetId="83bb-5ddb-b1d9-39b8" id="c5c0-000a-347d-90d5" primary="false" name="Harlequin Allies"/>
+        <categoryLink targetId="e554-d095-bb9d-c930" id="8897-c4e6-5fb5-2dae" primary="false" name="Corsairs and Travelling Players"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
@@ -7633,6 +7712,7 @@ Attacks characteristic of this model’s Solitaire weapons.</characteristic>
         <categoryLink id="7f8f-74fd-a9a2-cd24" name="Guardians" hidden="false" targetId="f71f-8079-2bf3-d4da" primary="false"/>
         <categoryLink id="f472-9797-249b-3d25" name="Faction: Asuryani" hidden="false" targetId="4378-1827-4988-be4e" primary="false"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="e402-66f8-59cf-b6a2" primary="false" name="Aeldari"/>
+        <categoryLink targetId="9032-f917-9bc5-fd47" id="353e-abc2-0791-39d5" primary="false" name="Ynnari"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
@@ -7653,276 +7733,65 @@ Attacks characteristic of this model’s Solitaire weapons.</characteristic>
                 <entryLink import="true" name="Shuriken Pistol" hidden="false" id="64bf-ad64-5f41-cabf" type="selectionEntry" targetId="6783-a483-98bc-4f87"/>
               </entryLinks>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Storm Guardian with Aeldari Flamer" hidden="false" id="cef3-fc6a-ea66-c6fe">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Flamer" hidden="false" id="8269-a594-848c-36a9" collective="true">
-                  <profiles>
-                    <profile name="Flamer" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="9dcc-347-c99f-3db6">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
-                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault, Ignores Cover, Torrent</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="187e-4cde-e6b8-75c7"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="382e-68d6-ec59-cb86"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Assault" hidden="false" type="rule" id="e794-a987-88d0-e30d" targetId="fc8a-8c24-bae9-cc1c"/>
-                    <infoLink name="Ignores Cover" hidden="false" type="rule" id="de27-a85a-7dca-4966" targetId="4640-43e7-30b-215a"/>
-                    <infoLink name="Torrent" hidden="false" type="rule" id="d680-1901-4a91-5b78" targetId="5edf-d619-23e0-9b56"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
+            <selectionEntry type="model" import="true" name="Storm Guardian with Flamer" hidden="false" id="cef3-fc6a-ea66-c6fe">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="58dd-96e2-3bba-f83a"/>
               </constraints>
-              <modifiers>
-                <modifier type="decrement" value="1" field="58dd-96e2-3bba-f83a">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="5452-c4a7-59fb-f05c" childId="5a90-5bed-c637-7f9e" shared="true" roundUp="false" includeChildForces="true" includeChildSelections="true"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
               <infoLinks>
                 <infoLink name="Storm Guardian" id="c078-c242-ecc9-2f84" hidden="false" type="profile" targetId="ba06-c174-6710-248e"/>
               </infoLinks>
               <entryLinks>
                 <entryLink import="true" name="Close Combat Weapon" hidden="false" id="cd43-827f-ebdb-daa8" type="selectionEntry" targetId="6f5b-87a7-49f0-9721"/>
+                <entryLink import="true" name="Flamer" hidden="false" id="cf0f-e0e9-4e76-d35e" type="selectionEntry" targetId="8269-a594-848c-36a9"/>
               </entryLinks>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Storm Guardian with Guardian Fusion Gun" hidden="false" id="8731-752d-3de9-6eb">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Fusion Gun" hidden="false" id="a36e-bee3-417a-6fb4" collective="true">
-                  <profiles>
-                    <profile name="Fusion Gun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="6ff1-3647-9b24-5187">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault, Melta 2</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a02f-3c47-130c-536f"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="37a2-ea5f-a50-bb8e"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Assault" hidden="false" type="rule" id="8562-e37a-3d94-755f" targetId="fc8a-8c24-bae9-cc1c"/>
-                    <infoLink name="Melta" hidden="false" type="rule" id="46ff-3a8d-2ca1-394f" targetId="7cdb-fb99-44a9-8849"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
+            <selectionEntry type="model" import="true" name="Storm Guardian with Fusion Gun" hidden="false" id="8731-752d-3de9-6eb">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="58dd-96e2-3bba-f83a"/>
               </constraints>
-              <modifiers>
-                <modifier type="decrement" value="1" field="58dd-96e2-3bba-f83a">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="5452-c4a7-59fb-f05c" childId="0d79-6426-d369-775e" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
               <infoLinks>
                 <infoLink name="Storm Guardian" id="e71c-161f-7c0e-5397" hidden="false" type="profile" targetId="ba06-c174-6710-248e"/>
               </infoLinks>
               <entryLinks>
                 <entryLink import="true" name="Close Combat Weapon" hidden="false" id="56e9-5fa2-dee2-bb90" type="selectionEntry" targetId="6f5b-87a7-49f0-9721"/>
+                <entryLink import="true" name="Fusion Gun" hidden="false" id="a36f-0217-50f0-5744" type="selectionEntry" targetId="05aa-a5ee-9c87-d323"/>
               </entryLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Storm Guardian with Power Sword" hidden="false" id="2f40-98b5-666c-3eef">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Power sword" hidden="false" id="0c83-9500-1b70-46d6" collective="true">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c3e-a19f-6aad-e929" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e3be-23ba-eea8-6d81" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Power sword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="b1f6-07bf-b55e-7573">
-                      <characteristics>
-                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                        <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
-                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
-                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="58dd-96e2-3bba-f83a"/>
               </constraints>
-              <modifiers>
-                <modifier type="decrement" value="1" field="58dd-96e2-3bba-f83a">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="5452-c4a7-59fb-f05c" childId="0d79-6426-d369-775e" shared="true" roundUp="false" includeChildForces="true" includeChildSelections="true"/>
-                  </repeats>
-                </modifier>
-                <modifier type="decrement" value="1" field="58dd-96e2-3bba-f83a">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="5452-c4a7-59fb-f05c" childId="5a90-5bed-c637-7f9e" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
               <infoLinks>
                 <infoLink name="Storm Guardian" id="089e-b779-0385-7d4e" hidden="false" type="profile" targetId="ba06-c174-6710-248e"/>
               </infoLinks>
               <entryLinks>
                 <entryLink import="true" name="Shuriken Pistol" hidden="false" id="3781-1a24-eff9-8af1" type="selectionEntry" targetId="6783-a483-98bc-4f87"/>
+                <entryLink import="true" name="Power sword" hidden="false" id="bd14-7da1-a80f-140b" type="selectionEntry" targetId="0e77-2630-6f58-75ce"/>
               </entryLinks>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Storm Guardian with Aeldari Flamer &amp; Power Sword" hidden="false" id="5a90-5bed-c637-7f9e">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Power sword" hidden="false" id="0e77-2630-6f58-75ce" collective="true">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a695-ef1f-617a-8751" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="85bc-5483-4ace-fe17" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Power sword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="eacd-1888-b8c7-ee56">
-                      <characteristics>
-                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                        <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
-                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
-                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Flamer" hidden="false" id="8017-db55-2a20-2fc2" collective="true">
-                  <profiles>
-                    <profile name="Flamer" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="75fa-2373-9319-c4c2">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
-                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault, Ignores Cover, Torrent</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="026d-5acf-4a0b-05cc"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1472-9861-1c17-3db0"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Assault" id="fdb8-cd0e-3948-3afe" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
-                    <infoLink name="Ignores Cover" id="6564-37bf-6d96-58d1" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
-                    <infoLink name="Torrent" id="e33e-363e-15a2-af2d" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
+            <selectionEntry type="model" import="true" name="Storm Guardian with Flamer &amp; Power Sword" hidden="false" id="5a90-5bed-c637-7f9e">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d906-e42d-18a5-7e25"/>
               </constraints>
-              <modifiers>
-                <modifier type="decrement" value="1" field="d906-e42d-18a5-7e25">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="5452-c4a7-59fb-f05c" childId="cef3-fc6a-ea66-c6fe" shared="true" roundUp="false" includeChildForces="true" includeChildSelections="true"/>
-                  </repeats>
-                </modifier>
-                <modifier type="decrement" value="1" field="d906-e42d-18a5-7e25">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="5452-c4a7-59fb-f05c" childId="2f40-98b5-666c-3eef" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
-                    <repeat value="1" repeats="1" field="selections" scope="5452-c4a7-59fb-f05c" childId="0d79-6426-d369-775e" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
               <infoLinks>
                 <infoLink name="Storm Guardian" id="cd0a-96e0-1342-92c4" hidden="false" type="profile" targetId="ba06-c174-6710-248e"/>
               </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Flamer" hidden="false" id="7bd6-ada8-1e1d-048f" type="selectionEntry" targetId="8269-a594-848c-36a9"/>
+                <entryLink import="true" name="Power sword" hidden="false" id="5bee-83e2-ca92-18ed" type="selectionEntry" targetId="0e77-2630-6f58-75ce"/>
+              </entryLinks>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Storm Guardian with Guardian Fusion Gun &amp; Power Sword" hidden="false" id="0d79-6426-d369-775e">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Power sword" hidden="false" id="e305-4541-19ec-d453" collective="true">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9840-dc0f-d413-96ff" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2475-b262-147a-85e9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Power sword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="e8a3-3679-a3a4-2c64">
-                      <characteristics>
-                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                        <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
-                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
-                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
-                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
-                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Fusion Gun" hidden="false" id="05aa-a5ee-9c87-d323" collective="true">
-                  <profiles>
-                    <profile name="Fusion Gun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="dd1c-f7db-6985-f4c9">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault, Melta 2</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="54fa-9ccf-8d9e-e6ee"/>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e14d-641d-8a73-c86e"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink name="Assault" id="6a45-5dde-369b-195a" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
-                    <infoLink name="Melta" id="6fcf-ab92-0cf3-bc72" hidden="false" type="rule" targetId="7cdb-fb99-44a9-8849"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
+            <selectionEntry type="model" import="true" name="Storm Guardian with Fusion Gun &amp; Power Sword" hidden="false" id="0d79-6426-d369-775e">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7fa2-0b0b-b5f8-e36e"/>
               </constraints>
-              <modifiers>
-                <modifier type="decrement" value="1" field="7fa2-0b0b-b5f8-e36e">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="5452-c4a7-59fb-f05c" childId="2f40-98b5-666c-3eef" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
-                    <repeat value="1" repeats="1" field="selections" scope="5452-c4a7-59fb-f05c" childId="5a90-5bed-c637-7f9e" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
-                  </repeats>
-                </modifier>
-                <modifier type="decrement" value="1" field="7fa2-0b0b-b5f8-e36e">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="5452-c4a7-59fb-f05c" childId="8731-752d-3de9-6eb" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
               <infoLinks>
                 <infoLink name="Storm Guardian" id="79fd-f191-5a31-7ab2" hidden="false" type="profile" targetId="ba06-c174-6710-248e"/>
               </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Power sword" hidden="false" id="03d6-5f76-652f-297c" type="selectionEntry" targetId="0e77-2630-6f58-75ce"/>
+                <entryLink import="true" name="Fusion Gun" hidden="false" id="421d-b96d-fb0d-f7e6" type="selectionEntry" targetId="05aa-a5ee-9c87-d323"/>
+              </entryLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -8032,6 +7901,7 @@ Attacks characteristic of this model’s Solitaire weapons.</characteristic>
         <categoryLink id="5a87-7bae-e952-4675" name="Faction: Asuryani" hidden="false" targetId="4378-1827-4988-be4e" primary="false"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="4c8e-3a9e-98a7-e97c" primary="false" name="Aeldari"/>
         <categoryLink targetId="4d82-2943-8868-2782" id="7bb7-ea99-7df1-90ab" primary="false" name="Aspect Warrior"/>
+        <categoryLink targetId="9032-f917-9bc5-fd47" id="c99f-2dd5-a433-ef2b" primary="false" name="Ynnari"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
@@ -8285,6 +8155,7 @@ Attacks characteristic of this model’s Solitaire weapons.</characteristic>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="287f-7fa1-d66d-d4e1" primary="true" name="Infantry"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="da20-0e79-decd-0c4d" primary="false" name="Aeldari"/>
         <categoryLink targetId="81a2-e730-fd4b-026c" id="d6e4-19b0-7f5a-a64b" primary="false" name="D-Cannon Platform"/>
+        <categoryLink targetId="9032-f917-9bc5-fd47" id="aa91-01f7-07a9-331d" primary="false" name="Ynnari"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="125"/>
@@ -8390,6 +8261,7 @@ Attacks characteristic of this model’s Solitaire weapons.</characteristic>
         <categoryLink targetId="e035-51fc-813a-1313" id="482b-068a-2cc5-a335" primary="false" name="Aeldari"/>
         <categoryLink targetId="dda2-bb0a-215e-ad9c" id="6b03-3fdb-ce1b-58d7" primary="false" name="Jump Pack"/>
         <categoryLink targetId="4d82-2943-8868-2782" id="c366-1646-3897-9581" primary="false" name="Aspect Warrior"/>
+        <categoryLink targetId="9032-f917-9bc5-fd47" id="298a-5594-a334-df35" primary="false" name="Ynnari"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
@@ -8887,7 +8759,7 @@ You can attach this unit to one of the above units, even if Yvraine has already 
                 <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6+3</characteristic>
                 <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
                 <characteristic name="S" typeId="2229-f494-25db-c5d3">7</characteristic>
-                <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
                 <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3</characteristic>
                 <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Psychic, Torrent</characteristic>
               </characteristics>
@@ -8968,6 +8840,7 @@ You can attach this unit to one of the above units, even if Yvraine has already 
         <categoryLink targetId="83bb-5ddb-b1d9-39b8" id="bfbf-cbf4-5bf8-fabe" primary="false" name="Harlequin Allies"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="55cd-f415-419a-7df4" primary="false" name="Aeldari"/>
         <categoryLink targetId="a5a2-d0c0-0349-d226" id="2524-503f-2749-ddb4" primary="false" name="Faction: Harlequins"/>
+        <categoryLink targetId="e554-d095-bb9d-c930" id="29f6-a837-9480-85b6" primary="false" name="Corsairs and Travelling Players"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
@@ -9462,6 +9335,7 @@ You can attach this unit to one of the above units, even if Yvraine has already 
         <categoryLink targetId="83bb-5ddb-b1d9-39b8" id="1ce1-3092-3da7-e426" primary="false" name="Harlequin Allies"/>
         <categoryLink targetId="a5a2-d0c0-0349-d226" id="1e4f-270f-7955-c676" primary="false" name="Faction: Harlequins"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="d30b-eea7-4399-c81a" primary="false" name="Aeldari"/>
+        <categoryLink targetId="e554-d095-bb9d-c930" id="f5dd-4490-0968-8a97" primary="false" name="Corsairs and Travelling Players"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
@@ -9702,6 +9576,7 @@ You can attach this unit to one of the above units, even if Yvraine has already 
         <categoryLink targetId="83bb-5ddb-b1d9-39b8" id="f812-eaea-de0e-4c1b" primary="false" name="Harlequin Allies"/>
         <categoryLink targetId="a5a2-d0c0-0349-d226" id="97fc-8173-aa89-0694" primary="false" name="Faction: Harlequins"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="cc5f-e660-e156-ecd5" primary="false" name="Aeldari"/>
+        <categoryLink targetId="e554-d095-bb9d-c930" id="edcb-d871-8c8e-089c" primary="false" name="Corsairs and Travelling Players"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="125"/>
@@ -9848,6 +9723,7 @@ You can attach this unit to one of the above units, even if Yvraine has already 
         <categoryLink id="7fbf-5841-4322-5f1b" name="Faction: Asuryani" hidden="false" targetId="4378-1827-4988-be4e" primary="false"/>
         <categoryLink targetId="a67a-77cf-f6e3-390a" id="51e-7de-be23-996d" primary="false" name="Warlock"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="c365-b498-4b9c-6d8a" primary="false" name="Aeldari"/>
+        <categoryLink targetId="9032-f917-9bc5-fd47" id="610e-5ac1-f9fd-d5c2" primary="false" name="Ynnari"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="45"/>
@@ -10026,6 +9902,7 @@ You can attach this model to a unit, even  if one ^^Autarch^^ or ^^Farseer^^ m
         <categoryLink id="dc4a-2a8d-f83d-f1da" name="Faction: Asuryani" hidden="false" targetId="4378-1827-4988-be4e" primary="false"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="5a97-780b-2d4b-c207" primary="false" name="Aeldari"/>
         <categoryLink targetId="a67a-77cf-f6e3-390a" id="02cb-92d5-606d-be04" primary="false" name="Warlock"/>
+        <categoryLink targetId="9032-f917-9bc5-fd47" id="c6b1-ac78-1e89-4b93" primary="false" name="Ynnari"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="55"/>
@@ -10206,6 +10083,7 @@ You can attach this model to a unit, even  if one ^^Autarch^^ or ^^Farseer^^ m
         <categoryLink targetId="dda2-bb0a-215e-ad9c" id="669a-8972-67fc-152e" primary="false" name="Jump Pack"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="fd6c-5bb2-dcee-a050" primary="false" name="Aeldari"/>
         <categoryLink targetId="4d82-2943-8868-2782" id="8866-1352-815e-cfd5" primary="false" name="Aspect Warrior"/>
+        <categoryLink targetId="9032-f917-9bc5-fd47" id="49ed-0103-f049-d1c5" primary="false" name="Ynnari"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="95"/>
@@ -10441,6 +10319,7 @@ You can attach this model to a unit, even  if one ^^Autarch^^ or ^^Farseer^^ m
         <categoryLink id="18ad-831-24e-8d54" name="Transport" hidden="false" targetId="75e8-57c4-40e3-1817" primary="false"/>
         <categoryLink id="b373-852d-da68-8a38" name="Faction: Asuryani" hidden="false" targetId="4378-1827-4988-be4e" primary="false"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="60e7-cf8a-df52-0751" primary="false" name="Aeldari"/>
+        <categoryLink targetId="9032-f917-9bc5-fd47" id="50a2-0635-3b31-8bc2" primary="false" name="Ynnari"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="115"/>
@@ -10700,14 +10579,19 @@ You can attach this model to a unit, even  if one ^^Autarch^^ or ^^Farseer^^ m
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="2f21-23a3-48e0-5788" name="Webway Gate" hidden="true" collective="false" import="true" type="model">
+    <selectionEntry id="2f21-23a3-48e0-5788" name="Webway Gate [Legends]" hidden="false" collective="false" import="true" type="model">
       <categoryLinks>
         <categoryLink id="1b7d-fe95-cfb2-4342" name="Webway Gate" hidden="false" targetId="2d93-4a0b-fcf3-eb5d" primary="false"/>
         <categoryLink id="7c6-4c8b-85bf-9e2a" name="Fortification" hidden="false" targetId="19d7-9c74-2140-5851" primary="true"/>
         <categoryLink id="83b6-2a7b-51e3-e4e6" name="Faction: Asuryani" hidden="false" targetId="4378-1827-4988-be4e" primary="false"/>
+        <categoryLink targetId="1d72-d9f7-b8e8-4b19" id="d9db-f6c7-ed53-d63a" primary="false" name="Faction: Aeldari Legend"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="220"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="105"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
       <profiles>
         <profile name="Webway Gate" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="d5dd-ac87-7af7-bbba">
@@ -10735,6 +10619,11 @@ You can attach this model to a unit, even  if one ^^Autarch^^ or ^^Farseer^^ m
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="forces" scope="roster" childId="1d6e-2579-8e7f-1ed4" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -10770,6 +10659,7 @@ You can attach this model to a unit, even  if one ^^Autarch^^ or ^^Farseer^^ m
         <categoryLink id="6aad-3dc4-82a7-19d4" name="Windriders" hidden="false" targetId="e32d-476-6618-3181" primary="false"/>
         <categoryLink id="9047-61eb-8f4d-cf65" name="Faction: Asuryani" hidden="false" targetId="4378-1827-4988-be4e" primary="false"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="7041-7131-1479-23f3" primary="false" name="Aeldari"/>
+        <categoryLink targetId="9032-f917-9bc5-fd47" id="b90d-32ed-de03-0efd" primary="false" name="Ynnari"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="aa4-6fbb-ce17-f0b9" name="Windriders" hidden="false" collective="false" import="true" defaultSelectionEntryId="1952-6f62-d108-a5c4">
@@ -10964,6 +10854,7 @@ You can attach this model to a unit, even  if one ^^Autarch^^ or ^^Farseer^^ m
         <categoryLink id="7d5f-51ff-2391-5e1" name="Walker" hidden="false" targetId="6dda-e157-334d-e93a" primary="false"/>
         <categoryLink id="3015-397-bf4a-716a" name="Faction: Asuryani" hidden="false" targetId="4378-1827-4988-be4e" primary="false"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="42be-2b11-586f-0c5a" primary="false" name="Aeldari"/>
+        <categoryLink targetId="9032-f917-9bc5-fd47" id="d300-e956-ce0a-b21a" primary="false" name="Ynnari"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="435"/>
@@ -11206,6 +11097,7 @@ It can also move through sections of terrain features that are more than 4&quot;
         <categoryLink id="a5ab-43d3-66f1-801e" name="Walker" hidden="false" targetId="6dda-e157-334d-e93a" primary="false"/>
         <categoryLink id="e2c4-743e-85e-5837" name="Faction: Asuryani" hidden="false" targetId="4378-1827-4988-be4e" primary="false"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="8758-8cca-f9db-cdd0" primary="false" name="Aeldari"/>
+        <categoryLink targetId="9032-f917-9bc5-fd47" id="bada-e1fc-f302-cf33" primary="false" name="Ynnari"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="140"/>
@@ -11525,6 +11417,7 @@ It can also move through sections of terrain features that are more than 4&quot;
         <categoryLink id="9290-1bab-cda0-9877" name="Wraithguard" hidden="false" targetId="6fba-69f6-a9d8-9754" primary="false"/>
         <categoryLink id="d787-9f9e-8024-1adc" name="Wraith Construct" hidden="false" targetId="c250-f6c5-ffc8-bcd5" primary="false"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="cf9d-e644-b9ef-87f5" primary="false" name="Aeldari"/>
+        <categoryLink targetId="9032-f917-9bc5-fd47" id="afc7-a356-5e26-e6f9" primary="false" name="Ynnari"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="5049-c34-3679-6ab9" name="Wraithguard" hidden="false" collective="false" import="true" type="model">
@@ -11862,6 +11755,7 @@ It can also move through sections of terrain features that are more than 4&quot;
         <categoryLink id="f8ff-c11f-f05c-f3e8" name="Wraith Construct" hidden="false" targetId="c250-f6c5-ffc8-bcd5" primary="false"/>
         <categoryLink id="8c56-b9d5-2ab2-17dc" name="Faction: Asuryani" hidden="false" targetId="4378-1827-4988-be4e" primary="false"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="8104-4851-22d5-ffa0" primary="false" name="Aeldari"/>
+        <categoryLink targetId="9032-f917-9bc5-fd47" id="8b60-dd47-8e2a-4d76" primary="false" name="Ynnari"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="170"/>
@@ -16322,6 +16216,17 @@ Before the battle, at the start of the Declare Battle Formations step, you can 
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
                   </characteristics>
                 </profile>
+                <profile name="Void Lance" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="5ff2-d39e-fb90-a243">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">14</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+2</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+                  </characteristics>
+                </profile>
               </profiles>
               <costs>
                 <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
@@ -16333,6 +16238,17 @@ Before the battle, at the start of the Declare Battle Formations step, you can 
               </constraints>
               <profiles>
                 <profile name="Dark Scythe" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="4368-e024-472b-47ac">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Dark Scythe" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="ea42-ef71-d17c-8e4a">
                   <characteristics>
                     <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
                     <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
@@ -16876,13 +16792,14 @@ improved to a 4+ against melee attacks.</characteristic>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Cobra" hidden="true" id="e2ad-60b4-9678-88aa">
+    <selectionEntry type="model" import="true" name="Cobra [Legends]" hidden="false" id="e2ad-60b4-9678-88aa">
       <categoryLinks>
         <categoryLink targetId="dbd4-63-af05-998" id="7daa-f2a7-c008-911" primary="true" name="Vehicle"/>
         <categoryLink targetId="5929-ad51-d006-e008" id="9686-ecf3-62fb-3175" primary="false" name="Titanic"/>
         <categoryLink targetId="c619-2086-bbcf-69c9" id="66b4-212-e0c4-b640" primary="false" name="Fly"/>
         <categoryLink targetId="4378-1827-4988-be4e" id="9156-4a69-69b1-21cc" primary="false" name="Faction: Asuryani"/>
         <categoryLink targetId="ee68-8c83-511d-c2a4" id="551d-5576-a838-fb50" primary="false" name="Cobra"/>
+        <categoryLink targetId="1d72-d9f7-b8e8-4b19" id="b999-adb2-cf5f-0aa2" primary="false" name="Faction: Aeldari Legend"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="415"/>
@@ -16982,12 +16899,17 @@ makes an attack, subtract 1 from the Hit roll</characteristic>
             <condition type="atLeast" value="1" field="forces" scope="roster" childId="1d6e-2579-8e7f-1ed4" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="05e0-60e6-7cc9-88ca" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Scorpion" hidden="true" id="1420-c80d-66fc-6a">
+    <selectionEntry type="model" import="true" name="Scorpion [Legends]" hidden="false" id="1420-c80d-66fc-6a">
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="410"/>
       </costs>
@@ -16997,6 +16919,7 @@ makes an attack, subtract 1 from the Hit roll</characteristic>
         <categoryLink targetId="dbd4-63-af05-998" id="684c-a7af-c010-105c" primary="true" name="Vehicle"/>
         <categoryLink targetId="c619-2086-bbcf-69c9" id="8d54-7660-27f7-a37b" primary="false" name="Fly"/>
         <categoryLink targetId="5929-ad51-d006-e008" id="6563-482b-37fe-a8bc" primary="false" name="Titanic"/>
+        <categoryLink targetId="1d72-d9f7-b8e8-4b19" id="6407-fed9-8d74-7737" primary="false" name="Faction: Aeldari Legend"/>
       </categoryLinks>
       <profiles>
         <profile id="9bbc-2cf8-56a6-4081" name="Damaged: 1-8 Wounds Remaining" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
@@ -17092,17 +17015,23 @@ makes an attack, subtract 1 from the Hit roll</characteristic>
             <condition type="atLeast" value="1" field="forces" scope="roster" childId="1d6e-2579-8e7f-1ed4" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="a2c9-1821-93ce-3900" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Hornet" hidden="true" id="1224-8735-46d-1919">
+    <selectionEntry type="model" import="true" name="Hornet [Legends]" hidden="false" id="1224-8735-46d-1919">
       <categoryLinks>
         <categoryLink targetId="dbd4-63-af05-998" id="9cf5-1067-79c7-fa2f" primary="true" name="Vehicle"/>
         <categoryLink targetId="c619-2086-bbcf-69c9" id="bc39-9057-f183-4b99" primary="false" name="Fly"/>
         <categoryLink targetId="4378-1827-4988-be4e" id="b661-d197-9dc4-96ec" primary="false" name="Faction: Asuryani"/>
         <categoryLink targetId="2a31-836c-d34e-dc16" id="b430-b5f8-ca82-c6a3" primary="false" name="Hornet"/>
+        <categoryLink targetId="1d72-d9f7-b8e8-4b19" id="ad95-ff52-5b98-7382" primary="false" name="Faction: Aeldari Legend"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="100"/>
@@ -17281,12 +17210,17 @@ makes an attack, subtract 1 from the Hit roll</characteristic>
             <condition type="atLeast" value="1" field="forces" scope="roster" childId="1d6e-2579-8e7f-1ed4" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="a2c9-1821-93ce-3900" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Irillyth" hidden="true" id="3e8d-c6f3-493c-4a35">
+    <selectionEntry type="model" import="true" name="Irillyth [Legends]" hidden="false" id="3e8d-c6f3-493c-4a35">
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="105"/>
       </costs>
@@ -17298,6 +17232,7 @@ makes an attack, subtract 1 from the Hit roll</characteristic>
         <categoryLink targetId="4378-1827-4988-be4e" id="cc58-d546-7df-361e" primary="false" name="Faction: Asuryani"/>
         <categoryLink targetId="ed15-de8a-9784-649c" id="8338-90e0-4eba-8e6b" primary="false" name="Irillyth"/>
         <categoryLink targetId="4e0f-4e9d-c47a-446" id="f4e9-f112-ab8b-d2a4" primary="false" name="Phoenix Lord"/>
+        <categoryLink targetId="1d72-d9f7-b8e8-4b19" id="9a6d-dab9-cc7f-244d" primary="false" name="Faction: Aeldari Legend"/>
       </categoryLinks>
       <profiles>
         <profile id="47ce-3299-1ca0-7fc" name="Invulnerable Save (Phoenix Lord)" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
@@ -17347,6 +17282,11 @@ makes an attack, subtract 1 from the Hit roll</characteristic>
             <condition type="atLeast" value="1" field="forces" scope="roster" childId="1d6e-2579-8e7f-1ed4" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Spear of Starlight" hidden="false" id="a6b4-e538-2dbf-36cc">
@@ -17384,7 +17324,7 @@ makes an attack, subtract 1 from the Hit roll</characteristic>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="aee1-5f0b-791b-8571" targetId="3f04-19ab-bfb0-6c67"/>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Lynx" hidden="true" id="e3c5-54ef-44a5-9366">
+    <selectionEntry type="model" import="true" name="Lynx [Legends]" hidden="false" id="e3c5-54ef-44a5-9366">
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="180"/>
       </costs>
@@ -17393,6 +17333,7 @@ makes an attack, subtract 1 from the Hit roll</characteristic>
         <categoryLink targetId="c619-2086-bbcf-69c9" id="8a9d-9b3e-a4be-b3df" primary="false" name="Fly"/>
         <categoryLink targetId="4378-1827-4988-be4e" id="acde-7a19-8121-db0f" primary="false" name="Faction: Asuryani"/>
         <categoryLink targetId="74fa-3695-a5b1-715b" id="5560-5112-10a5-93ec" primary="false" name="Lynx"/>
+        <categoryLink targetId="1d72-d9f7-b8e8-4b19" id="41ab-3691-88d8-e93e" primary="false" name="Faction: Aeldari Legend"/>
       </categoryLinks>
       <profiles>
         <profile id="e2f5-8b0e-bd0b-3ede" name="Invulnerable Save" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
@@ -17486,18 +17427,24 @@ makes an attack, subtract 1 from the Hit roll</characteristic>
             <condition type="atLeast" value="1" field="forces" scope="roster" childId="1d6e-2579-8e7f-1ed4" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="a2c9-1821-93ce-3900" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Nightwing" hidden="true" id="af2e-2bff-9813-a5a3">
+    <selectionEntry type="model" import="true" name="Nightwing [Legends]" hidden="false" id="af2e-2bff-9813-a5a3">
       <categoryLinks>
         <categoryLink targetId="dbd4-63-af05-998" id="6c95-5aab-c7eb-75bd" primary="true" name="Vehicle"/>
         <categoryLink targetId="c619-2086-bbcf-69c9" id="77f3-a776-36d4-71be" primary="false" name="Fly"/>
         <categoryLink targetId="63f1-e6e8-f6f6-a4f0" id="96bc-cac9-2ed1-c535" primary="false" name="Aircraft"/>
         <categoryLink targetId="4378-1827-4988-be4e" id="e190-2d6d-ace1-816e" primary="false" name="Faction: Asuryani"/>
         <categoryLink targetId="93e9-a14d-82a7-bcc8" id="2cd6-60dd-450d-336" primary="false" name="Nightwing"/>
+        <categoryLink targetId="1d72-d9f7-b8e8-4b19" id="28b4-3d4e-892a-8ed7" primary="false" name="Faction: Aeldari Legend"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="150"/>
@@ -17611,12 +17558,17 @@ makes an attack, subtract 1 from the Hit roll</characteristic>
             <condition type="atLeast" value="1" field="forces" scope="roster" childId="1d6e-2579-8e7f-1ed4" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="a2c9-1821-93ce-3900" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Skathach Wraithknight" hidden="true" id="5f15-8ad-1f3b-d6d1">
+    <selectionEntry type="model" import="true" name="Skathach Wraithknight [Legends]" hidden="false" id="5f15-8ad-1f3b-d6d1">
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="490"/>
       </costs>
@@ -17628,6 +17580,7 @@ makes an attack, subtract 1 from the Hit roll</characteristic>
         <categoryLink targetId="5929-ad51-d006-e008" id="6a27-78c7-e307-120b" primary="false" name="Titanic"/>
         <categoryLink targetId="6dda-e157-334d-e93a" id="254d-5541-7ab2-5dfe" primary="false" name="Walker"/>
         <categoryLink targetId="9693-cf84-fe69-37a9" id="e33e-2064-1f9e-a8d1" primary="true" name="Monster"/>
+        <categoryLink targetId="1d72-d9f7-b8e8-4b19" id="938b-06c7-ed79-0796" primary="false" name="Faction: Aeldari Legend"/>
       </categoryLinks>
       <profiles>
         <profile id="75c7-1306-c5e0-a913" name="Damaged: 1-6 Wounds Remaining" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
@@ -17867,6 +17820,11 @@ makes an attack, subtract 1 from the Hit roll</characteristic>
             <condition type="atLeast" value="1" field="forces" scope="roster" childId="1d6e-2579-8e7f-1ed4" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="a2c9-1821-93ce-3900" includeChildSelections="true"/>
@@ -17893,7 +17851,7 @@ makes an attack, subtract 1 from the Hit roll</characteristic>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Shadow Spectres" hidden="true" id="9c94-b663-fd31-6001">
+    <selectionEntry type="unit" import="true" name="Shadow Spectres [Legends]" hidden="false" id="9c94-b663-fd31-6001">
       <selectionEntryGroups>
         <selectionEntryGroup name="5-10 Shadow Spectres" hidden="false" id="bb45-1ce7-6905-aeb2" defaultSelectionEntryId="4583-2da0-623e-fd4a">
           <selectionEntries>
@@ -17996,6 +17954,11 @@ makes an attack, subtract 1 from the Hit roll</characteristic>
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="115"/>
@@ -18094,6 +18057,7 @@ makes an attack, subtract 1 from the Hit roll</characteristic>
         <categoryLink targetId="4378-1827-4988-be4e" id="6c21-acaf-796f-c2b4" primary="false" name="Faction: Asuryani"/>
         <categoryLink targetId="78dc-ec35-941b-4d0f" id="dff1-562-f9cf-5a38" primary="false" name="Shadow Spectres"/>
         <categoryLink targetId="dda2-bb0a-215e-ad9c" id="4453-85a0-ae7d-2b93" primary="false" name="Jump Pack"/>
+        <categoryLink targetId="1d72-d9f7-b8e8-4b19" id="ef0b-f193-73e5-cea8" primary="false" name="Faction: Aeldari Legend"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Deep Strike" hidden="false" type="rule" id="e3ad-c19d-3269-9f2c" targetId="7cb5-dd6b-dd87-ad3b"/>
@@ -18602,7 +18566,7 @@ makes an attack, subtract 1 from the Hit roll</characteristic>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="a2c9-1821-93ce-3900" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Warp Hunter" hidden="true" id="ef18-ff32-2be6-7372">
+    <selectionEntry type="model" import="true" name="Warp Hunter [Legends]" hidden="false" id="ef18-ff32-2be6-7372">
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="145"/>
       </costs>
@@ -18611,6 +18575,7 @@ makes an attack, subtract 1 from the Hit roll</characteristic>
         <categoryLink targetId="c619-2086-bbcf-69c9" id="c938-77cb-1b48-e98d" primary="false" name="Fly"/>
         <categoryLink targetId="4378-1827-4988-be4e" id="fbcc-886d-da9a-9ab5" primary="false" name="Faction: Asuryani"/>
         <categoryLink targetId="b5af-bcf2-fed9-a22e" id="b6b5-dcfa-e3ad-66ac" primary="false" name="Warp Hunter"/>
+        <categoryLink targetId="1d72-d9f7-b8e8-4b19" id="71dc-a483-632b-6de5" primary="false" name="Faction: Aeldari Legend"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Hull weapon" hidden="false" id="4a2b-be4d-ac05-bf67" defaultSelectionEntryId="f411-7b76-d850-b1c7">
@@ -18757,12 +18722,17 @@ makes an attack, subtract 1 from the Hit roll</characteristic>
             <condition type="atLeast" value="1" field="forces" scope="roster" childId="1d6e-2579-8e7f-1ed4" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="a2c9-1821-93ce-3900" includeChildSelections="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Wraithseer" hidden="true" id="b369-a813-75ac-2dc6">
+    <selectionEntry type="model" import="true" name="Wraithseer [Legends]" hidden="false" id="b369-a813-75ac-2dc6">
       <categoryLinks>
         <categoryLink targetId="6dda-e157-334d-e93a" id="acee-f11b-1291-bf91" primary="false" name="Walker"/>
         <categoryLink targetId="9693-cf84-fe69-37a9" id="febb-b455-a4fb-4084" primary="true" name="Monster"/>
@@ -18770,6 +18740,7 @@ makes an attack, subtract 1 from the Hit roll</characteristic>
         <categoryLink targetId="c250-f6c5-ffc8-bcd5" id="ebbf-29df-ca03-d22a" primary="false" name="Wraith Construct"/>
         <categoryLink targetId="ae8-dfee-ba09-44ea" id="fff-af47-14c1-85dc" primary="false" name="Wraithseer"/>
         <categoryLink targetId="13bf-2bee-3ae0-b414" id="831d-eb0c-5721-1869" primary="false" name="Psyker"/>
+        <categoryLink targetId="1d72-d9f7-b8e8-4b19" id="10f0-bf76-707d-fd2f" primary="false" name="Faction: Aeldari Legend"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="160"/>
@@ -19013,7 +18984,7 @@ makes an attack, subtract 1 from the Hit roll</characteristic>
         <entryLink import="true" name="Seer Council Enhancements" hidden="false" id="071a-c456-a65d-5a3b" type="selectionEntryGroup" targetId="9197-1498-317e-3df6"/>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Tantalus" hidden="false" id="dfe4-d4db-9d04-9e7a">
+    <selectionEntry type="model" import="true" name="Tantalus [Legends]" hidden="false" id="dfe4-d4db-9d04-9e7a">
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="230"/>
       </costs>
@@ -19023,6 +18994,7 @@ makes an attack, subtract 1 from the Hit roll</characteristic>
         <categoryLink targetId="c619-2086-bbcf-69c9" id="1cbc-c4a9-725d-ec28" primary="false" name="Fly"/>
         <categoryLink targetId="1015-db48-a2fa-c7da" id="58f-1ac2-cf57-512" primary="false" name="Faction: Drukhari"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="2da-7f09-1eb0-d7b5" primary="false" name="Aeldari"/>
+        <categoryLink targetId="1d72-d9f7-b8e8-4b19" id="a754-014d-6ca2-ab5e" primary="false" name="Faction: Aeldari Legend"/>
       </categoryLinks>
       <profiles>
         <profile name="Tantalus" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="96c6-b81b-3332-aab0">
@@ -19119,6 +19091,11 @@ makes an attack, subtract 1 from the Hit roll</characteristic>
             <condition type="atLeast" value="1" field="forces" scope="roster" childId="1d6e-2579-8e7f-1ed4" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="roster" childId="9ed-cbf4-bfe5-90bf" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="d1bc-7994-47a0-430b" includeChildSelections="true"/>
@@ -19152,6 +19129,7 @@ makes an attack, subtract 1 from the Hit roll</characteristic>
         <categoryLink targetId="9cfd-1c32-585f-7d5c" id="24ab-5d9e-59ed-dd0c" primary="false" name="Character"/>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="4b91-8d47-a446-8033" primary="false" name="Grenades"/>
         <categoryLink targetId="4378-1827-4988-be4e" id="195a-fdd7-7642-5f4f" primary="false" name="Faction: Asuryani"/>
+        <categoryLink targetId="1d72-d9f7-b8e8-4b19" id="25e7-171a-ac02-20c0" primary="false" name="Faction: Aeldari Legend"/>
       </categoryLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -19266,6 +19244,8 @@ makes an attack, subtract 1 from the Hit roll</characteristic>
         <categoryLink targetId="9cfd-1c32-585f-7d5c" id="aeb7-df5d-1cb7-e6cb" primary="true" name="Character"/>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="e566-d76e-e41e-f07d" primary="false" name="Infantry"/>
         <categoryLink targetId="13bf-2bee-3ae0-b414" id="4334-1dbd-4924-649c" primary="false" name="Psyker"/>
+        <categoryLink targetId="1d72-d9f7-b8e8-4b19" id="c64d-03f0-a79d-6a78" primary="false" name="Faction: Aeldari Legend"/>
+        <categoryLink targetId="4378-1827-4988-be4e" id="96d3-97b8-49d2-8ee2" primary="false" name="Faction: Asuryani"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Psytronome Shaper" hidden="false" id="76c7-fe48-c2b-c524">
@@ -19368,6 +19348,8 @@ makes an attack, subtract 1 from the Hit roll</characteristic>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="8e01-5b05-d6f7-c0a5" primary="false" name="Grenades"/>
         <categoryLink targetId="9cf8-50f3-f6f5-ea4c" id="d881-4cc4-7540-cfc4" primary="false" name="Anhrathe"/>
         <categoryLink targetId="5eed-c42b-80bf-d553" id="d5f9-a444-1ed1-cd72" primary="false" name="Corsair Cloud Dancer Band"/>
+        <categoryLink targetId="e554-d095-bb9d-c930" id="6c39-9ed8-16eb-211c" primary="false" name="Corsairs and Travelling Players"/>
+        <categoryLink targetId="1d72-d9f7-b8e8-4b19" id="1402-899b-959f-4be2" primary="false" name="Faction: Aeldari Legend"/>
       </categoryLinks>
       <modifierGroups>
         <modifierGroup>
@@ -19756,6 +19738,8 @@ makes an attack, subtract 1 from the Hit roll</characteristic>
         <categoryLink targetId="5a61-81ac-eb7c-a87e" id="5d1b-5db3-58d-888" primary="false" name="Grenades"/>
         <categoryLink targetId="9cf8-50f3-f6f5-ea4c" id="e64e-90c6-8239-609d" primary="false" name="Anhrathe"/>
         <categoryLink targetId="a50d-f450-3ab8-3289" id="15b7-dc29-6565-cc80" primary="false" name="Corsair Reaver Band"/>
+        <categoryLink targetId="e554-d095-bb9d-c930" id="0300-9a3b-cdd1-f179" primary="false" name="Corsairs and Travelling Players"/>
+        <categoryLink targetId="1d72-d9f7-b8e8-4b19" id="9a6c-e9bf-e5bf-13e4" primary="false" name="Faction: Aeldari Legend"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="125"/>
@@ -20520,6 +20504,8 @@ makes an attack, subtract 1 from the Hit roll</characteristic>
         <categoryLink targetId="c619-2086-bbcf-69c9" id="7f9-f493-15d2-ebe0" primary="false" name="Fly"/>
         <categoryLink targetId="dda2-bb0a-215e-ad9c" id="1484-9126-f892-d708" primary="false" name="Jump Pack"/>
         <categoryLink targetId="4de0-99b0-1887-1ed6" id="cb2c-ef3e-df99-b3ee" primary="false" name="Corsair Skyreaver Band"/>
+        <categoryLink targetId="e554-d095-bb9d-c930" id="37b7-238c-5330-e3b8" primary="false" name="Corsairs and Travelling Players"/>
+        <categoryLink targetId="1d72-d9f7-b8e8-4b19" id="9845-f183-c691-81df" primary="false" name="Faction: Aeldari Legend"/>
       </categoryLinks>
       <modifiers>
         <modifier type="set" field="51b2-306e-1021-d207" value="150">
@@ -21408,6 +21394,8 @@ makes an attack, subtract 1 from the Hit roll</characteristic>
         <categoryLink targetId="dbd4-63-af05-998" id="ba78-e932-df9c-4ef3" primary="true" name="Vehicle"/>
         <categoryLink targetId="c619-2086-bbcf-69c9" id="1559-7682-4192-d0b0" primary="false" name="Fly"/>
         <categoryLink targetId="f1ea-841f-4a5d-fe1e" id="6fe1-fe2f-198f-176e" primary="false" name="Firestorm"/>
+        <categoryLink targetId="1d72-d9f7-b8e8-4b19" id="1772-938f-97d1-4f1a" primary="false" name="Faction: Aeldari Legend"/>
+        <categoryLink targetId="4378-1827-4988-be4e" id="4ee2-bfc0-69e2-3aee" primary="false" name="Faction: Asuryani"/>
       </categoryLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -21559,6 +21547,8 @@ makes an attack, subtract 1 from the Hit roll</characteristic>
     <selectionEntry type="model" import="true" name="Phoenix [Legends]" hidden="false" id="6083-affa-5163-a94c">
       <categoryLinks>
         <categoryLink targetId="dbd4-63-af05-998" id="255f-13a9-cde8-1fa4" primary="true" name="Vehicle"/>
+        <categoryLink targetId="1d72-d9f7-b8e8-4b19" id="4ad8-1f08-56bf-c521" primary="false" name="Faction: Aeldari Legend"/>
+        <categoryLink targetId="4378-1827-4988-be4e" id="9790-91a1-c190-de7d" primary="false" name="Faction: Asuryani"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="175"/>
@@ -21701,6 +21691,8 @@ makes an attack, subtract 1 from the Hit roll</characteristic>
         <categoryLink targetId="63f1-e6e8-f6f6-a4f0" id="2824-20fa-c7ff-c33e" primary="false" name="Aircraft"/>
         <categoryLink targetId="5929-ad51-d006-e008" id="c757-34bc-474a-a9fb" primary="false" name="Titanic"/>
         <categoryLink targetId="7dd7-ce6-1911-234d" id="91c2-c62a-d445-c2ca" primary="false" name="Vampire Hunter"/>
+        <categoryLink targetId="1d72-d9f7-b8e8-4b19" id="32c5-b5ed-3208-345a" primary="false" name="Faction: Aeldari Legend"/>
+        <categoryLink targetId="4378-1827-4988-be4e" id="9b37-7306-20f4-455a" primary="false" name="Faction: Asuryani"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="460"/>
@@ -21845,6 +21837,8 @@ makes an attack, subtract 1 from the Hit roll</characteristic>
         <categoryLink targetId="5929-ad51-d006-e008" id="2fb7-70b-9448-2d19" primary="false" name="Titanic"/>
         <categoryLink targetId="75e8-57c4-40e3-1817" id="7ca2-bbdb-cae2-3760" primary="false" name="Transport"/>
         <categoryLink targetId="b4f8-31bd-ef34-5c1c" id="8689-6f91-52c0-e8b" primary="false" name="Vampire Raider"/>
+        <categoryLink targetId="1d72-d9f7-b8e8-4b19" id="c70c-88de-38f6-413f" primary="false" name="Faction: Aeldari Legend"/>
+        <categoryLink targetId="4378-1827-4988-be4e" id="f2d0-ee17-0caf-bb53" primary="false" name="Faction: Asuryani"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="430"/>
@@ -21980,6 +21974,7 @@ charge in a turn in which it Advanced</characteristic>
         <categoryLink targetId="6dda-e157-334d-e93a" id="f4a7-2305-6c13-d96a" primary="false" name="Walker"/>
         <categoryLink targetId="4378-1827-4988-be4e" id="d946-655e-7b56-4113" primary="false" name="Faction: Asuryani"/>
         <categoryLink targetId="10d-f0e-4106-524d" id="5b2d-58db-9c6f-d1d1" primary="false" name="Wasp Assault Walker"/>
+        <categoryLink targetId="1d72-d9f7-b8e8-4b19" id="b752-aac1-c99b-7796" primary="false" name="Faction: Aeldari Legend"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Heavy Weapons" hidden="false" type="selectionEntryGroup" id="813e-c434-ebe3-9157" targetId="c559-2f41-309b-620d">
@@ -22121,6 +22116,7 @@ charge in a turn in which it Advanced</characteristic>
         <categoryLink targetId="63f1-e6e8-f6f6-a4f0" id="1aa5-f359-cfc5-a937" primary="false" name="Aircraft"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="41c-43d5-f79-e4f" primary="false" name="Aeldari"/>
         <categoryLink targetId="a870-ecb8-e16-198" id="14d7-7367-3ed8-d0f5" primary="false" name="Raven Strike Fighter"/>
+        <categoryLink targetId="1d72-d9f7-b8e8-4b19" id="1eae-212a-8bf8-e80f" primary="false" name="Faction: Aeldari Legend"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="fca9-5548-511e-b57d" includeChildSelections="true"/>
@@ -22357,6 +22353,7 @@ charge in a turn in which it Advanced</characteristic>
         <categoryLink targetId="c619-2086-bbcf-69c9" id="ff55-cf8d-7a3d-417b" primary="false" name="Fly"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="9d42-b6ef-8375-6ad9" primary="false" name="Aeldari"/>
         <categoryLink targetId="5f7b-1c5d-5388-4f8d" id="b4a9-50b8-5ff1-532f" primary="false" name="Reaper"/>
+        <categoryLink targetId="1d72-d9f7-b8e8-4b19" id="ec67-e9d4-24a7-97b7" primary="false" name="Faction: Aeldari Legend"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="9e08-8b6d-e230-b6f" includeChildSelections="true"/>
@@ -22455,6 +22452,7 @@ charge in a turn in which it Advanced</characteristic>
         <categoryLink targetId="a67a-77cf-f6e3-390a" id="4c07-1419-062f-c839" primary="false" name="Warlock"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="bc53-d0e7-e97f-962d" primary="false" name="Aeldari"/>
         <categoryLink targetId="c619-2086-bbcf-69c9" id="ec74-0c77-703d-11bc" primary="false" name="Fly"/>
+        <categoryLink targetId="9032-f917-9bc5-fd47" id="707a-b318-4d3d-ed96" primary="false" name="Ynnari"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="45"/>
@@ -23138,7 +23136,7 @@ charge in a turn in which it Advanced</characteristic>
             </profile>
             <profile name="Crystalline Targeting" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6a7f-5c47-38f0-87">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this unit has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, each time a friendly Aeldari unit makes an attack that targets that enemy unit, improve the Armour Penetration characteristic of that attack by 1. Each unit can only be selected for that ability once per unit.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this unit has shot, select one enemy unit hit by one or more of those attacks. Until the end of the phase, each time a friendly ^^Aeldari^^ unit makes an attack that targets that enemy unit, improve the Armour Penetration characteristic of that attack by 1. Each unit can only be selected for that ability once per turn.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -23208,6 +23206,7 @@ charge in a turn in which it Advanced</characteristic>
         <categoryLink targetId="6dda-e157-334d-e93a" id="935a-12c6-7fee-83c9" primary="false" name="Walker"/>
         <categoryLink targetId="8093-f896-73a6-8bef" id="d6bc-f12a-f4a7-731b" primary="false" name="War Walkers"/>
         <categoryLink targetId="4378-1827-4988-be4e" id="a769-7c76-9c36-022b" primary="false" name="Faction: Asuryani"/>
+        <categoryLink targetId="9032-f917-9bc5-fd47" id="e3f3-42eb-061f-39c0" primary="false" name="Ynnari"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Close Combat Weapon" hidden="false" id="d945-f22d-d010-5525" collective="true">
@@ -23534,6 +23533,7 @@ charge in a turn in which it Advanced</characteristic>
         <categoryLink targetId="c619-2086-bbcf-69c9" id="3810-00cd-f033-b8a5" primary="false" name="Fly"/>
         <categoryLink targetId="9bf0-2fe2-5c6f-77c2" id="9222-8c83-6c40-8b5d" primary="false" name="Vypers"/>
         <categoryLink targetId="4378-1827-4988-be4e" id="dc1d-bc71-4f8f-5670" primary="false" name="Faction: Asuryani"/>
+        <categoryLink targetId="9032-f917-9bc5-fd47" id="aa99-bf26-dd9b-3c58" primary="false" name="Ynnari"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Shuriken Pistol" hidden="false" id="f550-9922-c96a-805f" collective="true">
@@ -23570,6 +23570,7 @@ charge in a turn in which it Advanced</characteristic>
         <categoryLink name="Faction: Asuryani" hidden="false" id="fbed-7222-8d37-7028" targetId="4378-1827-4988-be4e" primary="false"/>
         <categoryLink targetId="e035-51fc-813a-1313" id="acdf-565a-d551-5ee1" primary="false" name="Aeldari"/>
         <categoryLink targetId="02d0-507d-a879-bf14" id="223c-5a24-2daf-01ab" primary="false" name="Wraithknight with Ghostglaive"/>
+        <categoryLink targetId="9032-f917-9bc5-fd47" id="1029-ad0a-f680-8fe2" primary="false" name="Ynnari"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="420"/>
@@ -25601,6 +25602,79 @@ For every 5 models in this unit, it can have 1 Aspect Shrine token.</characteris
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Flamer" hidden="false" id="8269-a594-848c-36a9" collective="true">
+      <profiles>
+        <profile name="Flamer" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="9dcc-347-c99f-3db6">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault, Ignores Cover, Torrent</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="187e-4cde-e6b8-75c7"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="382e-68d6-ec59-cb86"/>
+        <constraint type="max" value="2" field="selections" scope="5452-c4a7-59fb-f05c" shared="true" id="e6e8-8476-4b7c-0696" includeChildSelections="true"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Assault" id="e794-a987-88d0-e30d" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
+        <infoLink name="Ignores Cover" id="de27-a85a-7dca-4966" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
+        <infoLink name="Torrent" id="d680-1901-4a91-5b78" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Power sword" hidden="false" id="0e77-2630-6f58-75ce" collective="true">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a695-ef1f-617a-8751" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="85bc-5483-4ace-fe17" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="2" field="selections" scope="5452-c4a7-59fb-f05c" shared="true" id="7274-7678-92c0-4e73" includeChildSelections="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Power sword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="eacd-1888-b8c7-ee56">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+      </costs>
+      <comment>Storm Guardians</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Fusion Gun" hidden="false" id="05aa-a5ee-9c87-d323" collective="true">
+      <profiles>
+        <profile name="Fusion Gun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="dd1c-f7db-6985-f4c9">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">8</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault, Melta 2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="54fa-9ccf-8d9e-e6ee"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e14d-641d-8a73-c86e"/>
+        <constraint type="max" value="2" field="selections" scope="5452-c4a7-59fb-f05c" shared="true" id="ac4a-360a-2631-1c37" includeChildSelections="true"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Assault" id="6a45-5dde-369b-195a" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
+        <infoLink name="Melta" id="6fcf-ab92-0cf3-bc72" hidden="false" type="rule" targetId="7cdb-fb99-44a9-8849"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="e26f-c156-51e9-9608" name="Warhost Enhancements" hidden="false" collective="false" import="true">
@@ -25627,7 +25701,7 @@ For every 5 models in this unit, it can have 1 Aspect Shrine token.</characteris
           <profiles>
             <profile name="Psychic Destroyer" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3f73-8bbc-22e7-6075">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Asuryani Psyker model only. Add 1 to the Damage characteristic of ranged Psychic weapons equipped by the bearer.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">^^Asuryani^^ ^^Psyker^^ model only. Add 1 to the Damage characteristic of ranged Psychic weapons equipped by the bearer.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -25637,7 +25711,7 @@ For every 5 models in this unit, it can have 1 Aspect Shrine token.</characteris
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditionGroups>
-                <conditionGroup type="and">
+                <conditionGroup type="or">
                   <conditions>
                     <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="4378-1827-4988-be4e" shared="true"/>
                     <condition type="notInstanceOf" value="1" field="selections" scope="parent" childId="13bf-2bee-3ae0-b414" shared="true"/>
@@ -25658,7 +25732,7 @@ For every 5 models in this unit, it can have 1 Aspect Shrine token.</characteris
           <profiles>
             <profile name="Phoenix Gem" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="bcf5-ae36-1885-a978">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Asuryani model only. The first time the bearer is destroyed, remove it from play, then, at the end of the phase, roll one D6: on a 2+, set the bearer back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of one of more enemy units, with its full wounds remaining.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">^^Asuryani^^ model only. The first time the bearer is destroyed, remove it from play, then, at the end of the phase, roll one D6: on a 2+, set the bearer back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of one of more enemy units, with its full wounds remaining.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -25684,7 +25758,7 @@ For every 5 models in this unit, it can have 1 Aspect Shrine token.</characteris
           <profiles>
             <profile name="Gift of Foresight" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5401-a04-29e8-1b72">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Asuryani model only. Once per battle round, you can target the bearer&apos;s unit with the Command Re-roll Stratagem for 0CP.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">^^Asuryani^^ model only. Once per battle round, you can target the bearer&apos;s unit with the Command Re-roll Stratagem for 0CP.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -25706,7 +25780,7 @@ For every 5 models in this unit, it can have 1 Aspect Shrine token.</characteris
           <profiles>
             <profile name="Timeless Strategist" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="be33-f12d-911a-8fc4">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Asuryani model only. At the start of the battle round, if the bearer is on the battlefield (or any Transport it is embarked within is on the battlefield), you receive 1 additional Battle Focus token.</characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">^^Asuryani^^ model only. At the start of the battle round, if the bearer is on the battlefield (or any Transport it is embarked within is on the battlefield), you receive 1 additional Battle Focus token.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -25959,6 +26033,9 @@ Designer’s Note: These are all cumulative, so if your army contains at least o
 Pain tokens.</description>
             </rule>
           </rules>
+          <infoLinks>
+            <infoLink name="Corsairs and Travelling Players" id="b335-1a1d-8fa9-18a1" hidden="false" type="rule" targetId="8344-0055-bb1f-4783"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Skysplinter Assault" hidden="false" id="7596-e2c8-71fb-1b4f">
           <rules>
@@ -25973,6 +26050,9 @@ Pain tokens.</description>
               </conditions>
             </modifier>
           </modifiers>
+          <infoLinks>
+            <infoLink name="Corsairs and Travelling Players" id="b2c2-a5c1-7a5c-6724" hidden="false" type="rule" targetId="8344-0055-bb1f-4783"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Reaper&apos;s Wager" hidden="false" id="e688-8140-bc36-3cee">
           <rules>
@@ -26173,6 +26253,14 @@ Each time you use one of the detachment Stratagems, if your Fate dice pool conta
           </rules>
         </selectionEntry>
       </selectionEntries>
+      <modifiers>
+        <modifier type="add" value="Faction: Aeldari Legendary Unit(s) selected. 
+This list is technically NOT legal RAW as the Legends units have the wrong Faction Keyword in the Legends Datasheets!!" field="warning">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="1d72-d9f7-b8e8-4b19" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup name="Skysplinter Assault Enhancements" hidden="false" id="9a90-50ad-4693-a585">
       <modifiers>
@@ -27344,6 +27432,13 @@ At the start of any phase, you can expend one or more Pain tokens from your Pai
     </rule>
     <rule name="Disparate Paths" id="10d8-3547-47ae-baab" hidden="false">
       <description>When mustering you army, you can include Harlequins units in your army, even though they do not have the Asuryani Faction keyword. Unless otherwise stated, you cannot select Harlequins or Ynnari as your Army Faction.</description>
+    </rule>
+    <rule name="Corsairs and Travelling Players" id="8344-0055-bb1f-4783" hidden="false">
+      <description>If your Army Faction is ^^Drukhari^^, you can include ^^Harlequins^^ and ^^Anhrathe^^ units in your army, even though they do not have the ^^Drukhari^^ Faction keyword. The combined points value of ^^Harlequins^^ and/or ^^Anhrathe^^ units you can include in your army depends on the battle size, as follows:
+■ Incursion: Up to 250 pts
+■ Strike Force: Up to 500 pts
+■ Onslaught: Up to 750 pts
+No ^^Harlequins^^ or ^^Anhrathe^^ models included in your army in this way can be your ^^Warlord^^, and they cannot be given Enhancements.</description>
     </rule>
   </sharedRules>
   <catalogueLinks>
