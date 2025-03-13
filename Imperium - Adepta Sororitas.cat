@@ -197,7 +197,7 @@
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="a322-26c3-3116-4a08"/>
       </constraints>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Detachment" hidden="false" id="ed1-baac-1f26-3ed7" defaultSelectionEntryId="8e26-78e2-10bd-6982">
+        <selectionEntryGroup name="Detachment" hidden="false" id="ed1-baac-1f26-3ed7" defaultSelectionEntryId="none">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9108-4f3b-bdd8-8f0b"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="48a2-629-cd21-4e9b"/>
@@ -221,6 +221,12 @@
             <selectionEntry type="upgrade" import="true" name="Army of Faith" hidden="false" id="6f81-1a3e-c84e-0954">
               <infoLinks>
                 <infoLink name="Sacred Rites" id="3bc0-d3dc-513f-c37e" hidden="false" type="rule" targetId="acd2-395b-e1b4-0918"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Champions of Faith" hidden="false" id="5c81-a47b-d3a0-31e8">
+              <infoLinks>
+                <infoLink name="Righteous Purpose" id="cae6-40c2-6082-49ce" hidden="false" type="rule" targetId="cb5e-57b9-c416-c2a5"/>
+                <infoLink name="Keywords" id="3cc8-eaa5-8cf5-cda4" hidden="false" type="rule" targetId="f84c-5011-816f-3fb6"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
@@ -296,6 +302,11 @@
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
         </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="828e-7f00-0d5d-7e9e">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 6+</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="45"/>
@@ -307,24 +318,17 @@
           </conditions>
         </modifier>
       </modifiers>
-      <infoGroups>
-        <infoGroup name="Invulnerable Save" id="4d27-e771-5ef9-87fb" hidden="false">
-          <profiles>
-            <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="828e-7f00-0d5d-7e9e">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 6+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </infoGroup>
-      </infoGroups>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="4404-b91a-9b5b-4f79" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Battle Sisters Squad" hidden="false" id="f26d-450d-1c55-caeb" publicationId="7d85-6d0f-57e0-5dea">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="115"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="105"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Sister Superior" hidden="false" id="245c-b19e-87f9-8ccc">
@@ -520,21 +524,15 @@
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the end of your Command phase, if this unit is within range of an objective marker you control, that objective markers remains under your control, even if you have no models within range of it, until you opponent controls it at the star or end of any turn.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7048-aade-fcf3-9011">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 6+</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Cherub" hidden="false" type="profile" id="cdd-6d70-bb7e-b542" targetId="7351-977f-72f0-68b6"/>
       </infoLinks>
-      <infoGroups>
-        <infoGroup name="Invulnerable Save" hidden="false" id="be76-2bf8-6c6f-fd6">
-          <profiles>
-            <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7048-aade-fcf3-9011">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 6+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </infoGroup>
-      </infoGroups>
       <constraints>
         <constraint type="max" value="6" field="selections" scope="force" shared="true" id="2cf1-71b1-51d8-ea28" includeChildSelections="false"/>
       </constraints>
@@ -750,6 +748,7 @@
     <selectionEntry id="c338-14f9-4ee-f223" name="Canoness" hidden="false" collective="false" import="true" type="model" publicationId="7d85-6d0f-57e0-5dea">
       <infoLinks>
         <infoLink name="Acts of Faith" hidden="false" type="rule" id="21ed-31a3-958c-23f4" targetId="7ef7-dca6-e2ea-ecc8"/>
+        <infoLink name="Sacred Command" id="664e-dc7d-430c-b8e7" hidden="false" type="profile" targetId="e8c6-0df9-48c0-7c29"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="9cfd-1c32-585f-7d5c" id="d95b-d363-56d2-116f" primary="true" name="Character"/>
@@ -1022,9 +1021,9 @@
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, at the start of any phase, this model can use this ability. If it does, until the end of the phase, this model has a 2+ invulnerable save.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Sacred Command" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c991-24b6-da5f-9755">
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e754-bda4-580f-5e56">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle round, one unit from your army with this ability can be targeted with a Strategem for 0CP, even if another unit from your army has already been targeted with that Strategem this phase.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 4+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1046,22 +1045,9 @@
             </profile>
           </profiles>
         </infoGroup>
-        <infoGroup name="Invulnerable Save" hidden="false" id="fd94-2279-3a6a-7303">
-          <profiles>
-            <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e754-bda4-580f-5e56">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 4+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </infoGroup>
       </infoGroups>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
-        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="4726-99a0-3226-1849" targetId="66c6-be4b-a1dc-10d0"/>
@@ -1120,7 +1106,11 @@
         <categoryLink targetId="fd71-afa6-b13b-7fda" id="de27-2ae2-77af-82c6" primary="false" name="Faction: Adepta Sororitas"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="150"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="170"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
       <profiles>
         <profile name="Castigator" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="3abd-1c95-28d7-b660">
@@ -1143,10 +1133,19 @@
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model has 1-4 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="25ab-15d5-7fa0-e25d">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 6+</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Acts of Faith" hidden="false" type="rule" id="c914-bb09-336f-4ac3" targetId="7ef7-dca6-e2ea-ecc8"/>
-        <infoLink name="Deadly Demise" hidden="false" type="rule" id="f4ea-3eba-2ab7-8830" targetId="b68a-5ded-65ac-98c"/>
+        <infoLink name="Deadly Demise" hidden="false" type="rule" id="f4ea-3eba-2ab7-8830" targetId="b68a-5ded-65ac-98c">
+          <modifiers>
+            <modifier type="append" value="D3" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Main gun" hidden="false" id="c132-47cf-763b-65be" defaultSelectionEntryId="1111-1170-a699-900f">
@@ -1237,17 +1236,6 @@
           </profiles>
         </selectionEntry>
       </selectionEntries>
-      <infoGroups>
-        <infoGroup name="Invulnerable Save" hidden="false" id="bcb4-3c3a-32bf-fdab">
-          <profiles>
-            <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="25ab-15d5-7fa0-e25d">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 6+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </infoGroup>
-      </infoGroups>
       <entryLinks>
         <entryLink import="true" name="Armoured tracks" hidden="false" type="selectionEntry" id="b548-d81f-aea6-26f8" targetId="c16b-804f-46cb-2256"/>
       </entryLinks>
@@ -1324,6 +1312,11 @@
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While and Adepta Sororitas Character is leading this unit, each time an attack targets this unit, subtract 1 from the Wound roll.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="289a-1246-3dd7-677c">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have an Invulnerable save of 4+.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Acts of Faith" hidden="false" type="rule" id="e172-38d0-ddc3-640f" targetId="7ef7-dca6-e2ea-ecc8"/>
@@ -1397,17 +1390,6 @@
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
         <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
-      <infoGroups>
-        <infoGroup name="Invulnerable Save" hidden="false" id="b3e3-9f17-b5d-f653">
-          <profiles>
-            <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="289a-1246-3dd7-677c">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have an Invulnerable save of 4+.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </infoGroup>
-      </infoGroups>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="b9af-92b4-a125-1446" includeChildSelections="false"/>
       </constraints>
@@ -1543,6 +1525,11 @@
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">You can target this unit with the Heroic Intervention Stratagem for 0CP, and can do so even if you have already targeted a different unit with that Stratagem this phase.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ee8f-866e-34f2-5704">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this units have an Invulnerable save of 4+</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Acts of Faith" hidden="false" type="rule" id="6915-8b4b-63f4-868e" targetId="7ef7-dca6-e2ea-ecc8"/>
@@ -1550,17 +1537,6 @@
         <infoLink name="Lone Operative" hidden="false" type="rule" id="cef-9ca5-1448-acae" targetId="a8a0-8fe7-898-e0f3"/>
         <infoLink name="Deep Strike" hidden="false" type="rule" id="4ace-561d-850c-30f4" targetId="7cb5-dd6b-dd87-ad3b"/>
       </infoLinks>
-      <infoGroups>
-        <infoGroup name="Invulnerable Save" hidden="false" id="45b7-3208-f45f-6f06">
-          <profiles>
-            <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ee8f-866e-34f2-5704">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this units have an Invulnerable save of 4+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </infoGroup>
-      </infoGroups>
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="89e4-78fe-17e6-d87f" targetId="66c6-be4b-a1dc-10d0"/>
       </entryLinks>
@@ -1570,7 +1546,11 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Dialogus" hidden="false" id="91b8-3ccb-de30-6e54" publicationId="7d85-6d0f-57e0-5dea">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="225c-a6d-f0c8-fb05" primary="false" name="Infantry"/>
@@ -1580,15 +1560,6 @@
         <categoryLink targetId="fd71-afa6-b13b-7fda" id="94c9-67b3-3f49-2079" primary="false" name="Faction: Adepta Sororitas"/>
       </categoryLinks>
       <infoGroups>
-        <infoGroup name="Invulnerable Save" hidden="false" id="551b-b3cb-9406-f646">
-          <profiles>
-            <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2c6b-cb4a-e7f9-3b6f">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 4+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </infoGroup>
         <infoGroup name="Leader" hidden="false" id="1849-c821-9ae2-c301">
           <infoLinks>
             <infoLink name="Leader" hidden="false" type="rule" id="e317-dc65-374a-1473" targetId="b4dd-3e1f-41cb-218f"/>
@@ -1637,6 +1608,11 @@ This model can be attached to a Battle Sisters Squad, even if one Canoness, Pala
         <profile name="Stirring Rhetoric" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c7dc-3ddb-ce59-3c1e">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, each time that unit performs an Act of Faith, the value of one of the Miracle dice used in that Act of Faith is first changed to a 6.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2c6b-cb4a-e7f9-3b6f">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 4+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1711,6 +1687,11 @@ This model can be attached to a Battle Sisters Squad, even if one Canoness, Pala
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, add 1 to the Objective Control characteristic of models in that unit.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="bd21-f700-849a-3d58">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 6+</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoGroups>
         <infoGroup name="Leader" hidden="false" id="e1b2-36f2-5119-9094">
@@ -1726,15 +1707,6 @@ This model can be attached to a Battle Sisters Squad, even if one Canoness, Pala
 ■ Dominion Squad
 ■ Retributor Squad
 This model can be attached to a Battle Sisters Squad, even if one Canoness, Palatine, Junith Eruita, or Aestred Thurga unit has already been attached to it. If you do, and that Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </infoGroup>
-        <infoGroup name="Invulnerable Save" hidden="false" id="484c-ee67-79c3-93b5">
-          <profiles>
-            <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="bd21-f700-849a-3d58">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 6+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1771,6 +1743,10 @@ This model can be attached to a Battle Sisters Squad, even if one Canoness, Pala
     <selectionEntry type="unit" import="true" name="Dominion Squad" hidden="false" id="d929-b22d-3040-9707" publicationId="7d85-6d0f-57e0-5dea">
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="115"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="910b-1a80-6e65-4326" primary="true" name="Infantry"/>
@@ -1788,17 +1764,6 @@ This model can be attached to a Battle Sisters Squad, even if one Canoness, Pala
           </modifiers>
         </infoLink>
       </infoLinks>
-      <infoGroups>
-        <infoGroup name="Invulnerable Save" hidden="false" id="96b0-106-61d-4d05">
-          <profiles>
-            <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7042-ea47-441c-57ca">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have an Invulnerable save of 6+.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </infoGroup>
-      </infoGroups>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Dominion Superior" hidden="false" id="61d7-81c-9448-4018">
           <constraints>
@@ -2008,6 +1973,11 @@ This model can be attached to a Battle Sisters Squad, even if one Canoness, Pala
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per turn, when an enemy unit ends a Normal, Advance, or Fall Back move within 9&quot; of this unit, if this unit is not within Engagement Range of one or more enemy units, it can make a Normal move of up to D6&quot;.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7042-ea47-441c-57ca">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have an Invulnerable save of 6+.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="5895-56eb-e0e2-4508" includeChildSelections="false"/>
@@ -2015,7 +1985,11 @@ This model can be attached to a Battle Sisters Squad, even if one Canoness, Pala
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Exorcist" hidden="false" id="684e-4dd3-340a-23ee" publicationId="7d85-6d0f-57e0-5dea">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="190"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="210"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="dbd4-63-af05-998" id="462d-50e8-52c0-69a2" primary="true" name="Vehicle"/>
@@ -2026,30 +2000,12 @@ This model can be attached to a Battle Sisters Squad, even if one Canoness, Pala
       </categoryLinks>
       <infoLinks>
         <infoLink name="Acts of Faith" hidden="false" type="rule" id="75c3-341f-74c-ac5b" targetId="7ef7-dca6-e2ea-ecc8"/>
+        <infoLink name="Deadly Demise" id="ed9-b6e0-13cb-c7d" hidden="false" type="rule" targetId="b68a-5ded-65ac-98c">
+          <modifiers>
+            <modifier type="append" value="D3" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
-      <infoGroups>
-        <infoGroup name="Invulnerable Save" hidden="false" id="23fa-a112-d60c-dffc">
-          <profiles>
-            <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5d3-7240-b966-c4cc">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 6+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </infoGroup>
-        <infoGroup name="Deadly Demise" hidden="false" id="665a-ea2a-6587-1a99">
-          <infoLinks>
-            <infoLink name="Deadly Demise" hidden="false" type="rule" id="ed9-b6e0-13cb-c7d" targetId="b68a-5ded-65ac-98c"/>
-          </infoLinks>
-          <profiles>
-            <profile name="Deadly Demise" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ee16-3107-24be-b39d">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">D3</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </infoGroup>
-      </infoGroups>
       <profiles>
         <profile name="Exorcist" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="8c9d-e315-3b83-2ea7">
           <characteristics>
@@ -2068,7 +2024,12 @@ This model can be attached to a Battle Sisters Squad, even if one Canoness, Pala
         </profile>
         <profile name="Devastating Refrain" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="62d8-4f1-3996-bcb9">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this model has shot, if one or more of those attacks made with an Indirect Fire weapon scored a hit against an enemy unit, that unit my take a Battle-shock test. Each time such an attack destroys an enemy model that has the Deadly Demise ability, the model&apos;s Deadly Demise ability inflicts mortal wounds on a D6 roll of 5+ instead of a 6.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this model has shot, if one or more of those attacks made with an Indirect Fire weapon scored a hit against an enemy unit, that unit must take a Battle-shock test. Each time such an attack destroys an enemy model that has the Deadly Demise ability, the model&apos;s Deadly Demise ability inflicts mortal wounds on a D6 roll of 5+ instead of a 6.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ccbb-de3f-002d-9476">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 6+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2175,15 +2136,6 @@ This model can be attached to a Battle Sisters Squad, even if one Canoness, Pala
         <categoryLink targetId="fd71-afa6-b13b-7fda" id="1dfc-6219-f551-8d9d" primary="false" name="Faction: Adepta Sororitas"/>
       </categoryLinks>
       <infoGroups>
-        <infoGroup name="Invulnerable Save" hidden="false" id="bef7-35bb-c63-3006">
-          <profiles>
-            <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3db1-c1a-9ee2-7664">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 6+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </infoGroup>
         <infoGroup name="Leader" hidden="false" id="e4d6-88a6-c160-47e3">
           <infoLinks>
             <infoLink name="Leader" hidden="false" type="rule" id="65b-b84c-987b-ba44" targetId="b4dd-3e1f-41cb-218f"/>
@@ -2234,6 +2186,16 @@ This model can be attached to a Battle Sisters Squad, even if one Canoness, Pala
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, in your Command phase, you can return up to 1 destroyed model (excluding Character models) to that unit. If you wish, you first discard 1 Miracle dice; if you do, you can return up to D3+1 destroyed models (excluding Character models) to that unit instead.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5d3-7240-b966-c4cc">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 6+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3db1-c1a-9ee2-7664">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 6+</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Acts of Faith" hidden="false" type="rule" id="566d-ed4a-2126-304f" targetId="7ef7-dca6-e2ea-ecc8"/>
@@ -2276,15 +2238,6 @@ This model can be attached to a Battle Sisters Squad, even if one Canoness, Pala
         <categoryLink targetId="fd71-afa6-b13b-7fda" id="ce27-3838-ea41-9a85" primary="false" name="Faction: Adepta Sororitas"/>
       </categoryLinks>
       <infoGroups>
-        <infoGroup name="Invulnerable Save" hidden="false" id="9461-733b-60c0-9784">
-          <profiles>
-            <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e47a-617-31f5-8186">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 4+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </infoGroup>
         <infoGroup name="Leader" hidden="false" id="a26a-38c0-11fa-2e7">
           <infoLinks>
             <infoLink name="Leader" hidden="false" type="rule" id="ceb6-92d3-3d79-aaa8" targetId="b4dd-3e1f-41cb-218f"/>
@@ -2343,6 +2296,11 @@ This model can be attached to a Battle Sisters Squad, even if one Canoness, Pala
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, models in that unit have a Save characteristic of 2+ and a 4+ invulnerable save.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e47a-617-31f5-8186">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 4+</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="6a6-ff36-2e3b-e6eb">
@@ -2371,7 +2329,11 @@ This model can be attached to a Battle Sisters Squad, even if one Canoness, Pala
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Immolator" hidden="false" id="1001-80ff-c9a8-5d9b" publicationId="7d85-6d0f-57e0-5dea">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="115"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="125"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="ba07-411c-2832-1f79" id="82c9-945a-74c-efc4" primary="true" name="Dedicated Transport"/>
@@ -2384,30 +2346,12 @@ This model can be attached to a Battle Sisters Squad, even if one Canoness, Pala
       </categoryLinks>
       <infoLinks>
         <infoLink name="Acts of Faith" hidden="false" type="rule" id="23eb-8acb-fd64-3b5d" targetId="7ef7-dca6-e2ea-ecc8"/>
+        <infoLink name="Deadly Demise" id="6836-d788-64f0-02b1" hidden="false" type="rule" targetId="b68a-5ded-65ac-98c">
+          <modifiers>
+            <modifier type="append" value="D3" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
-      <infoGroups>
-        <infoGroup name="Invulnerable Save" hidden="false" id="1690-3bb7-fb66-ffcf">
-          <profiles>
-            <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="eae-14c6-a34d-1d21">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 6+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </infoGroup>
-        <infoGroup name="Deadly Demise" hidden="false" id="2afa-fd1e-f95c-a40c">
-          <infoLinks>
-            <infoLink name="Deadly Demise" hidden="false" type="rule" id="bb2d-3f84-3a27-6b8" targetId="b68a-5ded-65ac-98c"/>
-          </infoLinks>
-          <profiles>
-            <profile name="Deadly Demise" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="74fa-feaf-4339-1a97">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">D3</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </infoGroup>
-      </infoGroups>
       <entryLinks>
         <entryLink import="true" name="Hunter-Killer Missile" hidden="false" type="selectionEntry" id="7488-6bc-5df8-7959" targetId="1d2f-6fb-9587-2ef">
           <constraints>
@@ -2443,7 +2387,7 @@ This model can be attached to a Battle Sisters Squad, even if one Canoness, Pala
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a transport capacity of 6 ADEPTA SORORITAS INFANTRY models. It cannot transport JUMP PACK models or the Triumph of Saint Katherine.
 
-At the start of the Declare Battle Formations step, you can select one BATTLE SISTERS SQUAD, DOMINION SQUAD or SISTERS NOVIATIATE SQUAD from your army. If you do, that unit is split into two units, each containing as equal a number of models as possible (when splitting a unit in this way, make a note of which models form each of the two new units). One of these units must start the battle embarked within this Transport; the other can start the battle embarked within another Transport, or it can be deployed as a separate unit.</characteristic>
+At the start of the Declare Battle Formations step, you can select one BATTLE SISTERS SQUAD, DOMINION SQUAD or SISTERS NOVIATIATE SQUAD from your army. If you do, that unit is split into two units, each containing as equal a number of models as possible (when splitting a unit in this way, make a note of which models form each of the two new units. If you are splitting a unit that has the Cherub ability, only one of the new units can use that ability during the battle – make a note of which of the new units this will be). One of these units must start the battle embarked within this TRANSPORT; the other can start the battle embarked within another TRANSPORT, or it can be deployed as a separate unit.</characteristic>
           </characteristics>
         </profile>
         <profile name="Purge and Cleanse" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5def-c759-39f-94ca">
@@ -2459,6 +2403,11 @@ At the start of the Declare Battle Formations step, you can select one BATTLE SI
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">11</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="eae-14c6-a34d-1d21">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 6+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2557,29 +2506,13 @@ At the start of the Declare Battle Formations step, you can select one BATTLE SI
       </categoryLinks>
       <infoLinks>
         <infoLink name="Acts of Faith" hidden="false" type="rule" id="6f61-daf2-fa9f-193b" targetId="7ef7-dca6-e2ea-ecc8"/>
+        <infoLink name="Deadly Demise" id="74ba-4f8f-758c-42d6" hidden="false" type="rule" targetId="b68a-5ded-65ac-98c">
+          <modifiers>
+            <modifier type="append" value="D3" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <infoGroups>
-        <infoGroup name="Invulnerable Save" hidden="false" id="4f74-1de4-e74d-c94">
-          <profiles>
-            <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="dbf3-7183-63e4-e7bf">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 4+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </infoGroup>
-        <infoGroup name="Deadly Demise" hidden="false" id="ffe5-4f1d-d01c-351f">
-          <infoLinks>
-            <infoLink name="Deadly Demise" hidden="false" type="rule" id="74ba-4f8f-758c-42d6" targetId="b68a-5ded-65ac-98c"/>
-          </infoLinks>
-          <profiles>
-            <profile name="Deadly Demise" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d23f-3e83-f164-1429">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">1</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </infoGroup>
         <infoGroup name="Leader" hidden="false" id="87a0-4a7d-12dd-9a40">
           <infoLinks>
             <infoLink name="Leader" hidden="false" type="rule" id="b69e-b3fd-82ea-3fec" targetId="b4dd-3e1f-41cb-218f"/>
@@ -2620,6 +2553,11 @@ At the start of the Declare Battle Formations step, you can select one BATTLE SI
 of your Command phase, you can choose one of the following:
 ■ Discard 1 Miracle dice and gain 1CP.
 ■ Take a Leadership test for this model, if that test is passed, gain 1CP.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="dbf3-7183-63e4-e7bf">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 4+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2697,17 +2635,6 @@ of your Command phase, you can choose one of the following:
           </modifiers>
         </infoLink>
       </infoLinks>
-      <infoGroups>
-        <infoGroup name="Invulnerable Save" hidden="false" id="ba2a-710d-c8c1-ad76">
-          <profiles>
-            <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a6d5-54f2-962a-7371">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 6+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </infoGroup>
-      </infoGroups>
       <selectionEntryGroups>
         <selectionEntryGroup name="Mortifiers" hidden="false" id="d974-8966-7e4c-f3f7">
           <selectionEntries>
@@ -2956,6 +2883,11 @@ of your Command phase, you can choose one of the following:
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit is destroyed by a melee attack, if that model has not fought this phase, roll one D6. One a 2+, do not remove it from play; that destroyed model can fight after attacking unit has finished making its attacks, and is then removed from play.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a6d5-54f2-962a-7371">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 6+</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <modifiers>
         <modifier type="set" value="140" field="51b2-306e-1021-d207">
@@ -2970,7 +2902,11 @@ of your Command phase, you can choose one of the following:
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Morvenn Vahl" hidden="false" id="7188-4d20-8216-c68a" publicationId="7d85-6d0f-57e0-5dea">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="160"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="170"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="dbd4-63-af05-998" id="d333-a966-2a02-7d86" primary="false" name="Vehicle"/>
@@ -3153,15 +3089,6 @@ of your Command phase, you can choose one of the following:
         <infoLink name="Acts of Faith" hidden="false" type="rule" id="c11-e0a2-56a0-f97d" targetId="7ef7-dca6-e2ea-ecc8"/>
       </infoLinks>
       <infoGroups>
-        <infoGroup name="Invulnerable Save" hidden="false" id="b819-6eb8-8869-7511">
-          <profiles>
-            <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="20b3-dac6-46c2-361b">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 4+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </infoGroup>
         <infoGroup name="Leader" hidden="false" id="9d37-f05d-e655-2cd6">
           <infoLinks>
             <infoLink name="Leader" hidden="false" type="rule" id="298-9924-7f2-74f4" targetId="b4dd-3e1f-41cb-218f"/>
@@ -3256,6 +3183,11 @@ of your Command phase, you can choose one of the following:
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model’s unit is selected to fight, you can discard 1 Miracle dice. If you do, then until the end of the phase, each time a melee attack made by this model scores a wound, the target of that attack suffers 1 mortal wound in addition to any normal damage.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="20b3-dac6-46c2-361b">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 4+</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="7cdd-e0c6-5390-1b61" includeChildSelections="false"/>
@@ -3284,7 +3216,11 @@ of your Command phase, you can choose one of the following:
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Paragon Warsuits" hidden="false" id="e75d-a7ac-7fcc-d302" publicationId="7d85-6d0f-57e0-5dea">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="210"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="220"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="dbd4-63-af05-998" id="8c78-61a5-b633-7b72" primary="true" name="Vehicle"/>
@@ -3297,21 +3233,15 @@ of your Command phase, you can choose one of the following:
       <infoLinks>
         <infoLink name="Acts of Faith" hidden="false" type="rule" id="3231-2d77-89fd-5623" targetId="7ef7-dca6-e2ea-ecc8"/>
       </infoLinks>
-      <infoGroups>
-        <infoGroup name="Invulnerable Save" hidden="false" id="77f9-b20-e57b-4e70">
-          <profiles>
-            <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="290a-217e-2cfe-3b03">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this units have an Invulnerable save of 4+.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </infoGroup>
-      </infoGroups>
       <profiles>
         <profile name="Righteous Paragons" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4a86-1713-528f-cf2a">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes an attack that targets a MONSTER or VEHICLE unit, add 1 to the Hit roll and add 1 to the Wound roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="290a-217e-2cfe-3b03">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this units have an Invulnerable save of 4+.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3852,18 +3782,12 @@ of your Command phase, you can choose one of the following:
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit is eligible to declare a charge in a turn in which it Advanced</characteristic>
           </characteristics>
         </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7dae-f442-e00e-7160">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 6+</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
-      <infoGroups>
-        <infoGroup name="Invulnerable Save" id="662d-11b4-5b61-a940" hidden="false">
-          <profiles>
-            <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7dae-f442-e00e-7160">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 6+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </infoGroup>
-      </infoGroups>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="117d-f4c5-43cb-2ff2" includeChildSelections="false"/>
       </constraints>
@@ -3884,15 +3808,6 @@ of your Command phase, you can choose one of the following:
         <infoLink name="Acts of Faith" hidden="false" type="rule" id="c458-eab7-3156-9889" targetId="7ef7-dca6-e2ea-ecc8"/>
       </infoLinks>
       <infoGroups>
-        <infoGroup name="Invulnerable Save" hidden="false" id="31c4-4c07-8c89-a41b">
-          <profiles>
-            <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="50af-95f-288c-b59">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 4+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </infoGroup>
         <infoGroup name="Leader" hidden="false" id="c7c8-191c-3477-776b">
           <infoLinks>
             <infoLink name="Leader" hidden="false" type="rule" id="d396-bda1-5af9-12ca" targetId="b4dd-3e1f-41cb-218f"/>
@@ -4024,6 +3939,11 @@ of your Command phase, you can choose one of the following:
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If this model is attached to a Dominion Squad during the Declare Battle Formations step, it gains the Scouts 6&quot; ability. If this model is attached to a Sisters Novitiate Squad during the Declare Battle Formations step, it gains the Infiltrators ability.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="50af-95f-288c-b59">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 4+</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <entryLinks>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="6a8f-e970-a25d-d52f" targetId="66c6-be4b-a1dc-10d0"/>
@@ -4050,17 +3970,6 @@ of your Command phase, you can choose one of the following:
           </modifiers>
         </infoLink>
       </infoLinks>
-      <infoGroups>
-        <infoGroup name="Invulnerable Save" hidden="false" id="1f06-3f22-5e03-7326">
-          <profiles>
-            <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7d81-1d12-745c-1984">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 6+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </infoGroup>
-      </infoGroups>
       <selectionEntries>
         <selectionEntry id="a90b-7c0c-8f88-fe9d" name="Sister Repentia" hidden="false" collective="false" import="true" type="model">
           <constraints>
@@ -4143,6 +4052,11 @@ of your Command phase, you can choose one of the following:
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this unit contains a Repentia Superior model, each time a Sisters Repentia model in this unit makes a melee attack, you can re-roll the Hit roll and you can re-roll the Wound roll.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7d81-1d12-745c-1984">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 6+</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
@@ -4176,17 +4090,6 @@ of your Command phase, you can choose one of the following:
       <infoLinks>
         <infoLink name="Acts of Faith" hidden="false" type="rule" id="91fd-ba71-ade7-444f" targetId="7ef7-dca6-e2ea-ecc8"/>
       </infoLinks>
-      <infoGroups>
-        <infoGroup name="Invulnerable Save" hidden="false" id="769f-b7d0-d04c-9070">
-          <profiles>
-            <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4e02-e55f-a394-e326">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this units have an invulnerable save of 6+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </infoGroup>
-      </infoGroups>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Retributor Superior" hidden="false" id="ef56-67fc-c2ec-1172">
           <constraints>
@@ -4278,7 +4181,18 @@ of your Command phase, you can choose one of the following:
                 </profile>
               </profiles>
               <entryLinks>
-                <entryLink import="true" name="Close combat weapon" hidden="false" id="7939-afc1-33a6-a846" type="selectionEntry" targetId="f204-1361-eda8-9845"/>
+                <entryLink import="true" name="Close combat weapon" hidden="false" id="7939-afc1-33a6-a846" type="selectionEntry" targetId="f204-1361-eda8-9845">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2a05-0c2d-6bab-ab1b-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a05-0c2d-6bab-ab1b-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Bolt pistol" hidden="false" id="6f56-715d-488f-98ba" type="selectionEntry" targetId="a330-88d-5e33-d8ca">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="067c-26be-e191-f11f-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="067c-26be-e191-f11f-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -4297,6 +4211,11 @@ of your Command phase, you can choose one of the following:
         <profile name="Storm of Retribution" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8eef-f65c-7895-183f">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes a ranged attack, re-roll a Wound roll of 1. If such an attack targets an enemy unit that has destroyed one or more Adepta Sororitas units from your army during the battle, you can re-roll the Wound roll instead.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4e02-e55f-a394-e326">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this units have an invulnerable save of 6+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4453,21 +4372,15 @@ of your Command phase, you can choose one of the following:
         <infoLink name="Acts of Faith" hidden="false" type="rule" id="82fb-2447-f7a8-6056" targetId="7ef7-dca6-e2ea-ecc8"/>
         <infoLink name="Deep Strike" hidden="false" type="rule" id="78b9-57ed-35a2-bf63" targetId="7cb5-dd6b-dd87-ad3b"/>
       </infoLinks>
-      <infoGroups>
-        <infoGroup name="Invulnerable Save" hidden="false" id="e9e3-dfb-6327-546e">
-          <profiles>
-            <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="860d-8fcb-4b93-d871">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this units have an Invulnerable save of 5+.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </infoGroup>
-      </infoGroups>
       <profiles>
         <profile name="Angelic Ascent" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="505c-e6aa-a712-a093">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this unit has shot, if it is not within Engagement Range of any enemy units, it can make a Normal move of up to 6&quot;. If it does, until the end of the turn, this unit is not eligible to declare a charge.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="860d-8fcb-4b93-d871">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this units have an Invulnerable save of 5+.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4679,6 +4592,10 @@ of your Command phase, you can choose one of the following:
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
       <modifiers>
         <modifier type="set" value="170" field="51b2-306e-1021-d207">
@@ -4843,17 +4760,6 @@ of your Command phase, you can choose one of the following:
         <infoLink name="Acts of Faith" hidden="false" type="rule" id="92ed-5626-3f90-2052" targetId="7ef7-dca6-e2ea-ecc8"/>
         <infoLink name="Infiltrators" id="9076-acaa-1230-7738" hidden="false" type="rule" targetId="c05d-f4c3-f091-4938"/>
       </infoLinks>
-      <infoGroups>
-        <infoGroup name="Invulnerable Save" hidden="false" id="6db7-3ff1-3adb-9d82">
-          <profiles>
-            <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="dbdc-2f28-490b-e918">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 6+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </infoGroup>
-      </infoGroups>
       <selectionEntryGroups>
         <selectionEntryGroup name="Novitiates" hidden="false" id="8918-877c-c5da-24ac" defaultSelectionEntryId="3a3f-a211-11ab-af21">
           <entryLinks>
@@ -5042,6 +4948,11 @@ of your Command phase, you can choose one of the following:
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Impetuous Fervour: Each time a model in this unit makes an attack, re-roll a Hit roll of 1. If the target of that attack is an enemy unit within range of an objective marker, you can re-roll the Hit roll instead.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="dbdc-2f28-490b-e918">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 6+</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="c659-074d-c3e0-f49e" includeChildSelections="false"/>
@@ -5121,7 +5032,11 @@ of your Command phase, you can choose one of the following:
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Triumph of Saint Katherine" hidden="false" id="9f5f-d769-7900-c8a1" publicationId="7d85-6d0f-57e0-5dea">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="190"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="250"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="ce7a-44bc-6b4d-897e" primary="false" name="Infantry"/>
@@ -5136,15 +5051,6 @@ of your Command phase, you can choose one of the following:
         <infoLink name="Acts of Faith" hidden="false" type="rule" id="3a83-cd2e-52cd-dba" targetId="7ef7-dca6-e2ea-ecc8"/>
       </infoLinks>
       <infoGroups>
-        <infoGroup name="Invulnerable Save" hidden="false" id="6229-42db-ce03-9490">
-          <profiles>
-            <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3eb6-8c59-3e85-181f">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 4+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </infoGroup>
         <infoGroup name="Leader" hidden="false" id="ab49-b26-ba8-c898">
           <infoLinks>
             <infoLink name="Leader" hidden="false" type="rule" id="8f98-5e48-fd65-b7a7" targetId="b4dd-3e1f-41cb-218f"/>
@@ -5255,7 +5161,12 @@ of your Command phase, you can choose one of the following:
         </profile>
         <profile name="Solemn Procession" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3d31-2f99-c625-f047">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the start of the battle round, if this model is on the battlefield, you gain 1 Miracle Dice showing a value of 6.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time you gain 1 Miracle dice at the start of the battle round, if this model is on the battlefield, do not roll one D6 to determine the value of that Miracle dice; it has a value of 6.’</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3eb6-8c59-3e85-181f">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 4+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5280,17 +5191,6 @@ of your Command phase, you can choose one of the following:
         <infoLink name="Acts of Faith" hidden="false" type="rule" id="be83-de98-1be9-eec5" targetId="7ef7-dca6-e2ea-ecc8"/>
         <infoLink name="Deep Strike" hidden="false" type="rule" id="2088-6820-eb0d-7488" targetId="7cb5-dd6b-dd87-ad3b"/>
       </infoLinks>
-      <infoGroups>
-        <infoGroup name="Invulnerable Save" hidden="false" id="bc1-37f1-c24b-e33a">
-          <profiles>
-            <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5994-fa4a-62d9-d0d8">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have an Invulnerable save of 5+.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </infoGroup>
-      </infoGroups>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Zephyrim Superior" hidden="false" id="37af-c9db-1ab0-50cb">
           <constraints>
@@ -5405,6 +5305,11 @@ Before making your selection, if this unit made a Charge move this turn, you can
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5994-fa4a-62d9-d0d8">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have an Invulnerable save of 5+.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5594,6 +5499,9 @@ Before making your selection, if this unit made a Charge move this turn, you can
       <categoryLinks>
         <categoryLink targetId="5c0e-4c31-d51b-e470" id="8fe5-8631-28d-be6" primary="false" name="Warlord"/>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ca5-48b6-5801-c3ef"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Repressor [Legends]" hidden="false" id="d324-8119-7bf-d5e1">
       <costs>
@@ -5776,6 +5684,7 @@ Before making your selection, if this unit made a Charge move this turn, you can
       <infoLinks>
         <infoLink name="Acts of Faith" id="fee8-4d6e-860e-0c42" hidden="false" type="rule" targetId="7ef7-dca6-e2ea-ecc8"/>
         <infoLink name="Deep Strike" id="c0cc-38c1-6f8c-a17e" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
+        <infoLink name="Sacred Command" id="6180-19b4-15bc-d4fa" hidden="false" type="profile" targetId="e8c6-0df9-48c0-7c29"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Character" hidden="false" id="10d6-fddf-8b3d-8ff3" targetId="9cfd-1c32-585f-7d5c" primary="true"/>
@@ -5878,14 +5787,14 @@ Before making your selection, if this unit made a Charge move this turn, you can
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
           </characteristics>
         </profile>
-        <profile name="Sacred Command" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c668-af96-6c78-b7c2">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle round, one unit from your army with this ability can be targeted with a Strategem for 0CP, even if another unit from your army has already been targeted with that Strategem this phase.</characteristic>
-          </characteristics>
-        </profile>
         <profile name="Divine Deliverance" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d29e-6553-723c-5067">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle, at the start of the Fight phase, this model can use this ability. If it does, until the end of the phase, add 3 to the Attacks characteristic of melee weapons equipped by the model and those weapons have the [DEVASTATING WOUNDS] ability</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7506-7743-d517-3826">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 4+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5900,15 +5809,6 @@ Before making your selection, if this unit made a Charge move this turn, you can
                 <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit can be attached to the following units: 
 - Seraphim Squad
 - Zephyrim Squad</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </infoGroup>
-        <infoGroup name="Invulnerable Save" id="15a2-86f1-1d09-142c" hidden="false">
-          <profiles>
-            <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7506-7743-d517-3826">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 4+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5944,18 +5844,12 @@ Before making your selection, if this unit made a Charge move this turn, you can
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a model in this unit makes an attack that targets a CHARACTER unit, you can re-roll the Wound roll.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4a62-1352-4db-d0d0">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have an invulnerable save of 5+.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
-      <infoGroups>
-        <infoGroup name="Invulnerable Save" id="4a1-92ee-ef10-e8aa" hidden="false">
-          <profiles>
-            <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4a62-1352-4db-d0d0">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have an invulnerable save of 5+.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </infoGroup>
-      </infoGroups>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Death Cult Assassin" hidden="false" id="fca7-7496-e5f5-187f" collective="false">
           <infoLinks>
@@ -6021,17 +5915,6 @@ Before making your selection, if this unit made a Charge move this turn, you can
       <infoLinks>
         <infoLink name="Acts of Faith" id="43e4-af2d-3d37-6ce1" hidden="false" type="rule" targetId="7ef7-dca6-e2ea-ecc8"/>
       </infoLinks>
-      <infoGroups>
-        <infoGroup name="Invulnerable Save" id="1324-1f23-1bc1-e26b" hidden="false">
-          <profiles>
-            <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3dc2-22d4-2748-a419">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have an Invulnerable save of 4+.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </infoGroup>
-      </infoGroups>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Crusader" hidden="false" id="737d-f718-6f96-8146">
           <selectionEntries>
@@ -6100,6 +5983,11 @@ Before making your selection, if this unit made a Charge move this turn, you can
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If a model from your army with the Leader ability can be attached to a BATTLE SISTERS SQUAD, it can be attached to this unit instead.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="3dc2-22d4-2748-a419">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Models in this unit have an Invulnerable save of 4+.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="force" shared="true" id="e713-c4a3-d9b7-06a0" includeChildSelections="false"/>
@@ -6158,7 +6046,7 @@ Before making your selection, if this unit made a Charge move this turn, you can
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Celestian Sacresant Aveline [Legends]" hidden="false" id="6227-8c95-0e8a-81de">
+    <selectionEntry type="model" import="true" name="Celestian Sacresant Aveline [Legends]" hidden="false" id="6227-8c95-0e8a-81de">
       <categoryLinks>
         <categoryLink name="Epic Hero" hidden="false" id="b48a-f08a-59a9-b569" targetId="4f3a-f0f7-6647-348d" primary="true"/>
         <categoryLink name="Infantry" hidden="false" id="a888-c6e4-bf45-c5e1" targetId="cf47-a0d7-7207-29dc" primary="false"/>
@@ -6241,133 +6129,6 @@ Before making your selection, if this unit made a Charge move this turn, you can
         <infoLink name="Lone Operative" id="aa3a-973a-9608-557b" hidden="false" type="rule" targetId="a8a0-8fe7-898-e0f3"/>
         <infoLink name="Acts of Faith" id="8b30-35c7-f431-8bc5" hidden="false" type="rule" targetId="7ef7-dca6-e2ea-ecc8"/>
       </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="model" import="true" name="Palatine Angele" hidden="false" id="1fbb-3f2a-a3e9-f737">
-      <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
-        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
-        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
-        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
-        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
-      </costs>
-      <categoryLinks>
-        <categoryLink targetId="cf47-a0d7-7207-29dc" id="0264-e1b1-fdc0-32ab" primary="false" name="Infantry"/>
-        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="3ff6-f5cb-411a-8615" primary="false" name="Character"/>
-        <categoryLink targetId="5a61-81ac-eb7c-a87e" id="3ce8-2712-39db-dc5f" primary="false" name="Grenades"/>
-        <categoryLink targetId="aff3-d6a3-2a95-9dc" id="3236-822c-6a1e-8c78" primary="false" name="Imperium"/>
-        <categoryLink targetId="fd71-afa6-b13b-7fda" id="11fe-5e7b-9682-ce03" primary="false" name="Faction: Adepta Sororitas"/>
-        <categoryLink name="Epic Hero" hidden="false" id="636f-762d-e0b1-4f57" targetId="4f3a-f0f7-6647-348d" primary="true"/>
-        <categoryLink name="Penitent" hidden="false" id="f044-438d-af9a-b100" targetId="e2c8-1479-a7c4-228e" primary="false"/>
-        <categoryLink name="Palatine" hidden="false" id="7833-229c-df6e-4f28" targetId="c027-f44-1c7f-62f5" primary="false"/>
-      </categoryLinks>
-      <infoLinks>
-        <infoLink name="Acts of Faith" hidden="false" type="rule" id="777e-cf7a-97f2-22ef" targetId="7ef7-dca6-e2ea-ecc8"/>
-      </infoLinks>
-      <infoGroups>
-        <infoGroup name="Invulnerable Save" hidden="false" id="0199-d17c-c230-2b0d">
-          <profiles>
-            <profile name="Invulnerable Save" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="fc9e-8158-9541-f5ef">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has an invulnerable save of 4+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </infoGroup>
-        <infoGroup name="Leader" hidden="false" id="82cd-b336-cef9-35f3">
-          <infoLinks>
-            <infoLink name="Leader" hidden="false" type="rule" id="b057-7ef9-0d16-0dbd" targetId="b4dd-3e1f-41cb-218f"/>
-          </infoLinks>
-          <profiles>
-            <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="541d-9d88-6138-edf4">
-              <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units:
-■ Battle Sisters Squad
-■ Celestian Sacresants
-■ Dominion Squad
-■ Retributor Squad
-■ Sisters Novitiate Squad</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </infoGroup>
-      </infoGroups>
-      <entryLinks>
-        <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="bdd4-cca2-9f55-1b3a" targetId="66c6-be4b-a1dc-10d0">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1ed8-56a5-d62f-48b6-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ed8-56a5-d62f-48b6-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <profiles>
-        <profile name="Palatine" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="82a1-e0dd-a497-5be6">
-          <characteristics>
-            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
-            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
-            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
-            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
-            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Fury of the Righteous" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1cf7-f62f-c6af-dfbc">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, weapons equipped by models in that unit have the [LETHAL HITS] ability.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Rapturous Blows" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="c086-419f-1053-2c2f">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model’s unit is selected to fight, you can discard 1 Miracle dice. If you do, then until the end of the phase, each time a melee attack made by this model scores a wound, the target of that attack suffers 1 mortal wound in addition to any normal damage.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Via Crucis Aeterna" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="484f-2a2e-bfdb-9aa4">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has the Penitent keyword and, during the Declare Battle Formations step, can be attached to a Repentia Squad unit.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Deeds of Repentance" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4dba-894e-a278-c575">
-          <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is leading a unit, each time this model’s unit performs an Act of Faith, the value of one of the Miracle dice used in that Act of Faith is first changed to a 6.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="3b45-0411-c413-db3e" includeChildSelections="false"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Sword of Regret" hidden="false" id="ae68-d352-d17c-aa18" collective="false">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="30f9-43dd-4f10-f3b6-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="30f9-43dd-4f10-f3b6-max" includeChildSelections="false"/>
-          </constraints>
-          <profiles>
-            <profile name="Sword of Regret" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="2e58-93ed-4e5b-b025">
-              <characteristics>
-                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-                <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
-                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
-                <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
-                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
-                <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
-                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Bolt pistol" hidden="false" id="8df0-44ac-18d4-16b7" collective="false">
-          <infoLinks>
-            <infoLink name="Bolt pistol" id="9251-e569-7447-e101" hidden="false" type="profile" targetId="c934-fc40-d6a2-8919">
-              <modifiers>
-                <modifier type="set" value="2+" field="94d-8a98-cf90-183e"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="433d-def6-6beb-ac02-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="433d-def6-6beb-ac02-max" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
@@ -6530,6 +6291,11 @@ Before making your selection, if this unit made a Charge move this turn, you can
         <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
       </characteristics>
     </profile>
+    <profile name="Sacred Command" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="e8c6-0df9-48c0-7c29">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per battle round, one unit from your army with this ability can use it when its unit is targeted with a Stratagem. If it does, reduce the CP cost of that use of that Stratagem by 1CP.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedRules>
     <rule name="Acts of Faith" hidden="false" id="7ef7-dca6-e2ea-ecc8">
@@ -6538,8 +6304,8 @@ Before making your selection, if this unit made a Charge move this turn, you can
 
 GAINING MIRACLE DICE
 If your Army Faction is ADEPTA SORORITAS, you gain 1 Miracle dice:
-■ At the start of each turn.
-■ Each time an ADEPTA SORORITAS unit from your army is destroyed.
+■ At the start of each battle round.
+■ At the end of each phase, If one or more ADEPTA SORORITAS units from your army were destroyed that phase.
 Each time you gain a Miracle dice, roll one D6. The number you roll is the value of that Miracle dice. This value cannot be changed or re-rolled, unless a rule specifically states otherwise. Keep your Miracle dice to one side – this is your Miracle dice pool.
 
 
@@ -6558,7 +6324,7 @@ be substituted). The dice that is being substituted is not rolled; instead the 
       <description>Each time an ADEPTA SORORITAS model from your army makes an attack, add 1 to the Hit roll if that model’s unit is below its Starting Strength, and add 1 to the Wound roll, as well, if that model’s unit is Below Half-strength.</description>
     </rule>
     <rule name="Desperate for Redemption" id="909a-664e-ff1a-1985" hidden="false">
-      <description>At the start of the battle round, select one of the following Vows of Atonement to be active for your army until the start of the next battle round. You can only select each Vow of Atonement once.
+      <description>At the start of the battle round, you can select one of the following Vows of Atonement to be active for your army until the start of the next battle round. You can only select each Vow of Atonement once per battle.
 
 
 The Path of the Penitent: Add 3&quot; to the Move characteristic of PENITENT model from your army.
@@ -6570,10 +6336,22 @@ Absolution in Battle: Each time a unit from your army is selected to fight, if t
 Death Before Disgrace: Each time a PENITENT model from your army is destroyed by a melee attack, if that model has not fought this phase, roll one D6. On a 2+, do not remove it from play; the destroyed model can fight after the attacking unit has finished making its attacks, and is then removed from play.</description>
     </rule>
     <rule name="Fervent Purgation" id="4130-3962-d1f1-2a04" hidden="false">
-      <description>Ranged weapons equipped by Adepta Sororitas model in your army have the [ASSAULT] ability, and each time an attack made with such a weapon targets a unit within 12&quot;, add 1 to the Strength characteristic of that attack.</description>
+      <description>Ranged weapons equipped by ADEPTA SORORITAS models from your army have the [ASSAULT] ability, and each time an attack made with such a weapon targets a unit within 6&quot;, add 1 to the Strength characteristic of that attack.</description>
     </rule>
     <rule name="Sacred Rites" id="acd2-395b-e1b4-0918" hidden="false">
       <description>Each Adepta Sororitas unit from your army can perform up to two Acts of Faith per phase, instead of just one.</description>
+    </rule>
+    <rule name="Righteous Purpose" id="cb5e-57b9-c416-c2a5" hidden="false">
+      <description>In your Command phase, you can discard up to 3 of your Miracle dice. For each discarded, you can select one Adepta Sororitas unit from your army. Until the start of your next Command phase, that unit is Righteous. While a unit is Righteous:
+
+
+■ Add 1&quot; to the Move characteristic of models in that unit.
+■ Improve the Leadership characteristic of models in that unit by 1.
+■ Improve the Weapon Skill and Ballistic Skill characteristics of weapons equipped by Battle Sisters Squad,
+Celestian Sacresants and Paragon Warsuits models in that unit by 1.</description>
+    </rule>
+    <rule name="Keywords" id="f84c-5011-816f-3fb6" hidden="false">
+      <description>While a Celestian Sacresants unit from your army is not Battle‑shocked, add 1 to the Objective Control characteristic of Celestian Sacresants models in that unit.</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntryGroups>
@@ -6984,7 +6762,7 @@ Death Before Disgrace: Each time a PENITENT model from your army is destroyed by
               <profiles>
                 <profile name="Catechism of Divine Penitence" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2e4b-b1b1-8eae-d495">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Canoness, Palatine, or Ministorum Priest model only. The bearer gains the Penitent keyword and, during the Declare Battle Formations step, can be attached to a Repentia Squad unit.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">CANONESS, PALATINE, or MINISTORUM PRIESST model only. The bearer gains the Penitent keyword and, during the Declare Battle Formations step, can be attached to a REPENTIA SQUAD unit.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7030,7 +6808,7 @@ Death Before Disgrace: Each time a PENITENT model from your army is destroyed by
               <profiles>
                 <profile name="Verse of Holy Piety" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="114b-c6f4-be4c-61e5">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Penitent model only. Once per battle, at the start of the battle round, select one Vow of Atonement. Until the start of the next battle round, that Vow of Atonement is active for the bearer&apos;s unit in addition to any that is active for your army, even if you have already selected that Vow of Atonement this battle.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">PENITENT model only. Once per battle, at the start of the battle round, select one Vow of Atonement. Until the start of the next battle round, that Vow of Atonement is active for the bearer&apos;s unit in addition to any that is active for your army, even if you have already selected that Vow of Atonement this battle.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7053,7 +6831,7 @@ Death Before Disgrace: Each time a PENITENT model from your army is destroyed by
               <profiles>
                 <profile name="Refrain of Enduring Faith" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8bb0-e954-199b-d118">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Penitent model only. While the bearer is leading a unit, models in that unit have a 5+ invulnerable save.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">PENITENT model only. While the bearer is leading a unit, models in that unit have a 5+ invulnerable save.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7091,7 +6869,7 @@ Death Before Disgrace: Each time a PENITENT model from your army is destroyed by
               <profiles>
                 <profile name="Iron Surplice of Saint Istalela" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ab2c-0599-3bf5-22a2">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Canoness or Palatine model only. The bearer has a Save characteristic of 2+ and the Feel No Pain 5+ ability.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">CANONESS or PALATINE model only. The bearer has a Save characteristic of 2+ and the Feel No Pain 5+ ability.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7100,7 +6878,11 @@ Death Before Disgrace: Each time a PENITENT model from your army is destroyed by
                 <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5b59-aa62-3311-244f" includeChildSelections="true" includeChildForces="true"/>
               </constraints>
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="5"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
               </costs>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
@@ -7128,7 +6910,11 @@ Death Before Disgrace: Each time a PENITENT model from your army is destroyed by
                 <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="008e-5524-8346-3484" includeChildSelections="true"/>
               </constraints>
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Manual of Saint Griselda" hidden="false" id="9105-7062-e61d-cc8b">
@@ -7144,14 +6930,18 @@ Death Before Disgrace: Each time a PENITENT model from your army is destroyed by
                 <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8dac-8e49-ead7-806d" includeChildSelections="true" includeChildForces="true"/>
               </constraints>
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Fire and Fury" hidden="false" id="32e8-f267-c03d-c48e">
               <profiles>
                 <profile name="Fire and Fury" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="aff3-1dba-b4f6-3f28">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Adepta Sororitas model only. While the bearer is leading a unit, add 1 to the Attacks characteristic of Torrent weapons equipped by models in that unit, and all other ranged weapons equipped by models that unit have the [Sustained Hits 1] ability.</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">ADEPTA SORORITAS model only. While the bearer is leading a unit, add 1 to the Attacks characteristic of Torrent weapons equipped by models in that unit, and all other ranged weapons equipped by models that unit have the [Sustained Hits 1] ability.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7160,7 +6950,11 @@ Death Before Disgrace: Each time a PENITENT model from your army is destroyed by
                 <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c8f3-2cd5-a95c-b9fd" includeChildSelections="true" includeChildForces="true"/>
               </constraints>
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -7175,6 +6969,97 @@ Death Before Disgrace: Each time a PENITENT model from your army is destroyed by
               </conditions>
             </modifier>
           </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Champions of Faith" id="3a3c-2c95-8673-4b4d" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Triptych of Judgement" hidden="false" id="4e52-3be7-153f-2ef8">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4a83-4be3-45af-8872" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Triptych of Judgement" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="cf4d-3336-e6e7-56a9">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">ADEPTA SORORITAS model only. Each time a model in the bearer’s unit makes an attack, you can ignore any or all modifiers to that attack’s Ballistic Skill or Weapon Skill characteristics and/or any or all modifiers to the Hit roll.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Mark of Devotion" hidden="false" id="6a87-e11a-7a83-54ac">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1a7e-c1e0-f5d5-2abb" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="30"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Mark of Devotion" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="2458-a30b-3f7d-69ca">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">ADEPTA SORORITAS model only. Add 1 to the Attacks characteristic of the bearer’s melee weapons. While the bearer’s unit is Righteous, add 2 to the Attacks characteristic and add 1 to the Damage characteristic of the bearer’s melee weapons instead.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Eyes of the Oracle" hidden="false" id="5344-3b0c-c939-e6a2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c5e3-48fa-d84c-71f7" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Eyes of the Oracle" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0565-355a-2b90-415c">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">ADEPTA SORORITAS model only. The bearer’s weapons have the [PRECISION] ability. Each time the bearer’s unit destroys an enemy Character model, you gain 1CP.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Sanctified Amulet" hidden="false" id="2c1d-5416-8c0d-f790">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a91d-7ec5-14e1-1dcc" includeChildSelections="true" includeChildForces="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Sanctified Amulet" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ef03-fbc3-b77b-a35a">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">ADEPTA SORORITAS model only. Enemy units that are set up on the battlefield from Reserves cannot be set up within 12&quot; of the bearer</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="5c81-a47b-d3a0-31e8" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0664-0b10-4212-583b"/>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="0b0b-ffde-d592-0228" includeChildSelections="true" includeChildForces="true"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
@@ -7230,7 +7115,6 @@ Death Before Disgrace: Each time a PENITENT model from your army is destroyed by
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c105-b0a1-fac3-f34d" includeChildSelections="false"/>
       </constraints>
     </entryLink>
-    <entryLink import="true" name="Palatine Angele" hidden="false" id="70bf-20de-c048-62e4" type="selectionEntry" targetId="1fbb-3f2a-a3e9-f737"/>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Imperium - Imperial Knights - Library" id="f82d-fbeb-8ed2-4284" targetId="1b6d-dc06-5db9-c7d1" importRootEntries="true"/>
