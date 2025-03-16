@@ -19,6 +19,8 @@
     <entryLink import="true" name="Crusader Squad" hidden="false" id="9d78-60f0-de05-6ba4" type="selectionEntry" targetId="f01e-19eb-4ca3-39dc"/>
     <entryLink import="true" name="Whirlwind Scorpius Orion" hidden="false" id="a88f-1636-2a75-03ca" type="selectionEntry" targetId="ff8a-1573-50cc-b24f"/>
     <entryLink import="true" name="Sternguard Veteran Squad" hidden="false" id="45a4-31ce-5e0f-1089" type="selectionEntry" targetId="907f-11-c4d1-ec21"/>
+    <entryLink import="true" name="Centurion Devastator Squad" hidden="false" id="4440-e0e9-3a91-0c16" type="selectionEntry" targetId="6ba0-cede-e278-f86b"/>
+    <entryLink import="true" name="Intercessor Squad" hidden="false" id="626e-3e7b-11a9-0c0e" type="selectionEntry" targetId="8da0-4570-c3c-819f"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Aggressor Squad Invaders" hidden="false" id="d24a-820c-d8b9-486c">
@@ -731,7 +733,12 @@ Attacks characteristic of 7.</characteristic>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Vindicator Soteria" hidden="false" id="00d1-e744-b6f5-f851">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="175"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="185"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+        <cost name="Honour Points" typeId="8135-9a2f-6627-09e2" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink name="Vehicle" hidden="false" id="f4ba-45d9-aa6d-3a9e" targetId="dbd4-63-af05-998" primary="true"/>
@@ -993,7 +1000,6 @@ You can attach this model to one of the above units even if one Captain or Chap
         <categoryLink name="Imperium" hidden="false" id="0cd3-80f7-2abd-f722" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
         <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="30f5-2e9b-f517-3e6b" targetId="6e7-40c-58d9-e402" primary="false"/>
         <categoryLink name="Tacticus" hidden="false" id="8c33-5973-d62e-7a72" targetId="5179-8ede-45e3-49a2" primary="false"/>
-        <categoryLink name="Primaris Apothecary" hidden="false" id="39c0-5685-98a1-b7c5" targetId="4b5c-b618-4edd-788c" primary="false"/>
         <categoryLink name="Infantry" hidden="false" id="d21c-71d5-ac8b-8ae7" targetId="cf47-a0d7-7207-29dc" primary="false"/>
       </categoryLinks>
       <constraints>
@@ -2147,6 +2153,93 @@ You can attach this model to a unit it can lead units even if one Captain or Ch
           </conditionGroups>
         </modifier>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Captain Nemo in Terminator Armour" hidden="false" id="1260-f48d-26fa-07af">
+      <infoLinks>
+        <infoLink name="Rites of Battle" id="d248-0860-f62c-b468" hidden="false" targetId="90c7-c55c-21e2-2232" type="profile"/>
+        <infoLink name="Deep Strike" id="a8f5-8c74-3ef0-f7f3" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
+        <infoLink name="Invulnerable Save" id="cad3-72d1-f715-80e8" hidden="false" type="profile" targetId="db19-dee7-9530-ef0e"/>
+        <infoLink name="Oath of Moment" id="5a80-dff3-a466-80cc" hidden="false" type="rule" targetId="3b76-4053-ece9-6e7d"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon 1" id="0cf7-9589-5600-e31b" hidden="false" defaultSelectionEntryId="bee5-946-b680-1efe">
+          <entryLinks>
+            <entryLink import="true" name="Combi-weapon" hidden="false" id="b115-6518-bff5-bde2" type="selectionEntry" targetId="2c13-8cdd-f66b-bcae"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Weapon 2" id="0d19-6595-ddb6-52ee" hidden="false" defaultSelectionEntryId="ce3e-263-7208-680a">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Relic Fist" hidden="false" id="8276-9d1b-a3cd-2747">
+              <profiles>
+                <profile name="Relic Fist" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="37d7-e5c7-8f80-4860">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
+                    <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink name="Character" hidden="false" id="167d-263e-a310-8a02" targetId="9cfd-1c32-585f-7d5c" primary="false"/>
+        <categoryLink name="Infantry" hidden="false" id="2f2c-12d7-e5f0-68d5" targetId="cf47-a0d7-7207-29dc" primary="false"/>
+        <categoryLink name="Captain" hidden="false" id="8a53-e1c9-cc1f-b00c" targetId="2d7f-1892-2fd0-e29c" primary="false"/>
+        <categoryLink name="Faction: Adeptus Astartes" hidden="false" id="e5c2-2c9c-c824-4e3f" targetId="6e7-40c-58d9-e402" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="5e47-3d18-e876-86b0" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
+        <categoryLink name="Terminator" hidden="false" id="4d1c-e97c-7588-0b78" targetId="740a-892c-8958-defa" primary="false"/>
+        <categoryLink targetId="4f3a-f0f7-6647-348d" id="4dbe-f375-7da4-c3ef" primary="true" name="Epic Hero"/>
+        <categoryLink targetId="7334-cf73-eefc-6dca" id="e856-b219-048d-593d" primary="false" name="Captain Nemo"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="145"/>
+        <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+        <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+        <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+        <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Captain Nemo in Terminator Armour" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="f7c2-9dae-1d2b-e137">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">6</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Leader" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="0ea3-9357-a010-1801">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model can be attached to the following units:
+
+■ Relic Terminator Squad
+■ Terminator Assault Squad
+■ Terminator Squad</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Suicide Squad Survivor" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="ee86-6929-8e97-a60b">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model is destroyed, Roll d6 adding 1 to that roll if there is no friendly ADEPTUS ASTARTES model within 9&quot; and substracting 1 for each time this model was set back on the battlefield using this rule, On a 3+ set this model back up on the battlefield as close as possible to where it was destroyed and not within Engagement Range of any enemy models, with full wounds remaining.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="The Idharae Gambit" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="795d-302e-8869-8894">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the end of the opponent Fight Phase, if this unit is within engagement range of one or more ennemy unit, choose one enemy unit in engagement range with this unit, on a 2+, that enemy unit suffers 3d3 mortal wounds. Then Nemo suffers 3d3 mortal wounds</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Damnos Incursion" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="85bc-8772-2656-8850">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <categoryEntries>
