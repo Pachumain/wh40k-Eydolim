@@ -6299,15 +6299,14 @@ Before making your selection, if this unit made a Charge move this turn, you can
   </sharedProfiles>
   <sharedRules>
     <rule name="Acts of Faith" hidden="false" id="7ef7-dca6-e2ea-ecc8">
-      <description>If your Army Faction is ADEPTA SORORITAS, each unit from your army with this ability can perform one Act of Faith per phase. This is done using Miracle dice.
-
+      <description>If your Army Faction is ^^Adepta Sororitas^^, each unit from your army with this ability can perform one Act of Faith per phase. This is done using Miracle dice.
 
 GAINING MIRACLE DICE
 If your Army Faction is ADEPTA SORORITAS, you gain 1 Miracle dice:
-■ At the start of each battle round.
-■ At the end of each phase, If one or more ADEPTA SORORITAS units from your army were destroyed that phase.
-Each time you gain a Miracle dice, roll one D6. The number you roll is the value of that Miracle dice. This value cannot be changed or re-rolled, unless a rule specifically states otherwise. Keep your Miracle dice to one side – this is your Miracle dice pool.
+- At the start of each battle round.
+- Each time an ^^Adepta Sororitas^^ unit from your army is destroyed.
 
+Each time you gain a Miracle dice, roll one D6. The number you roll is the value of that Miracle dice. This value cannot be changed or re-rolled, unless a rule specifically states otherwise. Keep your Miracle dice to one side – this is your Miracle dice pool.
 
 PERFORMING AN ACT OF FAITH
 Before making a dice roll for a model or unit from your army with the Acts of Faith ability, if you have one or more dice in your Miracle dice pool, that unit can perform an Act of Faith. If it does, select one of the dice from your Miracle dice pool to substitute that dice roll (if a roll involves more than one dice, e.g. a Charge roll or Battle-shock test, only a single dice can
