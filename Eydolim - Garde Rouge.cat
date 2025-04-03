@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="0b46-6b44-d984-f9a5" name="Eydolim - Garde Rouge" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="36" revision="1" authorName="Ajix / Noda / Pac" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedRules>
+    <rule name="Garde Rouge" id="88e0-c0dc-7df6-3040" hidden="false">
+      <description>A chaque fois qu&apos;un modèle dans l&apos;unité fait une attaque à distance qui cible l&apos;unité ennemie eligible la plus proche, ameliorez l&apos;AP de cette attaque de 1</description>
+    </rule>
+  </sharedRules>
+  <sharedSelectionEntries>
+    <selectionEntry type="model" import="true" name="Lord General Benoit Cadmun" hidden="false" id="20ed-3e6c-ed07-5953">
+      <categoryLinks>
+        <categoryLink name="Epic Hero" hidden="false" id="12ed-70d3-bb90-d362" targetId="4f3a-f0f7-6647-348d" primary="true"/>
+        <categoryLink name="Character" hidden="false" id="3b25-901b-c077-bce7" targetId="9cfd-1c32-585f-7d5c" primary="false"/>
+        <categoryLink name="Infantry" hidden="false" id="358b-6782-bb36-a9cd" targetId="cf47-a0d7-7207-29dc" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="620b-8502-391b-8762" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
+        <categoryLink name="Garde Rouge" hidden="false" id="0a6c-b5de-6666-6fda" targetId="c1d8-e381-d70a-38c0" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Lord General Benoit Cadmun" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="8254-78ec-043c-d30e">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">4</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Spécialiste du Combat Rapproché" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="6c0d-9347-9b32-1f09">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Tant que ce modèle lead une unité, durant la shooting phase, à chaque fois qu&apos;un modèle de cette unité effectue une attaque qui prend pour cible une unité ennemie à moins de la moitié de sa portée, ajoutez 1 au jet pour blesser de cette attaque.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Attaché Imperial" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="4acf-15dc-e91a-e6c7">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Ce model peut rejoindre toute unité ^^Garde Rouge^^, ^^Astra Militarum^^ ou ^^Agents of the Imperium^^  même si cette dernière contient un déjà un leader.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Garde Rouge" id="e607-29d9-daa3-a531" hidden="false" type="rule" targetId="88e0-c0dc-7df6-3040"/>
+        <infoLink name="Invulnerable Save (5+)" id="0a3b-9271-0cf9-a269" hidden="false" type="profile" targetId="30d6-3998-8498-5c22"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Master-Crafted Lasgun" hidden="false" id="6f57-3d52-4484-c032">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f260-4b9c-095a-1b74-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f260-4b9c-095a-1b74-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Master-Crafted Lasgun" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="76db-28c0-dade-9b29">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">3+</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Rapid Fire 1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Rapid Fire" id="4cab-1891-49fd-d5ae" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786">
+              <modifiers>
+                <modifier type="append" value="1" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Power Sword" hidden="false" id="1bc0-5f63-047d-12ea">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e4c5-104d-c2aa-4afd-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e4c5-104d-c2aa-4afd-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Power Sword" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="109d-fd78-9a12-6bde">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <infoGroups>
+        <infoGroup name="Furie de Luminance" id="ceb9-b106-3e70-773e" hidden="false">
+          <infoLinks>
+            <infoLink name="Melta" id="3939-fcd0-73b1-f40d" hidden="false" type="rule" targetId="7cdb-fb99-44a9-8849">
+              <modifiers>
+                <modifier type="append" value="1" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <profiles>
+            <profile name="Furie de Luminance" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5bd5-31c0-b10e-854d">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Quand ce modèle lead une unité, toutes les armes *las-* de l&apos;unité obtiennent le keyword Melta 1 </characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="[N] Fusiliers Rouges" hidden="false" id="ed2f-bcbc-2bcb-bcd5">
+      <categoryLinks>
+        <categoryLink name="Battleline" hidden="false" id="43ed-7b14-030f-4ad1" targetId="e338-111e-d0c6-b687" primary="true"/>
+        <categoryLink name="Infantry" hidden="false" id="3b4b-9525-2337-8d84" targetId="cf47-a0d7-7207-29dc" primary="false"/>
+        <categoryLink name="Garde Rouge" hidden="false" id="1040-f597-a746-e988" targetId="c1d8-e381-d70a-38c0" primary="false"/>
+        <categoryLink name="Grenades" hidden="false" id="79b2-2adc-fa7b-3684" targetId="5a61-81ac-eb7c-a87e" primary="false"/>
+        <categoryLink name="Smoke" hidden="false" id="e1d3-2cee-15fb-88ef" targetId="6df-937-16bc-8c1a" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="23b3-dd06-6948-3d40" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
+        <categoryLink name="Fusiliers de la Garde" hidden="false" id="5468-426a-647b-961c" targetId="20d5-a496-50fd-01a7" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Briser la marée rebelle" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="aa71-72b1-b2e2-68da">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A chaque fois qu&apos;un modèle dans cette unité effectue une attaque, relancez un jet de blessure de 1. Si la cible est au moins partiellement sur un objectif, vous pouvez relancer le jet de blessure à la place.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Volée devastatrice" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="7f02-7836-7c3d-8e35">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">A chaque fois que cette unité fait une attaque à distance, si la cible est à mi-portée ou moins, relancez un 1 pour toucher</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Composition" id="f754-3a4f-5f92-25bc" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="1 Sergent Fusilier, 7 Fusiliers et 3 Specialistes" hidden="false" id="bcc1-5408-57c2-d54a">
+              <entryLinks>
+                <entryLink import="true" name="Sergent Fusilier" hidden="false" id="1aa9-e4a2-a24e-cddc" type="selectionEntry" targetId="5d93-7129-d751-3ac3">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f6ff-de99-1639-6ebc-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f6ff-de99-1639-6ebc-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Fusilier Rouge" hidden="false" id="2107-69b4-0cfb-26ad" type="selectionEntry" targetId="16ad-d4ff-0863-752c">
+                  <constraints>
+                    <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="41c2-90e6-594e-952f-min" includeChildSelections="false"/>
+                    <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="41c2-90e6-594e-952f-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Fusilier Rouge avec Med-pack" hidden="false" id="dbb8-c5fb-dc98-59e3" type="selectionEntry" targetId="46c1-1ad1-dfd3-4b64">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bb51-ced1-1540-f898-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb51-ced1-1540-f898-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Specialiste Fusilier Rouge" hidden="false" id="286b-0666-6a2e-3eab" type="selectionEntryGroup" targetId="8d20-20b7-831d-ce9a"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="1 Sergent Fusilier et 15 Fusiliers" hidden="false" id="1abb-4335-809e-321a">
+              <entryLinks>
+                <entryLink import="true" name="Fusilier Rouge" hidden="false" id="cfe8-a3c9-a96c-a7f1" type="selectionEntry" targetId="16ad-d4ff-0863-752c">
+                  <constraints>
+                    <constraint type="min" value="14" field="selections" scope="parent" shared="true" id="17ee-7443-b28a-6dc7-min" includeChildSelections="false"/>
+                    <constraint type="max" value="14" field="selections" scope="parent" shared="true" id="17ee-7443-b28a-6dc7-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Sergent Fusilier" hidden="false" id="cb45-f42e-f4fa-8e1a" type="selectionEntry" targetId="5d93-7129-d751-3ac3">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="95c8-980d-326c-f6c7-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95c8-980d-326c-f6c7-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Fusilier Rouge avec Med-pack" hidden="false" id="d896-fd7d-d1be-867c" type="selectionEntry" targetId="46c1-1ad1-dfd3-4b64">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b45c-7792-0dac-2a3f-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b45c-7792-0dac-2a3f-max" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3020-2598-e2e9-02f3" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f2b1-f575-8b32-9623" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sergent Fusilier" hidden="false" id="5d93-7129-d751-3ac3">
+      <infoLinks>
+        <infoLink name="Fusilier Rouge" id="4f1c-7844-4ba2-7935" hidden="false" type="profile" targetId="984b-fb81-d65e-ab04"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Shotgun de Sergent" hidden="false" id="51bc-22cd-dd27-6b1a">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="691e-df7a-d7e8-9ceb-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="691e-df7a-d7e8-9ceb-max" includeChildSelections="false"/>
+          </constraints>
+          <infoGroups>
+            <infoGroup name="Shotgun de Sergent" id="c34b-c074-38cd-650e" hidden="false">
+              <profiles>
+                <profile name="Shotgun de Sergent" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="63bd-26bf-9c92-b898">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">18</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Assault" id="9bb3-7727-35a4-0cd1" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
+              </infoLinks>
+            </infoGroup>
+          </infoGroups>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Baton Energetique de Sergent" hidden="false" id="86ca-1bab-0834-4c42">
+          <profiles>
+            <profile name="Baton Energetique de Sergent" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="df50-6a23-eb67-444c">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+                <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d4b6-9801-ca1d-b35e-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4b6-9801-ca1d-b35e-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Fusilier Rouge" hidden="false" id="16ad-d4ff-0863-752c">
+      <infoLinks>
+        <infoLink name="Fusilier Rouge" id="4f94-fc49-3cbc-1934" hidden="false" type="profile" targetId="984b-fb81-d65e-ab04"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Lasgun tactique" hidden="false" id="1847-9c61-21b4-0e31" type="selectionEntry" targetId="89cb-6461-55b5-2074">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="28ac-fcd3-5921-633b-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="28ac-fcd3-5921-633b-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Close combat weapon" hidden="false" id="5f8c-cf3c-4de6-2cc2" type="selectionEntry" targetId="fdd4-7ae1-ef9f-4bef">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c9bf-0dff-68e5-3661-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9bf-0dff-68e5-3661-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Fusilier Rouge avec Med-pack" hidden="false" id="46c1-1ad1-dfd3-4b64">
+      <entryLinks>
+        <entryLink import="true" name="Close combat weapon" hidden="false" id="cadf-0cd8-32e9-002d" type="selectionEntry" targetId="fdd4-7ae1-ef9f-4bef">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="62ae-5568-da8d-9b36-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62ae-5568-da8d-9b36-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Lasgun tactique" hidden="false" id="b298-3c49-f84e-28bf" type="selectionEntry" targetId="89cb-6461-55b5-2074">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7d1c-d476-89ba-c206-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d1c-d476-89ba-c206-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Fusilier Rouge" id="a43c-af12-5cf6-4360" hidden="false" type="profile" targetId="984b-fb81-d65e-ab04"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Med-pack" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="a505-fcaa-5489-ca40">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Au début de votre Command phase, si cette unité est en dessous de sa Starting Strength, vous pouvez ramener jusqu&apos;à D3 modèles de Fusiliers Rouges détruits de cette unité sur le terrain.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lasgun tactique" hidden="false" id="89cb-6461-55b5-2074">
+      <infoGroups>
+        <infoGroup name="Lasgun tactique" id="aed3-4252-bc5e-a2df" hidden="false">
+          <profiles>
+            <profile name="Lasgun tactique" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="4817-02af-1eac-25fb">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Assault, Rapid Fire 1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Assault" id="84f0-f257-26e4-a27a" hidden="false" type="rule" targetId="fc8a-8c24-bae9-cc1c"/>
+            <infoLink name="Rapid Fire" id="7203-c65f-35e0-91c2" hidden="false" type="rule" targetId="c5c8-8b58-b8b6-7786">
+              <modifiers>
+                <modifier type="append" value="1" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="fdd4-7ae1-ef9f-4bef" page="">
+      <comment>1A S3 AP0 D1</comment>
+      <profiles>
+        <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="ee8c-1aef-8021-f3dd">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="[N] Tribun de la Garde" hidden="false" id="eae7-57d0-e271-ddb4">
+      <categoryLinks>
+        <categoryLink name="Character" hidden="false" id="f850-de20-0cb2-725f" targetId="9cfd-1c32-585f-7d5c" primary="true"/>
+        <categoryLink name="Infantry" hidden="false" id="c1af-c9b0-c991-9a62" targetId="cf47-a0d7-7207-29dc" primary="false"/>
+        <categoryLink name="Garde Rouge" hidden="false" id="959d-eaa2-868d-1c31" targetId="c1d8-e381-d70a-38c0" primary="false"/>
+        <categoryLink name="Tribun de la Garde" hidden="false" id="f8b7-33f3-7778-f5d7" targetId="1765-e28f-a007-6213" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Lord General Benoit Cadmun" hidden="false" id="3d9f-63ca-d5da-c5bc" targetId="20ed-3e6c-ed07-5953" type="selectionEntry"/>
+    <entryLink import="true" name="[N] Fusiliers de la Garde" hidden="false" id="9a1e-10f7-15c7-46c5" targetId="ed2f-bcbc-2bcb-bcd5" type="selectionEntry"/>
+  </entryLinks>
+  <categoryEntries>
+    <categoryEntry name="Garde Rouge" id="c1d8-e381-d70a-38c0" hidden="false"/>
+    <categoryEntry name="Fusiliers de la Garde" id="20d5-a496-50fd-01a7" hidden="false"/>
+    <categoryEntry name="Tribun de la Garde" id="1765-e28f-a007-6213" hidden="false"/>
+  </categoryEntries>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Imperium - Agents of the Imperium" id="5d18-bc6d-1a37-afb1" targetId="b00-cd86-4b4c-97ba" importRootEntries="true"/>
+  </catalogueLinks>
+  <sharedProfiles>
+    <profile name="Fusilier Rouge" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="984b-fb81-d65e-ab04">
+      <characteristics>
+        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+        <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
+        <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
+        <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
+        <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+        <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Specialistes Fusilier Rouge" id="8d20-20b7-831d-ce9a" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Tirailleur Fusilier Rouge" hidden="false" id="7d9f-8f5d-0ed4-5511">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e386-a788-7651-2ee2" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Fusilier Rouge" id="7c8a-e953-3d97-0e6d" hidden="false" type="profile" targetId="984b-fb81-d65e-ab04"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Arme a distance" id="81a3-92c8-80ed-f509" hidden="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dfc7-f4f4-f3fc-4ebe-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dfc7-f4f4-f3fc-4ebe-max" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Las-volley" hidden="false" id="5885-ca27-cf81-6258">
+                  <profiles>
+                    <profile name="Las-volley" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="5c85-80aa-214c-f3ce">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Flamer" hidden="false" id="74fe-86ac-7c55-5978">
+                  <profiles>
+                    <profile name="Flamer" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="ede0-322c-72eb-59c6">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
+                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Ignores Cover" id="90e8-5096-0b95-de08" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
+                    <infoLink name="Torrent" id="3d83-7249-c175-3715" hidden="false" type="rule" targetId="5edf-d619-23e0-9b56"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Close combat weapon" hidden="false" id="c795-b4bb-3a81-9d3e" type="selectionEntry" targetId="fdd4-7ae1-ef9f-4bef">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="41f1-b149-4b64-6e33-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41f1-b149-4b64-6e33-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Specialiste Anti-Emeute" hidden="false" id="3780-425a-3840-9f89">
+          <entryLinks>
+            <entryLink import="true" name="Lasgun tactique" hidden="false" id="cfbc-f47b-190d-fb1d" type="selectionEntry" targetId="89cb-6461-55b5-2074">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="da7f-4110-75bf-9023-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da7f-4110-75bf-9023-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Close combat weapon" hidden="false" id="32d3-d65e-ef5e-3a86" type="selectionEntry" targetId="fdd4-7ae1-ef9f-4bef">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="baf5-3e10-da13-0c02-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="baf5-3e10-da13-0c02-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Fusilier Rouge" id="1518-cca1-b7af-fa52" hidden="false" type="profile" targetId="984b-fb81-d65e-ab04"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8685-5574-e0e0-46aa" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Flashbang" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="66e4-ea7a-f94b-9ab0">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Une fois par bataille, lorsqu&apos;une unité ennemie déclare une charge visant cette unité, l&apos;unité ennemie gagne un malus de -1 à son jet de charge jusqu&apos;à la fin de la phase.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Coordinateur Garde Rouge" hidden="false" id="0f51-643b-ee02-e0a4">
+          <infoLinks>
+            <infoLink name="Fusilier Rouge" id="0545-8e84-a6cd-bfa3" hidden="false" type="profile" targetId="984b-fb81-d65e-ab04"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Close combat weapon" hidden="false" id="d1de-5bb5-b8a1-e0bd" type="selectionEntry" targetId="fdd4-7ae1-ef9f-4bef">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a7a2-87af-3a07-ce82-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a7a2-87af-3a07-ce82-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Lasgun tactique" hidden="false" id="6d16-7a5d-2711-5267" type="selectionEntry" targetId="89cb-6461-55b5-2074">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4007-62c7-0fdd-dd32-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4007-62c7-0fdd-dd32-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b2c-5b73-4326-27fa" includeChildSelections="false"/>
+          </constraints>
+          <infoGroups>
+            <infoGroup name="Plan des Opérations" id="a0b8-d9a8-ba21-9c12" hidden="false">
+              <profiles>
+                <profile name="Plan des Opérations" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5d75-59b4-846b-f4cc">
+                  <characteristics>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Les modèles de cette unité gagnent l&apos;abilité ^^Scouts 6&quot;^^</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Scouts" id="4757-e7ea-e3d9-4671" hidden="false" type="rule" targetId="ada6-bac1-ffe0-d6f7">
+                  <modifiers>
+                    <modifier type="append" value="6&quot;" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </infoGroup>
+          </infoGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="cf2c-3927-900c-1a85" includeChildSelections="false"/>
+        <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="d359-3549-c6d7-b20b" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+</catalogue>
