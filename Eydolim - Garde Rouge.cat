@@ -105,6 +105,9 @@
           </profiles>
         </infoGroup>
       </infoGroups>
+      <entryLinks>
+        <entryLink import="true" name="Warlord" hidden="false" id="3789-2f0d-267c-b78d" type="selectionEntry" targetId="bb9a-14e7-b947-793b"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="[N] Fusiliers Rouges" hidden="false" id="ed2f-bcbc-2bcb-bcd5">
       <categoryLinks>
