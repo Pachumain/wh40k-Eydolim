@@ -237,6 +237,10 @@
       <entryLinks>
         <entryLink import="true" name="Armoured tracks" hidden="false" id="8324-ce57-40c9-2aa2" type="selectionEntry" targetId="e635-5c9b-194c-44f2">
           <comment>russ</comment>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2dc1-ad4a-cac0-52ee-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2dc1-ad4a-cac0-52ee-max" includeChildSelections="false"/>
+          </constraints>
         </entryLink>
         <entryLink import="true" name="Warlord" hidden="false" id="cbca-61d8-13c4-8583" type="selectionEntry" targetId="ea3f-b52b-8dc7-d365"/>
       </entryLinks>
@@ -250,10 +254,10 @@
             <profile name="➤ Abrogator Battle Cannon - Daemon-Slayers Shells" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="3108-e32b-91c7-fd64">
               <characteristics>
                 <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-                <characteristic name="A" typeId="3bb-c35f-f54-fb08">3d6</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">3D6</characteristic>
                 <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
                 <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
-                <characteristic name="AP" typeId="9ead-8a10-520-de15">1</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
                 <characteristic name="D" typeId="a354-c1c8-a745-f9e3">4</characteristic>
                 <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast</characteristic>
               </characteristics>
@@ -262,7 +266,7 @@
               <characteristics>
                 <characteristic name="Range" typeId="9896-9419-16a1-92fc">72&quot;</characteristic>
                 <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
-                <characteristic name="BS" typeId="94d-8a98-cf90-183e">4</characteristic>
+                <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
                 <characteristic name="S" typeId="2229-f494-25db-c5d3">18</characteristic>
                 <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
                 <characteristic name="D" typeId="a354-c1c8-a745-f9e3">12</characteristic>
