@@ -13,6 +13,7 @@
         <categoryLink name="Infantry" hidden="false" id="358b-6782-bb36-a9cd" targetId="cf47-a0d7-7207-29dc" primary="false"/>
         <categoryLink name="Imperium" hidden="false" id="620b-8502-391b-8762" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
         <categoryLink name="Garde Rouge" hidden="false" id="0a6c-b5de-6666-6fda" targetId="c1d8-e381-d70a-38c0" primary="false"/>
+        <categoryLink name="Eydolim" hidden="false" id="16d8-2faf-1db3-9ca8" targetId="7cea-ac47-e24e-bab2" primary="false"/>
       </categoryLinks>
       <profiles>
         <profile name="Lord General Benoit Cadmun" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="8254-78ec-043c-d30e">
@@ -99,7 +100,7 @@
           <profiles>
             <profile name="Furie de Luminance" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5bd5-31c0-b10e-854d">
               <characteristics>
-                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Quand ce modèle lead une unité, toutes les armes *las-* de l&apos;unité obtiennent le keyword Melta 1 </characteristic>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Quand ce modèle lead une unité, toutes les armes *las-* de l&apos;unité obtiennent le keyword Melta 1</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -118,6 +119,7 @@
         <categoryLink name="Smoke" hidden="false" id="e1d3-2cee-15fb-88ef" targetId="6df-937-16bc-8c1a" primary="false"/>
         <categoryLink name="Imperium" hidden="false" id="23b3-dd06-6948-3d40" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
         <categoryLink name="Fusiliers de la Garde" hidden="false" id="5468-426a-647b-961c" targetId="20d5-a496-50fd-01a7" primary="false"/>
+        <categoryLink name="Eydolim" hidden="false" id="a257-4c86-3e07-224a" targetId="7cea-ac47-e24e-bab2" primary="false"/>
       </categoryLinks>
       <profiles>
         <profile name="Briser la marée rebelle" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="aa71-72b1-b2e2-68da">
@@ -154,7 +156,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb51-ced1-1540-f898-max" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Specialiste Fusilier Rouge" hidden="false" id="286b-0666-6a2e-3eab" type="selectionEntryGroup" targetId="8d20-20b7-831d-ce9a"/>
+                <entryLink import="true" name="Specialistes Fusilier Rouge" hidden="false" id="286b-0666-6a2e-3eab" type="selectionEntryGroup" targetId="8d20-20b7-831d-ce9a"/>
               </entryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="1 Sergent Fusilier et 15 Fusiliers" hidden="false" id="1abb-4335-809e-321a">
@@ -186,6 +188,9 @@
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Garde Rouge" id="c77e-0987-81e9-c6c4" hidden="false" type="rule" targetId="88e0-c0dc-7df6-3040"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Sergent Fusilier" hidden="false" id="5d93-7129-d751-3ac3">
       <infoLinks>
@@ -307,7 +312,7 @@
         </infoGroup>
       </infoGroups>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="fdd4-7ae1-ef9f-4bef" page="">
+    <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="fdd4-7ae1-ef9f-4bef">
       <comment>1A S3 AP0 D1</comment>
       <profiles>
         <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="ee8c-1aef-8021-f3dd">
@@ -323,7 +328,7 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="[N] Tribun de la Garde" hidden="false" id="eae7-57d0-e271-ddb4">
+    <selectionEntry type="unit" import="true" name="[N] Tribun de la Garde" hidden="false" id="eae7-57d0-e271-ddb4">
       <categoryLinks>
         <categoryLink name="Character" hidden="false" id="f850-de20-0cb2-725f" targetId="9cfd-1c32-585f-7d5c" primary="true"/>
         <categoryLink name="Infantry" hidden="false" id="c1af-c9b0-c991-9a62" targetId="cf47-a0d7-7207-29dc" primary="false"/>
@@ -340,7 +345,7 @@
         </profile>
         <profile name="Devotion Aveugle" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="40a7-626e-c6bd-061e">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Quand vous pourriez allouer des Blessures a un Character a 3&quot; ou moins de cette unité - après application de la Save -, vous pouvez allouer ces blessures à des modèles de cette unité comme si le Character ciblé par l&apos;attaque en faisait partie à la place.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Quand vous pourriez allouer des Blessures a un Character a 3&quot; ou moins de cette unité - après application de la Save -, vous pouvez allouer ces blessures à des modèles de cette unité comme si le Character ciblé par l&apos;attaque en faisait partie à la place. Cette abilité ne peut être activé que par une seule unité par phase.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -436,13 +441,16 @@
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="b91e-7178-61fa-2e21" includeChildSelections="false"/>
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="8805-5ea3-cd8a-4bc1" includeChildSelections="false"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="Ogryn" hidden="false" id="0836-cedc-0574-33e5" targetId="8384-9f3a-8b52-7b0e" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Coordinateur" hidden="false" id="ba0a-5cc3-983b-78ec">
           <profiles>
             <profile name="Coordinateur" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="e0c6-01a4-e22c-4aeb">
               <characteristics>
                 <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
-                <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3	</characteristic>
+                <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">3</characteristic>
                 <characteristic name="SV" typeId="450-a17e-9d5e-29da">4+</characteristic>
                 <characteristic name="W" typeId="750a-a2ec-90d3-21fe">1</characteristic>
                 <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
@@ -474,14 +482,20 @@
         <categoryLink name="Infantry" hidden="false" id="90bb-152c-d395-7bf4" targetId="cf47-a0d7-7207-29dc" primary="true"/>
         <categoryLink name="Garde Rouge" hidden="false" id="0bd7-e3a0-ea2d-259d" targetId="c1d8-e381-d70a-38c0" primary="false"/>
         <categoryLink name="Cordon Rapproché de Sécurité" hidden="false" id="83f5-b676-2b30-adef" targetId="fb47-0a21-c186-96ec" primary="false"/>
-        <categoryLink name="Ogryn" hidden="false" id="960e-0128-7e32-79a2" targetId="8384-9f3a-8b52-7b0e" primary="false"/>
+        <categoryLink name="Eydolim" hidden="false" id="75bb-384f-35d9-4731" targetId="7cea-ac47-e24e-bab2" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="c7ed-02be-ad90-a815" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
       </categoryLinks>
+      <infoLinks>
+        <infoLink name="Garde Rouge" id="713e-69d3-e431-f849" hidden="false" type="rule" targetId="88e0-c0dc-7df6-3040"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="[A] Escouade Canine" hidden="false" id="324d-3b2b-839c-bd3d">
       <categoryLinks>
         <categoryLink name="Infantry" hidden="false" id="37e0-344e-96c8-257b" targetId="cf47-a0d7-7207-29dc" primary="false"/>
         <categoryLink name="Beast" hidden="false" id="d1e7-e387-3482-c54f" targetId="4c3e-9310-a516-3590" primary="true"/>
         <categoryLink name="Garde Rouge" hidden="false" id="c69c-8480-a9ef-e0f8" targetId="c1d8-e381-d70a-38c0" primary="false"/>
+        <categoryLink name="Eydolim" hidden="false" id="33f8-c2ee-e5b8-5547" targetId="7cea-ac47-e24e-bab2" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="cf92-2a2b-9532-044d" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Maitre-Chien" hidden="false" id="0e0e-9b1f-ed34-afbd">
@@ -568,6 +582,7 @@
       </selectionEntries>
       <infoLinks>
         <infoLink name="Infiltrators" id="891d-f8b8-3d13-d6da" hidden="false" type="rule" targetId="c05d-f4c3-f091-4938"/>
+        <infoLink name="Garde Rouge" id="d1f2-fbdc-47c3-28a9" hidden="false" type="rule" targetId="88e0-c0dc-7df6-3040"/>
       </infoLinks>
       <profiles>
         <profile name="Chasseur" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5ffc-a55a-e290-dac6">
@@ -577,12 +592,385 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="[N] Taurox Lictor" hidden="false" id="e44f-943a-a888-e7f8">
+      <categoryLinks>
+        <categoryLink name="Vehicle" hidden="false" id="3f16-bffa-bd4a-17cf" targetId="dbd4-63-af05-998" primary="false"/>
+        <categoryLink name="Dedicated Transport" hidden="false" id="296d-5345-4095-256b" targetId="ba07-411c-2832-1f79" primary="true"/>
+        <categoryLink name="Transport" hidden="false" id="ca4c-81d5-75c2-05ee" targetId="75e8-57c4-40e3-1817" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="5a56-fd6b-84ae-3d8b" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
+        <categoryLink name="Garde Rouge" hidden="false" id="9496-b604-4157-ed2f" targetId="c1d8-e381-d70a-38c0" primary="false"/>
+        <categoryLink name="Taurox Lictor" hidden="false" id="66fd-73f8-6fc9-92f0" targetId="91e5-f875-2b58-036a" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="[N] Taurox Lictor" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="c756-2909-fbb1-2c69">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
+            <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">8</characteristic>
+            <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+            <characteristic name="W" typeId="750a-a2ec-90d3-21fe">10</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Transport" typeId="74f8-5443-9d6d-1f1e" typeName="Transport" hidden="false" id="0eef-bf83-548f-91f3">
+          <characteristics>
+            <characteristic name="Capacity" typeId="30f2-be70-861d-1b84">This model has a transport capacity of 12 **^^Garde Rouge Infantry^^** models. Each **^^Ogryn^^** model takes up the space of 3 models. It cannot transport **^^Artillery^^** models.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Debarquement Tactique" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="10dd-5daa-cf54-916f">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Les unités débarquant de ce ^^transport^^ après qu&apos;il ait effectué un Normal Move peuvent immédiatement effectuer un Normal Move de 3&quot;. Les Unités s&apos;étant déplacé ainsi ne sont pas éligibles pour déclarer de charges ce tour ci, mais peuvent autrement agir normalement.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Main Gun" id="8628-8b95-4868-1c84" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Acoustic Hailing Device" hidden="false" id="adc2-21c6-41fe-f180" type="selectionEntry" targetId="8c06-d4c3-fd86-f8ed"/>
+            <entryLink import="true" name="Twin autocannon" hidden="false" id="b3af-c72a-912d-da81" type="selectionEntry" targetId="7fa4-fa0b-c3b6-c413"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="de48-50a9-6075-1845" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e55-5107-d07b-7935" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Lictor autostubber" hidden="false" id="8716-4396-ebe7-630e">
+              <profiles>
+                <profile name="Lictor autostubber" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="7d4d-b39e-f9c2-7e9f">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">8</characteristic>
+                    <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Sustained Hits 1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Sustained Hits" id="a191-8fa0-b57f-02a0" hidden="false" type="rule" targetId="1897-c22c-9597-12b1">
+                  <modifiers>
+                    <modifier type="append" value="1" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Deadly Demise" id="9ed7-a575-a62e-3f24" hidden="false" type="rule" targetId="b68a-5ded-65ac-98c">
+          <modifiers>
+            <modifier type="append" value="1" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <modifiers>
+        <modifier type="append" value="D3" field="name"/>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="[N] Gardiens Rouges" hidden="false" id="a352-1001-9f40-fc6d"/>
+    <selectionEntry type="unit" import="true" name="[N] Sentinelles Rouges" hidden="false" id="7d6d-c09f-b1b3-bcb6">
+      <categoryLinks>
+        <categoryLink name="Vehicle" hidden="false" id="e20d-660c-0836-cee9" targetId="dbd4-63-af05-998" primary="true"/>
+        <categoryLink name="Garde Rouge" hidden="false" id="5d1c-433c-2221-d134" targetId="c1d8-e381-d70a-38c0" primary="false"/>
+        <categoryLink name="Walker" hidden="false" id="560d-c557-82b2-8b15" targetId="6dda-e157-334d-e93a" primary="false"/>
+        <categoryLink name="Sentinelles Rouges" hidden="false" id="9546-d8e0-e335-e235" targetId="f28f-f15d-764d-8dec" primary="false"/>
+        <categoryLink name="Smoke" hidden="false" id="3e1b-0ea9-0c20-cfee" targetId="6df-937-16bc-8c1a" primary="false"/>
+        <categoryLink name="Imperium" hidden="false" id="75cc-1bf7-ca21-e8d2" targetId="aff3-d6a3-2a95-9dc" primary="false"/>
+        <categoryLink name="Eydolim" hidden="false" id="13f9-fa70-0dbf-19c7" targetId="7cea-ac47-e24e-bab2" primary="false"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Deadly Demise" id="061d-c592-a304-bdf8" hidden="false" type="rule" targetId="b68a-5ded-65ac-98c">
+          <modifiers>
+            <modifier type="append" value="1" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="1-2 Sentinelles Rouges" id="62e5-5a15-f8b6-d6b1" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Sentinelle Rouge" hidden="false" id="4476-7fa8-dc69-0d44">
+              <costs>
+                <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
+                <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
+                <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
+                <cost name="Crusade: Weapon Modifications" typeId="716d-91b7-d55a-1022" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Sentinelle Rouge" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="5937-a64d-8892-63af">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">10&quot;</characteristic>
+                    <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">8</characteristic>
+                    <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
+                    <characteristic name="W" typeId="750a-a2ec-90d3-21fe">7</characteristic>
+                    <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                    <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
+                  </characteristics>
+                  <attributes>
+                    <attribute typeId="ee2c-fa85-08b6-ad86" name="New Attribute Type"/>
+                  </attributes>
+                </profile>
+              </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Multi-laser" id="c34f-a06b-fb75-20cf" hidden="false" defaultSelectionEntryId="8ffa-a002-ced7-388a">
+                  <entryLinks>
+                    <entryLink import="true" name="Multi-laser" hidden="false" id="8e4e-6aae-d15f-d856" targetId="5fb2-7799-94ea-3309" type="selectionEntry">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="cd11-df5f-961f-d100" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </entryLink>
+                    <entryLink import="true" name="Heavy flamer" hidden="false" id="650b-e2f6-416a-8ef9" type="selectionEntry" targetId="a7b5-94dc-187c-8350">
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="0285-3b9f-81f7-ff81" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </entryLink>
+                    <entryLink import="true" name="Meltagun" hidden="false" id="28f6-89ce-d999-33c3" type="selectionEntry" targetId="0442-5237-54d9-69d0"/>
+                    <entryLink import="true" name="Acoustic Hailing Device" hidden="false" id="d13f-a49f-0470-499e" type="selectionEntry" targetId="8c06-d4c3-fd86-f8ed"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aaca-f041-d2e3-b305"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df7a-9617-4c6e-2b02"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Foam thrower" hidden="false" id="44a6-cbf7-ab7c-8a3a">
+                      <profiles>
+                        <profile name="Foam Thrower" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="da4b-e0e7-9353-4fd4">
+                          <characteristics>
+                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">9&quot;</characteristic>
+                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
+                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+                            <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
+                            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Blast</characteristic>
+                          </characteristics>
+                        </profile>
+                        <profile name="Sticky Foam" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d919-6c08-5457-b6db">
+                          <characteristics>
+                            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Durant votre Shooting Phase, après que cette unité ait tiré,  selectionnez une unité d&apos;INFANTRY touchée par son Foam Thrower. Jusqu&apos;au début de votre prochaine Shooting Phase, cette unité est Shaken. Tant qu&apos;une unité est Shaken, retirez 2&quot;de sa caracteristique de Move et retirez 2 de tous les Charge Rolls qu&apos;elle effectue.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Ignores Cover" id="1471-97bf-f1b7-8f3a" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
+                        <infoLink name="Blast" id="8ad3-55dc-65f7-08f7" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
+                      </infoLinks>
+                      <entryLinks>
+                        <entryLink import="true" name="Weapon Modifications" hidden="false" id="d0c5-8cc9-11d4-fdee" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                      </entryLinks>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Close combat weapon" hidden="false" id="b420-876d-055d-daad">
+                  <profiles>
+                    <profile name="Close combat weapon" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="5bfd-c1e6-b61b-1b6e">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+                        <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c9a6-ff2d-d336-6d6e"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8b4-5bb9-0055-9027"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="e74f-bc7f-62e1-abe1" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f47d-7b62-5ebe-bf51" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a954-5d1b-a877-0096" includeChildSelections="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Hunter-killer missile" hidden="false" id="e673-861c-1924-1b72" type="selectionEntry" targetId="996b-13b4-622c-928e">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e15-f35f-a181-3b68"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="5b35-cc52-46f5-6577" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </entryLink>
+                <entryLink import="true" name="Sentinel chainsaw" hidden="false" id="8c55-e117-a033-5894" type="selectionEntry" targetId="d375-8c63-4419-b5ce">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="422a-9bb9-f8b5-4b8a"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Weapon Modifications" hidden="false" id="0347-78c7-5b93-ff79" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+                  </entryLinks>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <profiles>
+        <profile name="Traque des Fugitifs" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="f8f8-8473-1c0b-fa8b">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Au début de votre Shooting Phase, selectionnez une unité ennemie à moins de 18&quot; de cette unité et visible d&apos;elle. Jusqu&apos;à la fin de la phase cette unité ne peut pas bénéficier de couvert.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sentinel chainsaw" hidden="false" id="d375-8c63-4419-b5ce">
+      <profiles>
+        <profile name="Sentinel chainsaw" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons" hidden="false" id="1ab1-8c28-29a7-7afa">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Autocannon" hidden="false" id="c52e-17e4-a5b5-662c">
+      <profiles>
+        <profile name="Autocannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="298e-ebc0-598f-8d69">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lascannon" hidden="false" id="6a53-a40e-ab05-e1c6">
+      <profiles>
+        <profile name="Lascannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="ee20-634e-2302-db6b">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6+1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Missile launcher" hidden="false" id="e8bb-aa30-7290-5c2c">
+      <profiles>
+        <profile name="➤ Missile launcher - frag" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="f3bb-53d8-db88-3fdc">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">4</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Heavy</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="➤ Missile launcher - krak" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="019b-a1e5-9887-0f9a">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D6</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Heavy" id="7d34-325e-a1ce-79f6" hidden="false" type="rule" targetId="1202-10a8-78e9-4c67"/>
+        <infoLink name="Blast" id="2df4-961b-85d4-e3f3" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
+      </infoLinks>
+      <comment>BS4+</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Multi-laser" hidden="false" id="5fb2-7799-94ea-3309">
+      <profiles>
+        <profile name="Multi-laser" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="e0fe-e91c-ffb5-be43">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Acoustic Hailing Device" hidden="false" id="8c06-d4c3-fd86-f8ed">
+      <profiles>
+        <profile name="Acoustic Hailing Device" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="f893-7db8-7d5b-c6cb">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2D3</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Blast, Ignores Cover</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Disperser la foule" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="9208-6c40-b031-c397">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Durant votre shooting phase, après que cette unité ait tiré, selectionnez une unité d&apos;INFANTRY touchée par son Acoustic Hailing Device. Cette unité doit effectuer un Battleshock Test</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast" id="c74f-3ad1-7f50-14e4" hidden="false" type="rule" targetId="6c1f-1cf7-ff25-c99e"/>
+        <infoLink name="Ignores Cover" id="35d4-0383-0327-886d" hidden="false" type="rule" targetId="4640-43e7-30b-215a"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Weapon Modifications" hidden="false" id="7295-9a4b-d444-b1a2" type="selectionEntryGroup" targetId="f9da-852a-d7f0-92e9"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin autocannon" hidden="false" id="7fa4-fa0b-c3b6-c413">
+      <profiles>
+        <profile name="Twin autocannon" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="807a-811a-705e-b3e9">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">48&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2</characteristic>
+            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Twin-linked" id="e79f-0977-b04f-8cd7" hidden="false" type="rule" targetId="cf93-ad4d-2f08-a79d"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
-    <entryLink import="true" name="Lord General Benoit Cadmun" hidden="false" id="3d9f-63ca-d5da-c5bc" targetId="20ed-3e6c-ed07-5953" type="selectionEntry"/>
-    <entryLink import="true" name="[N] Fusiliers de la Garde" hidden="false" id="9a1e-10f7-15c7-46c5" targetId="ed2f-bcbc-2bcb-bcd5" type="selectionEntry"/>
+    <entryLink import="true" name="[A] Lord General Benoit Cadmun" hidden="false" id="3d9f-63ca-d5da-c5bc" targetId="20ed-3e6c-ed07-5953" type="selectionEntry"/>
+    <entryLink import="true" name="[N] Fusiliers Rouges" hidden="false" id="9a1e-10f7-15c7-46c5" targetId="ed2f-bcbc-2bcb-bcd5" type="selectionEntry"/>
     <entryLink import="true" name="[N] Cordon Rapproché de Sécurité" hidden="false" id="3a8b-359b-e9f3-1b50" targetId="6b6f-9345-be5a-976a" type="selectionEntry"/>
     <entryLink import="true" name="[A] Escouade Canine" hidden="false" id="a7bd-33f7-08fd-1e75" targetId="324d-3b2b-839c-bd3d" type="selectionEntry"/>
+    <entryLink import="true" name="[N] Sentinelles Rouges" hidden="false" id="f504-d45e-d484-b569" targetId="7d6d-c09f-b1b3-bcb6" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Vehicle" hidden="false" id="41d4-05ac-b949-5b65" targetId="dbd4-63-af05-998" primary="true"/>
+        <categoryLink name="Walker" hidden="false" id="1afd-9f88-d694-d473" targetId="6dda-e157-334d-e93a" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="[N] Taurox Lictor" hidden="false" id="98c4-eb52-aa88-4d5b" targetId="e44f-943a-a888-e7f8" type="selectionEntry"/>
   </entryLinks>
   <categoryEntries>
     <categoryEntry name="Garde Rouge" id="c1d8-e381-d70a-38c0" hidden="false"/>
@@ -590,6 +978,9 @@
     <categoryEntry name="Tribun de la Garde" id="1765-e28f-a007-6213" hidden="false"/>
     <categoryEntry name="Cordon Rapproché de Sécurité" id="fb47-0a21-c186-96ec" hidden="false"/>
     <categoryEntry name="Ogryn" id="8384-9f3a-8b52-7b0e" hidden="false"/>
+    <categoryEntry name="Sentinelles Rouges" id="f28f-f15d-764d-8dec" hidden="false"/>
+    <categoryEntry name="Eydolim" id="7cea-ac47-e24e-bab2" hidden="false"/>
+    <categoryEntry name="Taurox Lictor" id="91e5-f875-2b58-036a" hidden="false"/>
   </categoryEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Imperium - Agents of the Imperium" id="5d18-bc6d-1a37-afb1" targetId="b00-cd86-4b4c-97ba" importRootEntries="true"/>
@@ -724,7 +1115,7 @@
               <profiles>
                 <profile name="Plan des Opérations" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="5d75-59b4-846b-f4cc">
                   <characteristics>
-                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Les modèles de cette unité gagnent l&apos;abilité ^^Scouts 6&quot;^^</characteristic>
+                    <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Tant que cette unité contient au moins un Coordinateur Garde Rouge, tous ses modèles gagnent l&apos;abilité ^^Scouts 6&quot;^^</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
