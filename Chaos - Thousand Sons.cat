@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="1069-10ff-3ba9-873b" name="Chaos - Thousand Sons" revision="47" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="1069-10ff-3ba9-873b" name="Chaos - Thousand Sons" revision="62" battleScribeVersion="2.03" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" type="catalogue">
   <publications>
     <publication id="015a-6212-d737-9044" name="Index - Thousand Sons"/>
   </publications>
@@ -34,7 +34,6 @@
     <categoryEntry id="5568-6a60-e712-8b64" name="Maulerfiend" hidden="false"/>
     <categoryEntry id="d9c7-99b5-1d37-3021" name="Mutalith Vortex Beast" hidden="false"/>
     <categoryEntry name="Rubric Marines" hidden="false" id="cd-b0e0-7663-a659"/>
-    <categoryEntry name="Terminator" hidden="false" id="6957-5c6d-824d-8804"/>
     <categoryEntry name="Scarab Occult" hidden="false" id="5fdf-d92f-3c62-9a2e"/>
     <categoryEntry name="Sorcerer" hidden="false" id="3789-4546-1d0a-f02b"/>
     <categoryEntry name="Cultists" hidden="false" id="1b94-375f-5a5b-7dc1"/>
@@ -396,11 +395,9 @@ Psychic weapons equipped by ^^**Thousand Sons^^** models in your army have the [
             <selectionEntry type="upgrade" import="true" name="Warpmeld Pact" hidden="false" id="5be7-3aa8-5d64-cbaf">
               <rules>
                 <rule name="Warpmeld Sacrifice" id="051d-bef5-f9ed-7178" hidden="false">
-                  <description>Each time an enemy unit is selected to shoot or fight and one or more ^^**Tzeentch Mutant^^** units from your army are selected as a target of one or more of those attacks, each of those ^^**Tzeentch Mutant^^** units can make a Warpmeld Sacrifice. If it does, that ^^**Tzeentch Mutant^^** unit suffers D3 mortal wounds and until the end of the phase, each time an attack targets that unit, subtract 1 from the Wound roll.
+                  <description>Each time an enemy unit is selected to shoot or fight and one or more ^^**Tzeentch Mutant Infantry^^** or ^^**Tzeentch Mutant Mounted^^** units from your army are selected as a target of one or more of those attacks, each of those ^^**Tzeentch Mutant^^** units can make a Warpmeld Sacrifice. If it does, until the end of the phase, each time an attack targets that unit, subtract 1 from the Wound roll. At the end of the phase, that ^^**Tzeentch Mutant^^** unit suffers D3 mortal wounds.
 
-
-Each time a ^^**Tzeentch Mutant^^** unit from your army is selected to shoot or fight, before selecting its targets, that unit can make a Warpmeld Sacrifice. If it does, that unit suffers D3 mortal wounds and until the end of the phase, each time a model in that unit makes an attack, add 1 to the Wound roll.
-
+Each time a ^^**Tzeentch Mutant Infantry^^** or ^^**Tzeentch Mutant Mounted^^*** unit from your army is selected to shoot or fight, before selecting its targets, that unit can make a Warpmeld Sacrifice. If it does, until the end of the phase, each time a model in that unit makes an attack, add 1 to the Wound roll. At the end of the phase, that ^^**Tzeentch Mutant^^** unit suffers D3 mortal wounds.
 
 ^^**Tzaangors^^** units from your army have the Battleline keyword, and while such a unit is not Battle-shocked, add 1 to the Objective Control characteristic of models in that unit.</description>
                 </rule>
@@ -1117,6 +1114,7 @@ Each time a ^^**Thousand Sons Vehicle^^** model from your army with the Deadly D
         <categoryLink targetId="4c00-2578-faf5-6918" id="c1ae-c8a5-d0ed-b915" primary="false" name="Chaos"/>
         <categoryLink targetId="b188-114f-6ba5-79a1" id="92b7-650-ac24-737d" primary="false" name="Tzeentch"/>
         <categoryLink targetId="56d9-9e64-788e-3f3e" id="be37-4c75-c8c0-a700" primary="false" name="Rhino"/>
+        <categoryLink name="Smoke" hidden="false" id="35bb-1a6c-8643-bccb" targetId="6df-937-16bc-8c1a" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="2ad4-52d2-07b7-0e4e" name="Pintle weapon" hidden="false" collective="false" import="true">
@@ -1194,6 +1192,7 @@ Each time a ^^**Thousand Sons Vehicle^^** model from your army with the Deadly D
         <categoryLink id="6486-d3a8-c97d-1559" name="Chaos" hidden="false" targetId="4c00-2578-faf5-6918" primary="false"/>
         <categoryLink id="1a68-9e42-bce3-4eda" name="Tzeentch" hidden="false" targetId="b188-114f-6ba5-79a1" primary="false"/>
         <categoryLink id="e45e-6ab2-7ce2-b631" name="Spawn" hidden="false" targetId="6342-2cd6-f518-f565" primary="false"/>
+        <categoryLink name="Mutant" hidden="false" id="8781-fde7-cf33-1136" targetId="24dd-cf44-f6ab-e0e2" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="7502-b778-b920-3f68" name="Chaos Spawn" hidden="false" collective="false" import="true" type="model">
@@ -1361,6 +1360,11 @@ Each time a ^^**Thousand Sons Vehicle^^** model from your army with the Deadly D
         </infoLink>
         <infoLink id="7775-6118-4b17-8408" name="Damaged: 1-5 wounds remaining" hidden="false" targetId="cb08-29a7-4ffc-2561" type="profile"/>
         <infoLink name="Mortal Sorcery (Aura)" id="fe2d-fcd5-3643-1c59" hidden="false" type="profile" targetId="a4ad-ef25-1ec4-4b1f"/>
+        <infoLink name="Feel No Pain" id="313d-768e-385a-f942" hidden="false" type="rule" targetId="9bf4-280f-bbe2-6fbb">
+          <modifiers>
+            <modifier type="append" value="6+" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="bbaa-d8d3-a4bb-10b2" name="Faction: Thousand Sons" hidden="false" targetId="7002-1fbb-7571-e8e7" primary="false"/>
@@ -1694,6 +1698,13 @@ Each time a ^^**Thousand Sons Vehicle^^** model from your army with the Deadly D
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="3+" field="94d-8a98-cf90-183e">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3789-4546-1d0a-f02b" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -1768,7 +1779,7 @@ Each time a ^^**Thousand Sons Vehicle^^** model from your army with the Deadly D
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">3+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">6</characteristic>
             <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
-            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
+            <characteristic name="OC" typeId="bef7-942a-1a23-59f8">2</characteristic>
           </characteristics>
         </profile>
         <profile id="b7bd-2ab0-8ca3-2791" name="Arcane Shield (Psychic)" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
@@ -2093,7 +2104,7 @@ Each time a ^^**Thousand Sons Vehicle^^** model from your army with the Deadly D
             <characteristic name="A" typeId="3bb-c35f-f54-fb08">D6</characteristic>
             <characteristic name="BS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
             <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
-            <characteristic name="AP" typeId="9ead-8a10-520-de15">-1</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
             <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignores Cover, Torrent</characteristic>
           </characteristics>
@@ -2660,8 +2671,8 @@ Each time a ^^**Thousand Sons Vehicle^^** model from your army with the Deadly D
         <profile id="81ae-8d9c-e58d-bf94" name="Force weapon" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
           <characteristics>
             <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
-            <characteristic name="A" typeId="2337-daa1-6682-b110">5</characteristic>
-            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">2+</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+            <characteristic name="WS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
             <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
             <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
             <characteristic name="D" typeId="3254-9fe6-d824-513e">D3</characteristic>
@@ -2671,6 +2682,21 @@ Each time a ^^**Thousand Sons Vehicle^^** model from your army with the Deadly D
             <modifier type="append" value="+0" field="3254-9fe6-d824-513e" join="">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="7213-a7b3-4c8e-96bc" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="5" field="2337-daa1-6682-b110">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="010f-ca66-75a1-379b" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="740a-892c-8958-defa" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="2+" field="95d1-95f-45b4-11d6">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="010f-ca66-75a1-379b" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3007,7 +3033,7 @@ Each time a ^^**Thousand Sons Vehicle^^** model from your army with the Deadly D
         </profile>
         <profile id="4b6d-e4b8-2cfa-42a6" name="Immaterial Flare (Aura)" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While a friendly ^^**Thousand Sons Psyker^^** unit is within 6&quot; of this model, each time that unit Channels the Warp, add 1 to the Psychic test result.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While a friendly ^^**Thousand Sons Psyker^^** unit is within 6&quot; of this model, each time that unit Channels the Warp, add 1 to the Psychic test result. This is not cumulative with any other modifiers to the Psychic test result.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3269,7 +3295,7 @@ Each time a ^^**Thousand Sons Vehicle^^** model from your army with the Deadly D
                     <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Anti-INFANTRY 4+, Devastating Wounds, Psychic</characteristic>
                   </characteristics>
                   <modifiers>
-                    <modifier type="set" value="Anti-INFANTRY 4+, Devastating Wounds, Ignores Cover, Pistol, Psychic" field="7f1b-8591-2fcf-d01c">
+                    <modifier type="set" value="Anti-INFANTRY 4+, Devastating Wounds, Ignores Cover, Psychic" field="7f1b-8591-2fcf-d01c">
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="5d3d-e13b-8b76-dad3" childId="d9f5-2270-b9b2-8060" shared="true"/>
                       </conditions>
@@ -3879,11 +3905,11 @@ Wound roll.</characteristic>
       <categoryLinks>
         <categoryLink targetId="7002-1fbb-7571-e8e7" id="5ed1-b980-5b7c-8468" primary="false" name="Faction: Thousand Sons"/>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="f404-b536-da09-8a1e" primary="true" name="Infantry"/>
-        <categoryLink targetId="6957-5c6d-824d-8804" id="1269-d511-efb1-b1f5" primary="false" name="Terminator"/>
         <categoryLink targetId="4c00-2578-faf5-6918" id="6ed6-7784-6d69-fad5" primary="false" name="Chaos"/>
         <categoryLink targetId="b188-114f-6ba5-79a1" id="c746-8f4e-3f90-3ee1" primary="false" name="Tzeentch"/>
         <categoryLink targetId="5fdf-d92f-3c62-9a2e" id="2950-cca6-3af4-ddce" primary="false" name="Scarab Occult"/>
         <categoryLink name="Rubricae" hidden="false" id="be0b-e2a1-75bf-9571" targetId="07e6-410b-10e4-a6a2" primary="false"/>
+        <categoryLink name="Terminator" hidden="false" id="b5e8-5c7a-1532-a0ad" targetId="740a-892c-8958-defa" primary="false"/>
       </categoryLinks>
       <constraints>
         <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4c74-f13c-d125-ee54" type="max"/>
@@ -4014,10 +4040,10 @@ Wound roll.</characteristic>
         <categoryLink targetId="cf47-a0d7-7207-29dc" id="7f8b-48a2-c4a1-3b5f" primary="false" name="Infantry"/>
         <categoryLink targetId="9cfd-1c32-585f-7d5c" id="477-bef4-c778-beb9" primary="true" name="Character"/>
         <categoryLink targetId="13bf-2bee-3ae0-b414" id="26b4-993f-5b-5fd2" primary="false" name="Psyker"/>
-        <categoryLink targetId="6957-5c6d-824d-8804" id="74a0-93fd-c77b-2723" primary="false" name="Terminator"/>
         <categoryLink targetId="4c00-2578-faf5-6918" id="87de-a4b4-3990-ded3" primary="false" name="Chaos"/>
         <categoryLink targetId="b188-114f-6ba5-79a1" id="1f67-c506-1b0-bbf8" primary="false" name="Tzeentch"/>
         <categoryLink targetId="3789-4546-1d0a-f02b" id="97a5-79d3-5bc2-f2cf" primary="false" name="Sorcerer"/>
+        <categoryLink name="Terminator" hidden="false" id="811d-d49d-9f9b-2871" targetId="740a-892c-8958-defa" primary="false"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Leader" hidden="false" type="rule" id="30ba-d2d7-3e01-d034" targetId="b4dd-3e1f-41cb-218f"/>
@@ -4044,7 +4070,7 @@ Wound roll.</characteristic>
         </profile>
         <profile name="Marked by Fate (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="8c56-bbd9-5aa5-21f0">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this model&apos;s unit has shot, select one enemy unit hit by one or more of those attacks made with a Psychic weapon. Until the end of the turn, each time a friendly ^^**Thousand Sons^^** model makes an attack that targets that enemy unit, add 1 to the Hit roll.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Shooting phase, after this model&apos;s unit has shot, select one enemy unit hit by one or more of those attacks made with a Psychic weapon. Until the end of the phase, each time a friendly ^^**Thousand Sons^^** model makes an attack that targets that enemy unit, add 1 to the Hit roll.</characteristic>
           </characteristics>
         </profile>
         <profile name="Sorcerer in Terminator Armour" typeId="c547-1836-d8a-ff4f" typeName="Unit" hidden="false" id="123c-e2d5-50ff-e0d4">
@@ -4168,7 +4194,7 @@ Wound roll.</characteristic>
         </profile>
         <profile name="Servile Pawns" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="aa29-af55-b319-e4d6">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is within 3&quot; of one or more friendly ^^**Thousand Sons^^** units, this model has the Lone Operative ability.</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is within 3&quot; of one or more friendly ^^**Thousand Sons Infantry^^** units, this model has the Lone Operative ability.</characteristic>
           </characteristics>
         </profile>
         <profile name="Glamour of Tzeentch (Aura, Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="1bf0-2da1-b7fb-6fea">
@@ -4316,7 +4342,7 @@ Wound roll.</characteristic>
         <profile name="Aetherstride (Psychic)" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="d2ea-4457-7ac2-7173">
           <characteristics>
             <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In your Movement phase, when this model is set up on the battlefield using the Deep Strike ability, it can perform an aetherstride. If it does:
-- It can be set up anywhere on the battlefield more than 7&quot; horizontally away from all enemy units.
+- It can be set up anywhere on the battlefield more than 6&quot; horizontally away from all enemy units.
 - Until the end of the turn, its Dark Blessing has the [Sustained Hits D3] ability.
 - Until the end of the turn, it is not eligible to declare a charge.</characteristic>
           </characteristics>
@@ -4335,6 +4361,7 @@ Wound roll.</characteristic>
         </infoLink>
         <infoLink name="Mortal Sorcery (Aura)" id="c1fa-16e9-219d-9c5e" hidden="false" type="profile" targetId="a4ad-ef25-1ec4-4b1f"/>
         <infoLink name="Cabal of Sorcerers" id="46c9-c498-fcb4-a12b" hidden="false" type="rule" targetId="b280-6105-5358-ba2e"/>
+        <infoLink name="Deep Strike" id="9baf-7fd1-ecb4-adbc" hidden="false" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="7002-1fbb-7571-e8e7" id="6db2-4ace-8e25-ba6a" primary="false" name="Faction: Thousand Sons"/>
@@ -4357,7 +4384,7 @@ Wound roll.</characteristic>
             <profile id="f3ac-4af-df82-2142" name="Infernal cannon" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
               <characteristics>
                 <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
-                <characteristic name="A" typeId="3bb-c35f-f54-fb08">6</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">3</characteristic>
                 <characteristic name="BS" typeId="94d-8a98-cf90-183e">2+</characteristic>
                 <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
                 <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
@@ -4758,28 +4785,6 @@ Wound roll.</characteristic>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Tzaangor w/ pistol and chainsword" hidden="false" id="c0b0-d4f8-c617-7c2a">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Autopistol" hidden="false" id="bf00-4f42-3ff8-9881" collective="true">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ae29-9b77-a661-a961"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="356f-de98-cb05-7fd"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Autopistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="e44a-ebff-fb9b-b457">
-                      <characteristics>
-                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-                        <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
-                        <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
-                        <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Pistol" hidden="false" type="rule" id="327f-9d0c-8e42-f95a" targetId="8bf7-8812-923d-29e4"/>
-                  </infoLinks>
-                </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Chainsword" hidden="false" id="dffd-fef4-9824-77bf" collective="true">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a583-3169-d8f5-df92"/>
@@ -4803,6 +4808,9 @@ Wound roll.</characteristic>
               <constraints>
                 <constraint type="max" value="19" field="selections" scope="parent" shared="true" id="e0b6-762a-d858-e503" includeChildSelections="false"/>
               </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Autopistol" hidden="false" id="e63f-ecdc-0f57-9e1e" type="selectionEntry" targetId="71c8-48cb-ab68-2a61"/>
+              </entryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -4852,28 +4860,6 @@ Wound roll.</characteristic>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Pistol and chainsword" hidden="false" id="da8f-c310-499e-0107">
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Autopistol" hidden="false" id="48bc-c725-1a32-8b69" collective="true">
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e964-ff21-5fcf-389d"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a97-e687-5ede-b5c0"/>
-                      </constraints>
-                      <profiles>
-                        <profile name="Autopistol" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons" hidden="false" id="4e86-3db9-4618-d285">
-                          <characteristics>
-                            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
-                            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
-                            <characteristic name="BS" typeId="94d-8a98-cf90-183e">4+</characteristic>
-                            <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
-                            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
-                            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-                            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink name="Pistol" id="b434-f849-ef3c-5412" hidden="false" type="rule" targetId="8bf7-8812-923d-29e4"/>
-                      </infoLinks>
-                    </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Chainsword" hidden="false" id="b951-afc2-e321-2dee" collective="true">
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b342-6003-cb69-75f5"/>
@@ -4894,6 +4880,9 @@ Wound roll.</characteristic>
                       </profiles>
                     </selectionEntry>
                   </selectionEntries>
+                  <entryLinks>
+                    <entryLink import="true" name="Autopistol" hidden="false" id="63e9-3b15-9f5f-7f83" type="selectionEntry" targetId="71c8-48cb-ab68-2a61"/>
+                  </entryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Tzaangor blades" hidden="false" id="ee84-120d-a66b-0b72">
                   <selectionEntries>
@@ -6016,7 +6005,7 @@ Wound roll.</characteristic>
             <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
             <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
             <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
-            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">-</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Pistol</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6384,7 +6373,7 @@ Wound roll.</characteristic>
                 <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
                 <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
                 <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D3</characteristic>
-                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Psychic</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Hazardous, Psychic</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6746,6 +6735,7 @@ Wound roll.</characteristic>
         <categoryLink name="Tzeentch" hidden="false" id="d66c-39f1-9ab7-f368" targetId="b188-114f-6ba5-79a1" primary="false"/>
         <categoryLink name="Summoned" hidden="false" id="f49e-6983-cedd-a926" targetId="f2ef-26db-0286-e0a7" primary="false"/>
         <categoryLink name="Horrors" hidden="false" id="076e-61d5-2865-1138" targetId="3262-235e-8f70-6c36" primary="false"/>
+        <categoryLink name="Faction: Scintillating Legions" hidden="false" id="5951-9d7a-5446-7c9c" targetId="5fa1-9079-f32b-ce1e" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Pink Horror" hidden="false" id="884b-a88a-9eaa-88d3">
@@ -7001,6 +6991,7 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
         <categoryLink name="Tzeentch" hidden="false" id="09ed-5ff9-bcc1-1e1e" targetId="b188-114f-6ba5-79a1" primary="false"/>
         <categoryLink name="Summoned" hidden="false" id="957e-7996-b363-7480" targetId="f2ef-26db-0286-e0a7" primary="false"/>
         <categoryLink name="Horrors" hidden="false" id="ce40-7a77-0da9-330b" targetId="3262-235e-8f70-6c36" primary="false"/>
+        <categoryLink name="Faction: Scintillating Legions" hidden="false" id="e89c-564d-a86d-c391" targetId="5fa1-9079-f32b-ce1e" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Blue Horror" hidden="false" id="a7db-5a37-4495-4ed1" collective="false">
@@ -7883,9 +7874,8 @@ _Designer’s Note: While this unit contains one or more ^^Pink Horrors^^ models
       <description>If your army Faction is ^^**Thousand Sons^^**, at the start of your Shooting phase, one or more models from your army with this ability can attempt Rituals. To do so, select one model from your army with this ability that has not yet attempted a Ritual this turn and select one Ritual no model from your army has manifested this turn, then take a Psychic test by following the sequence below:
 
 1. Roll 2D6
-2. Channel the Warp (optionally, roll one additional D6)
-3. Then, if one or more doubles or triples were rolled during this test, that model&apos;s unit suffers D3 mortal wounds.
-4. If that model is not destroyed, the combined total of all the dice rolled during this test is the Psychic test result. If this equals or exceeds the Warp Charge value of the Ritual being attempted, that model manifests that Ritual and you resolve its effects.</description>
+2. Optionally, roll one additional D6 (Channel the Warp). Then, if one or more doubles or triples were rolled during this test, that model&apos;s unit suffers D3 mortal wounds.
+3. If that model is not destroyed, the combined total of all the dice rolled during this test is the Psychic test result. If this equals or exceeds the Warp Charge value of the Ritual being attempted, that model manifests that Ritual and you resolve its effects.</description>
     </rule>
   </sharedRules>
 </catalogue>
