@@ -27872,7 +27872,7 @@ While this unit is joined to a unit, it can embark within any **^^Transport^^** 
       <modifiers>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
-            <conditionGroup type="or">
+            <conditionGroup type="and">
               <conditions>
                 <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="b0ae-12a5-c84-ea45" shared="true"/>
                 <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="6cc7-4732-769d-80ab" shared="true"/>
