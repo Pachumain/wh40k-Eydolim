@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="36d3-36bc-68dd-40ac" name="Imperium - Adeptus Astartes - Black Templars" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="34" battleScribeVersion="2.03" type="catalogue" authorName="Acebaur">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="36d3-36bc-68dd-40ac" name="Imperium - Adeptus Astartes - Black Templars" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="1" revision="37" battleScribeVersion="2.03" type="catalogue" authorName="Acebaur">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Imperium - Space Marines" id="2137-605d-109a-d3b2" targetId="e0af-67df-9d63-8fb7" importRootEntries="true"/>
   </catalogueLinks>
@@ -240,7 +240,7 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
             <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
             <characteristic name="SV" typeId="450-a17e-9d5e-29da">2+</characteristic>
             <characteristic name="W" typeId="750a-a2ec-90d3-21fe">6</characteristic>
-            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">5+</characteristic>
+            <characteristic name="LD" typeId="58d2-b879-49c7-43bc">6+</characteristic>
             <characteristic name="OC" typeId="bef7-942a-1a23-59f8">3</characteristic>
           </characteristics>
         </profile>
@@ -923,6 +923,11 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
                             <condition type="atLeast" value="10" field="selections" scope="206c-6b4d-4aaa-7e79" childId="93d5-a2f6-533-694f" shared="true" id="232f-fa4a-56db-d00e"/>
                           </conditions>
                         </modifier>
+                        <modifier type="set" value="0" field="823b-c755-a52d-86bd">
+                          <conditions>
+                            <condition type="lessThan" value="5" field="selections" scope="206c-6b4d-4aaa-7e79" childId="93d5-a2f6-533-694f" shared="true" id="cd92-d2b2-ba7a-1e6c"/>
+                          </conditions>
+                        </modifier>
                       </modifiers>
                     </entryLink>
                     <entryLink import="true" name="Pyre Pistol" hidden="false" type="selectionEntry" id="c2da-2af9-347f-8698" targetId="bb21-4114-6b0c-634d">
@@ -933,6 +938,11 @@ Water from the Stoup of Elucidation: Improve the Armour Penetration characterist
                         <modifier type="set" value="4" field="5377-c73c-cf9-8f5d">
                           <conditions>
                             <condition type="atLeast" value="10" field="selections" scope="206c-6b4d-4aaa-7e79" childId="93d5-a2f6-533-694f" shared="true" id="613e-3107-de5-e07d"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" value="0" field="5377-c73c-cf9-8f5d">
+                          <conditions>
+                            <condition type="lessThan" value="5" field="selections" scope="206c-6b4d-4aaa-7e79" childId="93d5-a2f6-533-694f" shared="true" id="be0e-05e1-2471-1726"/>
                           </conditions>
                         </modifier>
                       </modifiers>
@@ -5144,7 +5154,7 @@ You can attach this model to one of the above units even if one Captain, Chapter
         </profile>
       </profiles>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="165"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="175"/>
         <cost name="Crusade Points" typeId="b03b-c239-15a5-da55" value="0"/>
         <cost name="Crusade: Battle Honours" typeId="75bb-ded1-c86d-bdf0" value="0"/>
         <cost name="Crusade: Experience" typeId="a623-fe74-1d33-cddf" value="0"/>
