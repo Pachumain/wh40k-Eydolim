@@ -177,9 +177,7 @@
         </profile>
         <profile name="Flame of saint athalia" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="28b7-0dd0-e6d0-2df1">
           <characteristics>
-            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a melta lance equipped by this model target an unit within 3’’ it gain [DEVASTATING WOUND].
-
-</characteristic>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a melta lance equipped by this model target an unit within 3’’ it gain [DEVASTATING WOUND].</characteristic>
           </characteristics>
         </profile>
         <profile name="Vox-lauders" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities" hidden="false" id="bea9-a56f-26ae-61fc">
@@ -224,6 +222,7 @@
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Palatine Angele" hidden="false" id="4bb3-2464-edbc-33d7" type="selectionEntry" targetId="8ccf-6341-5d4c-5fef"/>
+    <entryLink import="true" name="Lance of the Emperor" hidden="false" id="e904-1161-c4e7-8bfb" type="selectionEntry" targetId="aa2b-5845-45a2-5ca4"/>
   </entryLinks>
   <categoryEntries>
     <categoryEntry name="Palatine Angele" id="1eeb-370d-df53-c640" hidden="false"/>
