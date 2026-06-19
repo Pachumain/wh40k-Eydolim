@@ -22986,6 +22986,10 @@ Each time the bearer&apos;s unit is selected to shoot, if that unit is not withi
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="884a-cf0f-6141-d87a"/>
       </constraints>
+      <categoryLinks>
+        <categoryLink targetId="14a0-40c9-2748-ae6e" id="c8d9-7708-fde4-6a46" primary="false" name="Mounted"/>
+        <categoryLink targetId="56cc-5f43-2403-8da0" id="699a-eb53-efe5-7dd0" primary="true" name="Faction: Orks"/>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
   <sharedProfiles>
